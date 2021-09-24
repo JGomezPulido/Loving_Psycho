@@ -6,8 +6,8 @@
 *Sitio web o correo electrónico de contacto*  
 *Versión 1.1 – 15 de febrero de 2021* 
 
-Resumen  | ------ 
----------|-------
-Géneros: | Modos: 
--------- | ------- 
-Publico objetivo | Plataformas: 
+
+Géneros: | Modos:
+------------ | -------------
+Público objetivo | Plataformas
+Content in the first column | Content in the second column
