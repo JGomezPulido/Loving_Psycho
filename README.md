@@ -1,7 +1,7 @@
 # LOVING PSYCHO
 [Documento de Brainstorming](https://docs.google.com/document/d/1pQZNYVFjzyh0nKH6pELmN9OpXBWc8SqLfTluE3-CcKY/edit?usp=sharing)  
 
-[Página de gestión (Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2532848)
+[Página de gestión (Pivotal Tracker)](https://www.pivotaltracker.com/n/projects/2532848)
 
 *Documento de diseño de videojuego*  
 *Nombre de los autores o la empresa*  
