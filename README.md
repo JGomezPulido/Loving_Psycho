@@ -94,11 +94,15 @@ Vista general |
 
 ### <a name = "Estética">2.3 Estética</a>
 
+------------------------------------
+
 ## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juegos</a>
 
 ### <a name = "Configuración">3.1 Configuración</a>
 
 ### <a name = "Interfaz_y_control">3.2 Interfaz y control</a>
+
+-------------------------------------
 
 ## <a name = "Contenido">4. Contenido</a>
 
@@ -109,6 +113,8 @@ Vista general |
 ### <a name = "Personajes_y_enemigos">4.3 Personajes y enemigos</a>
 
 ### <a name = "Objetos">4.4 Objetos</a>
+
+--------------------------------------
 
 ## <a name = "Referencias">5. Referencias</a>
  
