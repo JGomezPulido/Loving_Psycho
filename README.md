@@ -113,6 +113,7 @@ para reducir su barra de instinto asesino. Dependiendo de lo bien o mal que lo h
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
 #### <a name = "Cámara">2.1.2 Cámara </a>
+La cámara será estática, mostrando el escenario. Además, conforme distintos personajes vayan hablando, aparecerán sus retratos en los extremos izquierdo y derecho de la pantalla. En caso de haber varios personajes personajes hablando, se iluminará el retrato del personaje que esté hablando.
 
 ### <a name = "Dinámica">2.2 Dinámica</a>
 
