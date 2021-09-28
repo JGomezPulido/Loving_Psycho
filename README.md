@@ -24,8 +24,8 @@
     <td colspan = "2"> Resumen </td>
   </tr>
   <tr>
-    <td> Generos: Dating simulator</td>
-    <td> Modos: </td>
+    <td> Generos: Dating simulator, Horror game, Novela visual</td>
+    <td> Modos: Videojuego de un jugador </td>
   </tr>
   <tr>
     <td> Público objetivo: <br>
@@ -140,6 +140,7 @@ El juego se controla principalmente con el ratón, haciendo click en las diferen
 
 --------------------------------------
 
-## <a name = "Referencias">5. Referencias</a>
+## <a name = "Referencias">5. Referencias</a>  
+  - "Doki Doki Literature Club!"
  
 
