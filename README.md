@@ -141,6 +141,6 @@ El juego se controla principalmente con el ratón, haciendo click en las diferen
 --------------------------------------
 
 ## <a name = "Referencias">5. Referencias</a>  
-  - ["Doki Doki Literature Club!"](https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/)
+  - [Doki Doki Literature Club!](https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/)
  
 
