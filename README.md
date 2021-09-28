@@ -7,7 +7,7 @@
 
 *Nombre de los autores o la empresa:*  
 *José María Gómez Pulido*  
-*Victor Estremera Herranz*  
+*Víctor Estremera Herranz*  
 *Eduardo de Orellana*  
 *Sergio Baña Marchante* 
 
@@ -60,9 +60,7 @@ x|
     1.1 [Relato breve y parcial de una partida típica](#relato-breve)  
   
 2. [Jugabilidad](#Jugabilidad)  
-    2.1 [Mecánica](#Mecánica)  
-         - [Mecánicas del personaje](#Mecánicas_del_personaje)  
-         - [Mecánicas de escenario](#Mecánicas_de_escenario)  
+    2.1 [Mecánica](#Mecánica)   
          - [Controles](#Controles)  
          - [Cámara](#Cámara)  
     2.2 [Dinámica](#Dinámica)  
@@ -102,14 +100,10 @@ para reducir su barra de instinto asesino. Dependiendo de lo bien o mal que lo h
 
 ### <a name = "Mecánica">2.1 Mecánica</a>
 
-#### <a name = "Mecánicas_del_personaje">2.1.1 Mecánicas del personaje </a>
-
-#### <a name = "Mecánicas_de_escenario">2.1.2 Mecánicas de escenario </a> 
-
-#### <a name = "Controles">2.1.3 Controles </a>
+#### <a name = "Controles">2.1.1 Controles </a>
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
-#### <a name = "Cámara">2.1.4 Cámara </a>
+#### <a name = "Cámara">2.1.2 Cámara </a>
 
 ### <a name = "Dinámica">2.2 Dinámica</a>
 
