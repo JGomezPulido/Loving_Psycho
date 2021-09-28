@@ -24,9 +24,17 @@
     <td colspan = "2"> Resumen </td>
   </tr>
   <tr>
-    <td> Generos: <br/> Dating simulator</td>
+    <td> Generos: Dating simulator</td>
     <td> Modos: </td>
   </tr>
+  <tr>
+    <td> Público objetivo: <br>
+         Edad: +16, sexo: indiferente, región: inter-nacional e idioma: español <br>
+    </td>
+    <td> Plataforma: web </br>
+    </td>
+  </tr>
+      
   <tr>
     <td> Cantidades: <br>
          Escenarios <br>
@@ -36,8 +44,9 @@
          Palabras <br>
    </td>
     <td> Hitos: <br>
-         Fecha de propuesta del concepto <br>
-         Fechas de pre-producción <br>
+         Fecha de propuesta del concepto: 24 de septiembre <br>
+         Fechas de pre-producción: <br>
+         Hito I: 1 de octubre
          Fechas de producción <br>
          Fecha de lanzamiento <br>
    </td>
