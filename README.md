@@ -91,6 +91,7 @@ Vista general |
 #### <a name = "Mecánicas_de_escenario">2.1.2 Mecánicas de escenario </a> 
 
 #### <a name = "Controles">2.1.3 Controles </a>
+    El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
 #### <a name = "Cámara">2.1.4 Cámara </a>
 
