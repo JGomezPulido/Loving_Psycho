@@ -6,7 +6,7 @@
 *Documento de diseño de videojuego*  
 *Nombre de los autores o la empresa*  
 *José María Gómez Pulido*  
-*Victor Estremera Herranz*  
+*Víctor Estremera Herranz*  
 *Eduardo de Orellana*  
 *Sergio Baña Marchante*  
 *E-mails de contacto:*   
