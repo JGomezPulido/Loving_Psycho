@@ -3,25 +3,28 @@
 
 [Página de gestión (Pivotal Tracker)](https://www.pivotaltracker.com/n/projects/2532848)
 
-*Documento de diseño de videojuego*  
-*Nombre de los autores o la empresa*  
+### *Documento de diseño de videojuego* 
+
+*Nombre de los autores o la empresa:*  
 *José María Gómez Pulido*  
 *Victor Estremera Herranz*  
 *Eduardo de Orellana*  
-*Sergio Baña Marchante*  
+*Sergio Baña Marchante* 
+
 *E-mails de contacto:*   
 *jgomez18@ucm.es*   
 *sebana@ucm.es*  
 *vestre01@ucm.es*  
-*eorellana@ucm.es*    
-*Versión 1.1 – 15 de febrero de 2021* 
+*eorellana@ucm.es* 
+
+*Versión 1.1 – 28 de febrero de 2021* 
 
 <table>
   <tr>
     <td colspan = "2"> Resumen </td>
   </tr>
   <tr>
-    <td> Generos: </td>
+    <td> Generos: <br/> Dating simulator</td>
     <td> Modos: </td>
   </tr>
   <tr>
