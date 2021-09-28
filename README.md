@@ -78,6 +78,13 @@ Vista general |
 [imagen]|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
+El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
+A medida que el jugador avanza en la conversación, este elige las distintas opciones de diálogo que cree más convenientes para, al mismo tiempo, 
+agradar a su cita y evadir el instinto asesino en forma de madre que duerme en su interior. Durante la cita el jugador también podrá hacer uso de sus pastillas
+para reducir su barra de instinto asesino. Dependiendo de lo bien o mal que lo haya hecho, se podrán conseguir tres finales: "Tu cita ha salido con éxito",
+"Tu cita ha huido" o "Has matado a tu cita".
+
+
 ------------------------------------
 
 ## <a name = "Jugabilidad">2. Jugabilidad</a>
