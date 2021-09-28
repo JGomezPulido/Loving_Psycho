@@ -13,9 +13,9 @@
 
 *E-mails de contacto:*   
 *jgomez18@ucm.es*   
-*sebana@ucm.es*  
 *vestre01@ucm.es*  
-*eorellana@ucm.es* 
+*eorellana@ucm.es*  
+*sebana@ucm.es* 
 
 *Versión 1.1 – 28 de febrero de 2021* 
 
@@ -28,6 +28,14 @@
     <td> Modos: Videojuego de un jugador </td>
   </tr>
   <tr>
+    <td> Público objetivo: <br>
+         Edad: +16, sexo: indiferente, región: inter-nacional e idioma: español <br>
+    </td>
+    <td> Plataforma: web </br>
+    </td>
+  </tr>
+      
+  <tr>
     <td> Cantidades: <br>
          Escenarios <br>
          Objetos <br>
@@ -36,8 +44,9 @@
          Palabras <br>
    </td>
     <td> Hitos: <br>
-         Fecha de propuesta del concepto <br>
-         Fechas de pre-producción <br>
+         Fecha de propuesta del concepto: 24 de septiembre <br>
+         Fechas de pre-producción: <br>
+         Hito I: 1 de octubre
          Fechas de producción <br>
          Fecha de lanzamiento <br>
    </td>
@@ -104,7 +113,6 @@ para reducir su barra de instinto asesino. Dependiendo de lo bien o mal que lo h
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
 #### <a name = "Cámara">2.1.2 Cámara </a>
-La cámara será estática, mostrando el escenario. Además, conforme distintos personajes vayan hablando, aparecerán sus retratos en los extremos izquierdo y derecho de la pantalla. En caso de haber varios personajes personajes hablando, se iluminará el retrato del personaje que esté hablando.
 
 ### <a name = "Dinámica">2.2 Dinámica</a>
 
