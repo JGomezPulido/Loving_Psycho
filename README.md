@@ -8,7 +8,7 @@
 *Nombre de los autores o la empresa:*  
 *José María Gómez Pulido*  
 *Víctor Estremera Herranz*  
-*Eduardo de Orellana*  
+*Eduardo de Orellana Sanchez*  
 *Sergio Baña Marchante* 
 
 *E-mails de contacto:*   
