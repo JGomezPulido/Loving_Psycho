@@ -1,5 +1,7 @@
 # LOVING PSYCHO
-[Documento de Brainstorming](https://docs.google.com/document/d/1pQZNYVFjzyh0nKH6pELmN9OpXBWc8SqLfTluE3-CcKY/edit?usp=sharing)
+[Documento de Brainstorming](https://docs.google.com/document/d/1pQZNYVFjzyh0nKH6pELmN9OpXBWc8SqLfTluE3-CcKY/edit?usp=sharing)  
+
+[Página de gestión (Pivotal Tracker)](https://www.pivotaltracker.com/n/projects/2532848)
 
 *Documento de diseño de videojuego*  
 *Nombre de los autores o la empresa*  
@@ -79,6 +81,13 @@ Vista general |
 -|
 [imagen]|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
+
+El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
+A medida que el jugador avanza en la conversación, este elige las distintas opciones de diálogo que cree más convenientes para, al mismo tiempo, 
+agradar a su cita y evadir el instinto asesino en forma de madre que duerme en su interior. Durante la cita el jugador también podrá hacer uso de sus pastillas
+para reducir su barra de instinto asesino. Dependiendo de lo bien o mal que lo haya hecho, se podrán conseguir tres finales: "Tu cita ha salido con éxito",
+"Tu cita ha huido" o "Has matado a tu cita".
+
 
 ------------------------------------
 
