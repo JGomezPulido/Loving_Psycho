@@ -142,5 +142,6 @@ La cámara será estática, mostrando el escenario. Además, conforme distintos 
 
 ## <a name = "Referencias">5. Referencias</a>  
   - [Doki Doki Literature Club!](https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/)
+  - [Telltale games (Walking Dead)](https://store.steampowered.com/app/1449690/The_Walking_Dead_The_Telltale_Definitive_Series/)
  
 
