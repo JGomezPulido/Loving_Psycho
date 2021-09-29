@@ -139,11 +139,9 @@ Las citas estarán basadas en fragmentos de las distintas películas de Hitchcoc
 
 Marion Crane (Psicosis) --> Se recreará la escena en la que Norman invita a comer a Marion, en la primera noche en la que esta llega al al Motel Bates.
 
-Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren.
+Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren. En este caso Roger Thornhill sería también interpretado por el asesino de Psicosis, con todas las características descritas en este GDD.
 
 Tercera cita (¿deberíamos hacer tantas citas?)
-
-
 
 ### <a name = "Niveles">4.2 Niveles</a>
 
