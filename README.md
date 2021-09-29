@@ -150,7 +150,7 @@ Tercera cita (¿deberíamos hacer tantas citas?)
 ### <a name = "Personajes_y_enemigos">4.3 Personajes y enemigos</a>
 
 ### <a name = "Objetos">4.4 Objetos</a>
-Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a la mitad. Los puedes utilizar en cualquier momento de la cita.
+Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a la mitad. Las puedes utilizar en cualquier momento de la cita.
 
 --------------------------------------
 
