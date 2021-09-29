@@ -105,9 +105,9 @@ una de las respuestas. Dependiendo de tu nivel de instinto asesino podrás elegi
 El jugador podrá hacer uso de sus "caramelos" durante cualquier momento de la cita. El jugador dispondrá de tres "caramelos". Si el jugador toma un "caramelo" su barra de instinto bajará la mitad de la que tenga en ese momento.
 
 En una partida o cita se podrán obtener tres finales distintintos:  
-     -Derrota: si la barra de instinto asesino llega al máximo y terminas matando a tu cita.  
-     -Empate: si la cita termina antes de tiempo, ya sea porque tu cita ha huido o porque tu cita se ha aburrido de vuestra conversación.  
-     -Victoria: si has logrado controlar con éxito tu barra de instinto asesino, al mismo tiempo que has conseguido agradar a tu cita, has triunfado en tu cita.
+-Derrota: si la barra de instinto asesino llega al máximo y terminas matando a tu cita.  
+-Empate: si la cita termina antes de tiempo, ya sea porque tu cita ha huido o porque tu cita se ha aburrido de vuestra conversación.  
+-Victoria: si has logrado controlar con éxito tu barra de instinto asesino, al mismo tiempo que has conseguido agradar a tu cita, has triunfado en tu cita.
 
 #### <a name = "Controles">2.1.1 Controles </a>
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las "caramelos". Adicionalmente, para tomarse las "caramelos" se podrá pulsar la barra espaciadora.
@@ -115,6 +115,9 @@ El juego se controla principalmente con el ratón, haciendo click en las diferen
 #### <a name = "Cámara">2.1.2 Cámara </a>
 
 ### <a name = "Dinámica">2.2 Dinámica</a>
+El objetivo del juego es conseguir triunfar en tu cita, para ello el jugador tendrá que valorar qué respuesta le conviene más en cada momento teniendo en cuenta que, cuanto más sugerentes sean tus conversaciones con tu cita, más mosqueada estará tu madre y por lo tanto, más subirá tu barra de instinto asesino. 
+
+De esta forma se pueden idean estrategias muy variadas. Si tu barra de instinto asesino se encuentra baja tendrás más banda ancha para hablar con tu cita, mientras que si tu barra se encuentra alta deberás medir más tus palabras. También puedes arriesgarte elegir opciones que sabes que no le van a gustar a tu madre para posteriormente tomarte uno de tus "caramelos". Así mismo, si has llegado a un punto en el que tu barra de instinto asesino está muy alta y ya se te hace muy difícil remediarlo debido a que las opcines de diálogo favorables ni siquiera aparecen, lo mejor será que intentes asustar a tu cita para poder lograra un empate.
 
 ### <a name = "Estética">2.3 Estética</a>
 
