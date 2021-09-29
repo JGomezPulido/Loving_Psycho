@@ -104,10 +104,10 @@ una de las respuestas. Dependiendo de tu nivel de instinto asesino podrás elegi
 
 El jugador podrá hacer uso de sus "caramelos" durante cualquier momento de la cita. El jugador dispondrá de tres "caramelos". Si el jugador toma un "caramelo" su barra de instinto bajará la mitad de la que tenga en ese momento.
 
-1. En una partida o cita se podrán obtener tres finales distintintos:
-     1.1 Derrota: si la barra de instinto asesino llega al máximo y terminas matando a tu cita.
-     1.2 Empate: si la cita termina antes de tiempo, ya sea porque tu cita ha huido o porque tu cita se ha aburrido de vuestra conversación.
-     1.3 Victoria: si has logrado controlar con éxito tu barra de instinto asesino, al mismo tiempo que has conseguido agradar a tu cita, has triunfado en tu cita.
+En una partida o cita se podrán obtener tres finales distintintos:  
+     -Derrota: si la barra de instinto asesino llega al máximo y terminas matando a tu cita.  
+     -Empate: si la cita termina antes de tiempo, ya sea porque tu cita ha huido o porque tu cita se ha aburrido de vuestra conversación.  
+     -Victoria: si has logrado controlar con éxito tu barra de instinto asesino, al mismo tiempo que has conseguido agradar a tu cita, has triunfado en tu cita.
 
 #### <a name = "Controles">2.1.1 Controles </a>
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las "caramelos". Adicionalmente, para tomarse las "caramelos" se podrá pulsar la barra espaciadora.
