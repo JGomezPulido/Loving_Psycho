@@ -135,11 +135,13 @@ De esta forma se pueden idean estrategias muy variadas. Si tu barra de instinto 
 El juego consistirá en 3 citas independientes, de una duración de 10 minutos, siempre y cuando el jugador llegue hasta el final de la cita. Cada cita tendrá diversas ramas dependiendo de las opciones que elija el jugador.
 
 ### <a name = "Historia">4.1 Historia</a>
+El jugador encarnará el papel de Norman, el asesino de Psicosis, bajo la premisa de que en él duerme una doble personalidad, siendo su objetivo evitar que su madre se apodere de él completamente, al contrario que pasa en la película.
+
 Las citas estarán basadas en fragmentos de las distintas películas de Hitchcock, pero debido a las características del juego, desviarán de las conversaciones y contexto de las películas originales.
 
 Marion Crane (Psicosis) --> Se recreará la escena en la que Norman invita a comer a Marion, en la primera noche en la que esta llega al al Motel Bates.
 
-Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren. En este caso Roger Thornhill sería también interpretado por el asesino de Psicosis, con todas las características descritas en este GDD.
+Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren. En este caso, Roger Thornhill sería también interpretado por Norman Bates, con todas las características descritas en este GDD.
 
 Tercera cita (¿deberíamos hacer tantas citas?)
 
