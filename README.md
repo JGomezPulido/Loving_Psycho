@@ -4,16 +4,19 @@
 [Página de gestión (Pivotal Tracker)](https://www.pivotaltracker.com/n/projects/2532848)
 
 *Documento de diseño de videojuego*  
+
 *Nombre de los autores o la empresa*  
 *José María Gómez Pulido*  
-*Víctor Estremera Herranz*  
-*Eduardo de Orellana*  
-*Sergio Baña Marchante*  
+*Sergio Baña Marchante*     
+*Víctor Estremera Herranz*    
+*Eduardo de Orellana*
+
 *E-mails de contacto:*   
 *jgomez18@ucm.es*   
 *sebana@ucm.es*  
 *vestre01@ucm.es*  
-*eorellana@ucm.es*    
+*eorellana@ucm.es*   
+
 *Versión 1.1 – 15 de febrero de 2021* 
 
 <table>
