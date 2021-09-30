@@ -158,5 +158,10 @@ Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a
 --------------------------------------
 
 ## <a name = "Referencias">5. Referencias</a>
- 
+Doki Doki Literature Club! (https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/)
+
+Psicosis (https://es.wikipedia.org/wiki/Psicosis_(pel%C3%ADcula))
+
+Telltale games como Walking Dead y The wolf among us (https://telltale.com/)
+
 
