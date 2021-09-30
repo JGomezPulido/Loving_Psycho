@@ -129,6 +129,7 @@ Cada una de las citas deberá tener una serie de expresiones que cambiarán depe
 
 Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se pondrán los bordes, dándole al gameplay un ambiente opresivo de inestabilidad.
 
+Durante las citas sonará música jazz.
 ------------------------------------
 
 ## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juego</a> 
@@ -150,7 +151,7 @@ El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).
 -------------------------------------
 
 ## <a name = "Contenido">4. Contenido</a>
-El juego consistirá en 3 citas independientes, de una duración de 10 minutos, siempre y cuando el jugador llegue hasta el final de la cita. Cada cita tendrá diversas ramas dependiendo de las opciones que elija el jugador.
+El juego consistirá en 2 citas independientes, de una duración de 10 minutos, siempre y cuando el jugador llegue hasta el final de la cita. Cada cita tendrá diversas ramas dependiendo de las opciones que elija el jugador.
 
 ### <a name = "Historia">4.1 Historia</a>
 El jugador encarnará el papel de Norman, el asesino de Psicosis, bajo la premisa de que en él duerme una doble personalidad, siendo su objetivo evitar que su madre se apodere de él completamente, al contrario que pasa en la película.
