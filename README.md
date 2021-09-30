@@ -82,7 +82,7 @@ Logotipo y portada del juego |
 
 Vista general |
 -|
-![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/LovingPsycho.jpg "Vista General de un frame del juego")|
+![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/VistaGeneral.jpg "Vista General de un frame del juego")|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
 El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
@@ -138,6 +138,7 @@ Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se
 
 ### <a name = "Interfaz_y_control">3.2 Interfaz y control</a>
 
+
 -------------------------------------
 
 ## <a name = "Contenido">4. Contenido</a>
@@ -158,10 +159,5 @@ Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a
 --------------------------------------
 
 ## <a name = "Referencias">5. Referencias</a>
-Doki Doki Literature Club! (https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/)
-
-Psicosis (https://es.wikipedia.org/wiki/Psicosis_(pel%C3%ADcula))
-
-Telltale games como Walking Dead y The wolf among us (https://telltale.com/)
-
+ 
 
