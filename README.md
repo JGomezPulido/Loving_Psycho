@@ -174,5 +174,8 @@ Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a
 --------------------------------------
 
 ## <a name = "Referencias">5. Referencias</a>
- [Corazón de melón](https://www.corazondemelon.es/) 
- 
+ [Corazón de melón](https://www.corazondemelon.es/)   
+ [Doki Doki Literature Club!](https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/)   
+ Psicosis - Alfred Hitchcock  
+ Con la muerte en los talones - Alfred Hitchcock   
+ Tellatale Games
