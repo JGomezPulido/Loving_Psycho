@@ -109,6 +109,10 @@ En una partida o cita se podrán obtener tres finales distintintos:
 -Empate: si la cita termina antes de tiempo, ya sea porque tu cita ha huido o porque tu cita se ha aburrido de vuestra conversación.  
 -Victoria: si has logrado controlar con éxito tu barra de instinto asesino, al mismo tiempo que has conseguido agradar a tu cita, has triunfado en tu cita.
 
+La lógica del juego se basará en un sistema de rutas depndiendo de las opciones de diálogo que elija el jugador, por lo que habrá varios finales de Victoria, de Empate y de Derrota. De todas formas, puedes perder de forma prematura si tu barra de instinto asesino sube al máximo. 
+
+Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo que pasa, ya sea al principio de la cita como forma de intruducción para que el jugador entienda el contexto, o al final de esta para explicarte los detalles de cámo ha terminado tu cita o qué ha pasado después de esta. 
+
 #### <a name = "Controles">2.1.1 Controles </a>
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
