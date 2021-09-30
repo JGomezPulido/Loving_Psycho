@@ -125,7 +125,7 @@ El objetivo del juego es conseguir triunfar en tu cita, para ello el jugador ten
 De esta forma se pueden idean estrategias muy variadas. Si tu barra de instinto asesino se encuentra baja tendrás más banda ancha para hablar con tu cita, mientras que si tu barra se encuentra alta deberás medir más tus palabras. También puedes arriesgarte elegir opciones que sabes que no le van a gustar a tu madre para posteriormente tomarte uno de tus pastillas. Así mismo, si has llegado a un punto en el que tu barra de instinto asesino está muy alta y ya se te hace muy difícil remediarlo debido a que las opcines de diálogo favorables ni siquiera aparecen, lo mejor será que intentes asustar a tu cita para poder lograra un empate.
 
 ### <a name = "Estética">2.3 Estética</a>
-Cada una de las citas deberá tener una serie de expresiones que cambiaran dependiendo del diálogo: neutral, feliz, riéndose, aburrida, asustada, enfadada...
+Cada una de las citas deberá tener una serie de expresiones que cambiarán dependiendo del diálogo: neutral, feliz, riéndose, aburrida, asustada, enfadada...
 
 Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se pondrán los bordes, dándole al gameplay un ambiente opresivo de inestabilidad.
 
