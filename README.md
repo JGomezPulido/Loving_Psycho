@@ -151,7 +151,8 @@ Se podrá regular el volumen al que se reproduce la música.
 ### <a name = "Interfaz_y_control">3.2 Interfaz y control</a>
 ![Interfaz](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
 
-El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).
+El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).  
+Aparecerán en este el número de pastillas disponibles, la barra de instinto asesino y las diferentes opciones de dialogo.
 
 -------------------------------------
 
