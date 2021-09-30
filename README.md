@@ -82,7 +82,7 @@ Logotipo y portada del juego |
 
 Vista general |
 -|
-[imagen]|
+![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/LovingPsycho.jpg "Vista General de un frame del juego")|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
 El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
@@ -118,7 +118,7 @@ Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
 #### <a name = "Cámara">2.1.2 Cámara </a>
-La cámara será estática, mostrando el escenario. Además, conforme distintos personajes vayan hablando, aparecerán sus retratos en los extremos izquierdo y derecho de la pantalla. En caso de haber varios personajes personajes hablando, se iluminará el retrato del personaje que esté hablando.
+La cámara será estática, mostrando el escenario. Además, el retrato de la persona con la que estás hablando aparecerá en el centro de la pantalla.
 
 ### <a name = "Dinámica">2.2 Dinámica</a>
 El objetivo del juego es conseguir triunfar en tu cita, para ello el jugador tendrá que valorar qué respuesta le conviene más en cada momento teniendo en cuenta que, cuanto más sugerentes sean tus conversaciones con tu cita, más mosqueada estará tu madre y por lo tanto, más subirá tu barra de instinto asesino. 
@@ -132,7 +132,7 @@ Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se
 
 ------------------------------------
 
-## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juegos</a>
+## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juego</a>
 
 ### <a name = "Configuración">3.1 Configuración</a>
 
@@ -151,12 +151,6 @@ Las citas estarán basadas en fragmentos de las distintas películas de Hitchcoc
 Marion Crane (Psicosis) --> Se recreará la escena en la que Norman invita a comer a Marion, en la primera noche en la que esta llega al al Motel Bates.
 
 Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren. En este caso, Roger Thornhill sería también interpretado por Norman Bates, con todas las características descritas en este GDD.
-
-Tercera cita (¿deberíamos hacer tantas citas?)
-
-### <a name = "Niveles">4.2 Niveles</a>
-
-### <a name = "Personajes_y_enemigos">4.3 Personajes y enemigos</a>
 
 ### <a name = "Objetos">4.4 Objetos</a>
 Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a la mitad. Las puedes utilizar en cualquier momento de la cita.
