@@ -134,11 +134,11 @@ Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se
 
 ## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juego</a> 
 Loving Psycho es un juego para un solo jugador, que cuenta con dos dificultades:  
-  -Normal: la barra de instinto asesino solo sube si eliges una mala opción de dialogo.  
-  -Difícil: la barra de instinto asesino sube de forma progresiva mientras no haya elegido una opción de dialogo, además de subir por una mala opción.
+  -Normal: la barra de instinto asesino solo puede subir con los distintos diálogos. 
+  -Difícil: la barra de instinto asesino sube de forma progresiva en los momentos en los que el jugador tenga que elegir entre varias opciones.
 
 
-![Interfaz] (https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
+![Interfaz](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
 
 
 ### <a name = "Configuración">3.1 Configuración</a>
