@@ -22,20 +22,19 @@
     <td colspan = "2"> Resumen </td>
   </tr>
   <tr>
-    <td> Generos: </td>
-    <td> Modos: </td>
+    <td> Generos: Dating simulator, horror game, novela visual </td>
+    <td> Modos: single-player, dos dificultades</td>
   </tr>
   <tr>
     <td> Cantidades: <br>
-         Escenarios <br>
-         Objetos <br>
-         Armas <br>
-         Personajes <br>
-         Palabras <br>
+         Objetos: 1 <br>
+         Personajes: 3 <br>
    </td>
     <td> Hitos: <br>
-         Fecha de propuesta del concepto <br>
-         Fechas de pre-producción <br>
+         Fecha de propuesta del concepto: <br>
+         24 de septiembre de 2021 <br>
+         Fechas de pre-producción: <br>
+         Hito 0 : 1 de octubre de 2021 <br>
          Fechas de producción <br>
          Fecha de lanzamiento <br>
    </td>
