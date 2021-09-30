@@ -152,7 +152,7 @@ Marion Crane (Psicosis) --> Se recreará la escena en la que Norman invita a com
 
 Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren. En este caso, Roger Thornhill sería también interpretado por Norman Bates, con todas las características descritas en este GDD.
 
-### <a name = "Objetos">4.4 Objetos</a>
+### <a name = "Objetos">4.2 Objetos</a>
 Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a la mitad. Las puedes utilizar en cualquier momento de la cita.
 
 --------------------------------------
