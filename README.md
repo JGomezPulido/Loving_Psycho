@@ -47,7 +47,7 @@
 
 Logotipo y portada del juego |
 -----------------------------|
-![Logotipo](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/imagenPrueba.png "Logotipo del juego")|
+![Logotipo](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/LovingPsycho.jpg "Logotipo del juego")|
 
 -------------------------------------------
 
