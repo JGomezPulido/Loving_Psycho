@@ -106,8 +106,8 @@ El jugador podrá hacer uso de sus pastillas durante cualquier momento de la cit
 
 En una partida o cita se podrán obtener tres finales distintintos:  
 -Derrota: si matas a tu cita.  
--Empate: si la cita termina ya sea porque ha huido o porque se ha aburrido de vuestra conversación.  
--Victoria: si logras controlar con éxito tu barra de instinto asesino, al mismo tiempo que consigues agradar a tu cita, triunfado así en tu cita.
+-Empate: si la cita termina, ya sea porque ha huido o porque se ha aburrido de vuestra conversación.  
+-Victoria: si logras controlar con éxito tu barra de instinto asesino, al mismo tiempo que consigues agradar a la otra persona, triunfado así en tu cita.
 
 La lógica del juego se basará en un sistema de rutas depndiendo de las opciones de diálogo que elija el jugador, por lo que habrá varios finales de Victoria, de Empate y de Derrota. De todas formas, puedes perder de forma prematura si tu barra de instinto asesino sube al máximo. 
 
@@ -125,6 +125,9 @@ El objetivo del juego es conseguir triunfar en tu cita, para ello el jugador ten
 De esta forma se pueden idean estrategias muy variadas. Si tu barra de instinto asesino se encuentra baja tendrás más banda ancha para hablar con tu cita, mientras que si tu barra se encuentra alta deberás medir más tus palabras. También puedes arriesgarte elegir opciones que sabes que no le van a gustar a tu madre para posteriormente tomarte uno de tus pastillas. Así mismo, si has llegado a un punto en el que tu barra de instinto asesino está muy alta y ya se te hace muy difícil remediarlo debido a que las opcines de diálogo favorables ni siquiera aparecen, lo mejor será que intentes asustar a tu cita para poder lograra un empate.
 
 ### <a name = "Estética">2.3 Estética</a>
+Cada una de las citas deberá tener una serie de expresiones que cambiaran dependiendo del diálogo: neutral, feliz, riéndose, aburrida, asustada, enfadada...
+
+Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se pondrán los bordes, dándole al gameplay un ambiente opresivo de inestabilidad.
 
 ------------------------------------
 
