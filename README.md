@@ -105,9 +105,9 @@ una de las respuestas. Dependiendo de tu nivel de instinto asesino podrás elegi
 El jugador podrá hacer uso de sus pastillas durante cualquier momento de la cita. El jugador dispondrá de tres pastillas. Si el jugador toma un pastilla su barra de instinto bajará la mitad de la que tenga en ese momento.
 
 En una partida o cita se podrán obtener tres finales distintintos:  
--Derrota: si la barra de instinto asesino llega al máximo y terminas matando a tu cita.  
--Empate: si la cita termina antes de tiempo, ya sea porque tu cita ha huido o porque tu cita se ha aburrido de vuestra conversación.  
--Victoria: si has logrado controlar con éxito tu barra de instinto asesino, al mismo tiempo que has conseguido agradar a tu cita, has triunfado en tu cita.
+-Derrota: si matas a tu cita.  
+-Empate: si la cita termina ya sea porque ha huido o porque se ha aburrido de vuestra conversación.  
+-Victoria: si logras controlar con éxito tu barra de instinto asesino, al mismo tiempo que consigues agradar a tu cita, triunfado así en tu cita.
 
 La lógica del juego se basará en un sistema de rutas depndiendo de las opciones de diálogo que elija el jugador, por lo que habrá varios finales de Victoria, de Empate y de Derrota. De todas formas, puedes perder de forma prematura si tu barra de instinto asesino sube al máximo. 
 
@@ -117,6 +117,7 @@ Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
 
 #### <a name = "Cámara">2.1.2 Cámara </a>
+La cámara será estática, mostrando el escenario. Además, conforme distintos personajes vayan hablando, aparecerán sus retratos en los extremos izquierdo y derecho de la pantalla. En caso de haber varios personajes personajes hablando, se iluminará el retrato del personaje que esté hablando.
 
 ### <a name = "Dinámica">2.2 Dinámica</a>
 El objetivo del juego es conseguir triunfar en tu cita, para ello el jugador tendrá que valorar qué respuesta le conviene más en cada momento teniendo en cuenta que, cuanto más sugerentes sean tus conversaciones con tu cita, más mosqueada estará tu madre y por lo tanto, más subirá tu barra de instinto asesino. 
