@@ -143,13 +143,13 @@ Loving Psycho es un juego para un solo jugador, que cuenta con dos dificultades:
 
 ### <a name = "Configuración">3.1 Configuración</a>
 
-![Interfaz](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
+
 El juego contará con la opción de regular la velocidad a la que se reproduce el texto.
 
 Se podrá regular el volumen al que se reproduce la música.
 
 ### <a name = "Interfaz_y_control">3.2 Interfaz y control</a>
-
+![Interfaz](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
 
 El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).
 
