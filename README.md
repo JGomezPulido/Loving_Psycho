@@ -10,10 +10,7 @@
 *Eduardo de Orellana*
 
 *E-mails de contacto:*   
-*jgomez18@ucm.es*   
-*sebana@ucm.es*  
-*vestre01@ucm.es*  
-*eorellana@ucm.es*   
+*lovingpsycho.pvli@gmail.com*  
 
 *Versión 1.1 – 15 de febrero de 2021* 
 
