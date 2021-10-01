@@ -127,6 +127,7 @@ Cada una de las citas deberá tener una serie de expresiones que cambiarán depe
 Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se pondrán los bordes, dándole al gameplay un ambiente opresivo de inestabilidad.
 
 Durante las citas sonará música jazz.
+
 ------------------------------------
 
 ## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juego</a> 
