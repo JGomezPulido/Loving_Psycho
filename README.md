@@ -3,7 +3,8 @@
 
 *Documento de diseño de videojuego*  
 
-**3! - 1**  
+### **Nombre de la empresa: 3! - 1**  
+*Integrantes:*  
 *José María Gómez Pulido*  
 *Sergio Baña Marchante*     
 *Víctor Estremera Herranz*    
