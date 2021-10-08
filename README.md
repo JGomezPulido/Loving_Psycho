@@ -89,7 +89,7 @@ Logotipo y portada del juego |
 
 Vista general |
 -|
-![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/VistaGeneral.png "Vista General de un frame del juego")|
+![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/VistaPrevia.png "Vista General de un frame del juego")|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
 El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
