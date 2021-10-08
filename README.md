@@ -3,17 +3,14 @@
 
 *Documento de diseño de videojuego*  
 
-*Nombre de los autores o la empresa*  
+**3! - 1**  
 *José María Gómez Pulido*  
 *Sergio Baña Marchante*     
 *Víctor Estremera Herranz*    
 *Eduardo de Orellana*
 
-*E-mails de contacto:*   
-*jgomez18@ucm.es*   
-*sebana@ucm.es*  
-*vestre01@ucm.es*  
-*eorellana@ucm.es*   
+*E-mail de contacto:*   
+*lovingpsycho.pvli@gmail.com*   
 
 *Versión 1.1 – 15 de febrero de 2021* 
 
