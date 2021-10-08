@@ -10,7 +10,10 @@
 *Eduardo de Orellana*
 
 *E-mails de contacto:*   
-*lovingpsycho.pvli@gmail.com*  
+*jgomez18@ucm.es*   
+*sebana@ucm.es*  
+*vestre01@ucm.es*  
+*eorellana@ucm.es*   
 
 *Versión 1.1 – 15 de febrero de 2021* 
 
@@ -21,14 +24,6 @@
   <tr>
     <td> Generos: Dating simulator, horror game, novela visual </td>
     <td> Modos: single-player, dos dificultades</td>
-  </tr>
-  <tr>
-    <td> Publico objetivo: <br>
-         Edad: +16 <br>
-         Sexo: indiferente <br>
-         Idioma: español    
-    </td>
-    <td> Plataformas: web</td>
   </tr>
   <tr>
     <td> Cantidades: <br>
@@ -87,7 +82,7 @@ Logotipo y portada del juego |
 Vista general |
 -|
 ![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/VistaGeneral.png "Vista General de un frame del juego")|
-### <a name = "relato-breve">1.1 Relato breve y parcial de una partida típica</a>
+### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
 El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
 A medida que el jugador avanza en la conversación, este elige las distintas opciones de diálogo que cree más convenientes para, al mismo tiempo, 
@@ -134,8 +129,7 @@ Cada una de las citas deberá tener una serie de expresiones que cambiarán depe
 
 Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se pondrán los bordes, dándole al gameplay un ambiente opresivo de inestabilidad.
 
-Durante las citas sonará música jazz.
-
+Durante las citas sonará música de jazz, pero la música cambiará a un tono más distorsionado y lento si tu instinto asesino está alto.
 ------------------------------------
 
 ## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juego</a> 
