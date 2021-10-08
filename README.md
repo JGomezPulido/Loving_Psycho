@@ -26,6 +26,14 @@
     <td> Modos: single-player, dos dificultades</td>
   </tr>
   <tr>
+    <td> Publico objetivo: <br>
+         Edad: +16 <br>
+         Sexo: indiferente <br>
+         Idioma: español    
+    </td>
+    <td> Plataformas: web</td>
+  </tr>
+  <tr>
     <td> Cantidades: <br>
          Objetos: 1 <br>
          Personajes: 3 <br>
