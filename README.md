@@ -3,8 +3,10 @@
 
 *Documento de diseño de videojuego*  
 
-### **Nombre de la empresa: 3! - 1**  
-*Integrantes:*  
+**Nombre de la empresa: "3! - 1"**  
+
+*Integrantes:*
+
 *José María Gómez Pulido*  
 *Sergio Baña Marchante*     
 *Víctor Estremera Herranz*    
@@ -13,7 +15,7 @@
 *E-mail de contacto:*   
 *lovingpsycho.pvli@gmail.com*   
 
-*Versión 1.1 – 15 de febrero de 2021* 
+*Versión 1.1 – 8 de Octubre de 2021* 
 
 <table>
   <tr>
@@ -154,7 +156,7 @@ En el menú principal el jugador podrá elegir cualquiera de la dos citas dispon
 
 ![Interfaz](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
 
-El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).  Aparecerán en este el número de pastillas disponibles, la barra de instinto asesino y las diferentes opciones de dialogo.
+El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).  Aparecerán en este el número de pastillas disponibles y la barra de instinto asesino en el lateral derecho y el diálogo abajo en el centro, dependiendo si es diálgo lineal o si toca elegir opciones.
 
 -------------------------------------
 
