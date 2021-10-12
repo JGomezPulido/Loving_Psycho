@@ -93,34 +93,29 @@ Vista general |
 ![Vista General 2](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/DialogoLineal.png "Vista General 2 de un frame del juego")|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
-El jugador elegirá una de las treas citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
+El jugador elegirá una de las tres citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
 A medida que el jugador avanza en la conversación, este elige las distintas opciones de diálogo que cree más convenientes para, al mismo tiempo, 
 agradar a su cita y evadir el instinto asesino en forma de madre que duerme en su interior. Durante la cita el jugador también podrá hacer uso de sus pastillas
-para reducir su barra de instinto asesino. Dependiendo de lo bien o mal que lo haya hecho, se podrán conseguir tres finales: "Tu cita ha salido con éxito",
-"Tu cita ha huido" o "Has matado a tu cita".
+para reducir su barra de instinto asesino. Al final de la cita el jugador obtendrá un porcentaje de "Match" dependiendo de lo bien o mal que lo haya hecho.
 
 
 ------------------------------------
 
 ## <a name = "Jugabilidad">2. Jugabilidad</a>
+El objetivo del juego es elegir las opciones de diálogo más convenientesen cada momento para consguir el máximo porcentaje de "Match" con nuestra cita, al mismo tiempo que controlamos la barra de instinto asesino para evitar matarla.
 
 ### <a name = "Mecánica">2.1 Mecánica</a>
-La mecánica principal del juego es controlar la barra de instinto asesino (0 - 100). Si la barra llega al máximo la conversación acabará y tu instinto asesino en forma de madre matará a tu cita. La barra podrá subir y bajar con las distintas opciones de diálogo:
+La mecánica principal del juego es controlar la barra de instinto asesino (0 - 100). Si la barra llega al máximo la conversación acabará y tu instinto asesino en forma de madre matará a tu cita (perdiendo así la partida). La barra podrá subir y bajar con las distintas opciones de diálogo:
 a medida que avance la cita el jugador tendrá que elegir entre diferentes opciones de diálogo, algunas de ellas aumentarán tu
 barra de instinto asesino, otras dejarán la barra prácticamente intacta y otras la reducirán. Así mismo, cuando el jugador tenga 
 que elegir entre varias opciones de diálogo la barra de instinto asesino aumentará poco a poco hasta que el jugador se decida por
-una de las respuestas (solo en modo difícil). Dependiendo de tu nivel de instinto asesino podrás elegir unas opciones de diálogo u otras, de esta forma, si el jugador deja pasar el tiempo haciendo que la barra de instnto asesino suba gradualmente, podrá ocurrir que despareciesen algunas opciones de diálogo al mismo tiempo que otras apareciesen. No en todos los diálogos el jugador tendrá que elegir entre varias opciones, muchos de estos serán lineales. Los diálogos lineales, tanto de tu cita, como los tuyos, también podrán modificar la barra de instinto asesino (tenidendo en cuenta que estos diálogos lineales dependen de las opciones elegidas anteriormente). Durante estos diálogos la barra de instinto asesino no subirá progresivamente si tardas en pasar de un diálogo a otro. El número de opciones de dialogo oscilará entre las 2 y 4 opciones.
+una de las respuestas (solo en modo difícil). Dependiendo de tu nivel de instinto asesino podrás elegir unas opciones de diálogo u otras, de esta forma, si el jugador deja pasar el tiempo haciendo que la barra de instnto asesino suba gradualmente, podrá ocurrir que despareciesen algunas opciones de diálogo al mismo tiempo que otras apareciesen. El número de opciones de diálogo podrá ser de un mínimo de 2 y un máximo de 4. No en todos los diálogos el jugador tendrá que elegir entre varias opciones, muchos de estos serán lineales. Los diálogos lineales, tanto de tu cita, como los tuyos, también podrán modificar la barra de instinto asesino (tenidendo en cuenta que estos diálogos lineales dependen de las opciones elegidas anteriormente). Durante estos diálogos la barra de instinto asesino no subirá progresivamente si tardas en pasar de un diálogo a otro. 
 
 El jugador podrá hacer uso de sus pastillas durante cualquier momento de la cita. El jugador dispondrá de tres pastillas. Si el jugador toma un pastilla su barra de instinto bajará la mitad de la que tenga en ese momento.
 
-En una partida o cita se podrán obtener tres finales distintintos:  
--Derrota: si matas a tu cita.  
--Empate: si la cita termina, ya sea porque ha huido o porque se ha aburrido de vuestra conversación.  
--Victoria: si logras controlar con éxito tu barra de instinto asesino, al mismo tiempo que consigues agradar a la otra persona, triunfado así en tu cita.
+La lógica del juego se basará en un gran árbol de diálogo en el que cada nodo corresponderá a los momentos en los que el jugador tenga que elegir entre varias opciones de diálogo, dividiéndose así el árbol en más ramas. El juego terminará cuando el jugador llegue a una rama cortada. Cada rama cortada corresponderá a un final distinto, en el que el jugador podrá ver lo bien o mal que lo ha hecho en su cita dependiendo de un porcentaje de "Match". La cita también puede acabar prematuramente si la barra de instinto asesino llega al máximo, como ya se ha explicado anteriormente.
 
-La lógica del juego se basará en un sistema de rutas depndiendo de las opciones de diálogo que elija el jugador, por lo que habrá varios finales de Victoria, de Empate y de Derrota. De todas formas, puedes perder de forma prematura si tu barra de instinto asesino sube al máximo. 
-
-Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo que pasa, ya sea al principio de la cita como forma de intruducción para que el jugador entienda el contexto, o al final de esta para explicarte los detalles de cámo ha terminado tu cita o qué ha pasado después de esta. 
+Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo que pasa, ya sea al principio de la cita como forma de intruducción para que el jugador entienda el contexto, o al final de esta para explicarte los detalles de cámo ha terminado tu cita, tu nivel de "Match" o qué ha pasado después de esta. 
 
 #### <a name = "Controles">2.1.1 Controles </a>
 El juego se controla principalmente con el ratón, haciendo click en las diferentes opciones de diálogo o en el botón de tomarse las pastillas. Adicionalmente, para tomarse las pastillas se podrá pulsar la barra espaciadora.
@@ -161,7 +156,7 @@ El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).
 -------------------------------------
 
 ## <a name = "Contenido">4. Contenido</a>
-El juego consistirá en 2 citas independientes, de una duración de 10 minutos, siempre y cuando el jugador llegue hasta el final de la cita. Cada cita tendrá diversas ramas dependiendo de las opciones que elija el jugador.
+El juego consistirá en 2 citas independientes de una duración de 5 minutos en la ramificación más larga.
 
 ### <a name = "Historia">4.1 Historia</a>
 El jugador encarnará el papel de Norman, el asesino de Psicosis, bajo la premisa de que en él duerme una doble personalidad, siendo su objetivo evitar que su madre se apodere de él completamente, al contrario que pasa en la película.
