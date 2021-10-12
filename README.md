@@ -102,7 +102,7 @@ para reducir su barra de instinto asesino. Al final de la cita el jugador obtend
 ------------------------------------
 
 ## <a name = "Jugabilidad">2. Jugabilidad</a>
-El objetivo del juego es elegir las opciones de diálogo más convenientesen cada momento para consguir el máximo porcentaje de "Match" con nuestra cita, al mismo tiempo que controlamos la barra de instinto asesino para evitar matarla.
+El objetivo del juego es elegir las opciones de diálogo más convenientes en cada momento para consguir el máximo porcentaje de "Match" con nuestra cita, al mismo tiempo que controlamos la barra de instinto asesino para evitar matarla.
 
 ### <a name = "Mecánica">2.1 Mecánica</a>
 La mecánica principal del juego es controlar la barra de instinto asesino (0 - 100). Si la barra llega al máximo la conversación acabará y tu instinto asesino en forma de madre matará a tu cita (perdiendo así la partida). La barra podrá subir y bajar con las distintas opciones de diálogo:
