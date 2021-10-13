@@ -115,7 +115,7 @@ El jugador podrá hacer uso de sus pastillas durante cualquier momento de la cit
 
 La lógica del juego se basará en un gran árbol de diálogo en el que cada nodo corresponderá a los momentos en los que el jugador tenga que elegir entre varias opciones de diálogo, dividiéndose así el árbol en más ramas. El juego terminará cuando el jugador llegue a una rama cortada. Cada rama cortada corresponderá a un final distinto, en el que el jugador podrá ver lo bien o mal que lo ha hecho en su cita dependiendo de un porcentaje de "Match" (cada final viene asociado con un nivel de "Match" de forma predefinida). La cita también puede acabar prematuramente si la barra de instinto asesino llega al máximo, como ya se ha explicado anteriormente.
 
-![Ejemplo Conversación](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/EjemploConversacion.jpg "Ejemplo de un conversación")
+![Ejemplo Conversación](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/EjemploConver.png "Ejemplo de un conversación")
 
 Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo que pasa, ya sea al principio de la cita como forma de intruducción para que el jugador entienda el contexto, o al final de esta para explicarte los detalles de cámo ha terminado tu cita, tu nivel de "Match" o qué ha pasado después de esta. 
 
