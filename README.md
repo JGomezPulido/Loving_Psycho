@@ -53,6 +53,7 @@
 
 ## Descripción
 
+Loving Psycho es un dating simulator con un pequeño toque de terror. En él, el jugador encarna a Norman Bates, personaje de "Psicosis" que sufre de una doble personalidad. El jugador tendrá que ligar con su cita mientras intenta mantener a raya a su doble personalidad (su madre). Si lo consigue, el jugador se ligará a su cita y ganará. En caso de que el jugador no matenga a raya su enfermedad, matará a su cita y perderá.
 Logotipo y portada del juego |
 -----------------------------|
 ![Logotipo](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/LovingPsycho.jpg "Logotipo del juego")|
