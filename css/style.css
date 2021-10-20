@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.titulo{
+    color: pink;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color : black;
+    transition:  color 100ms ease-in-out;
+}
+a:link:hover, a:visited:hover{
+    color: red;
+}
