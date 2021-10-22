@@ -43,6 +43,7 @@
          24 de septiembre de 2021 <br>
          Fechas de pre-producción: <br>
          Hito 0 : 1 de octubre de 2021 <br>
+         Hito 1 : 29 de octubre de 2021 <br>
          Fechas de producción <br>
          Fecha de lanzamiento <br>
    </td>
@@ -56,7 +57,7 @@
 Loving Psycho es un dating simulator con un pequeño toque de terror. En él, el jugador encarna a Norman Bates, personaje de "Psicosis" que sufre de una doble personalidad. El jugador tendrá que ligar con su cita mientras intenta mantener a raya a su doble personalidad (su madre). Si lo consigue, el jugador se ligará a su cita y ganará. En caso de que el jugador no matenga a raya su enfermedad, matará a su cita y perderá.
 Logotipo y portada del juego |
 -----------------------------|
-![Logotipo](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/LovingPsycho.jpg "Logotipo del juego")|
+![Logotipo](./imagenes/loving_psycho.jpg "Logotipo del juego")|
 
 -------------------------------------------
 
@@ -90,8 +91,8 @@ Logotipo y portada del juego |
 
 Vista general |
 -|
-![Vista General](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/VistaPrevia.png "Vista General de un frame del juego")
-![Vista General 2](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/DialogoLineal.png "Vista General 2 de un frame del juego")|
+![Vista General](./imagenes/vista_previa.png "Vista General de un frame del juego")
+![Vista General 2](./imagenes/dialogo_lineal.png "Vista General 2 de un frame del juego")|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
 El jugador elegirá una de las tres citas disponibles, aparecerá una introducción poniendo en contexto la cita para dar comienzo a esta.
@@ -116,7 +117,7 @@ El jugador podrá hacer uso de sus pastillas durante cualquier momento de la cit
 
 La lógica del juego se basará en un gran árbol de diálogo en el que cada nodo corresponderá a los momentos en los que el jugador tenga que elegir entre varias opciones de diálogo, dividiéndose así el árbol en más ramas. El juego terminará cuando el jugador llegue a una rama cortada. Cada rama cortada corresponderá a un final distinto, en el que el jugador podrá ver lo bien o mal que lo ha hecho en su cita dependiendo de un porcentaje de "Match" (cada final viene asociado con un nivel de "Match" de forma predefinida). La cita también puede acabar prematuramente si la barra de instinto asesino llega al máximo, como ya se ha explicado anteriormente.
 
-![Ejemplo Conversación](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/EjemploConver.png "Ejemplo de un conversación")
+![Ejemplo Conversación](./imagenes/ejemplo_conver.png "Ejemplo de un conversación")
 
 Durante el juego podrán aparecer escenas en negro con texto que te expliquen lo que pasa, ya sea al principio de la cita como forma de intruducción para que el jugador entienda el contexto, o al final de esta para explicarte los detalles de cámo ha terminado tu cita, tu nivel de "Match" o qué ha pasado después de esta. 
 
@@ -138,6 +139,8 @@ Cuanto más alta esté la barra de instinto asesino, más difuminados y rojos se
 
 Durante las citas sonará música de jazz, pero la música cambiará a un tono más distorsionado y lento si tu instinto asesino está alto.
 
+El lugar de las citas podrá cambiar durante estas.
+
 ------------------------------------
 
 ## <a name = "Menús_y_modos_de_juegos">3. Menús y modos de juego</a> 
@@ -152,7 +155,7 @@ El menú de configuración se abrirá con el Esc. Contará con la opción de reg
 ### <a name = "Interfaz_y_control">3.2 Interfaz y control</a>
 En el menú principal el jugador podrá elegir cualquiera de la dos citas disponibles, además de su dificultad. También contará con una explicación sobre la premisa del juego en realación con la barra de instinto asesino. Adicionalmente, contará con las opciones para abrir la configuración y salir del juego.
 
-![Interfaz](https://github.com/jgomez18UCM/Loving_Psycho/blob/main/Imagenes/Interfaz.png  "Interfaz")
+![Interfaz](./imagenes/interfaz.png  "Interfaz")
 
 El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).  Aparecerán en este el número de pastillas disponibles y la barra de instinto asesino en el lateral derecho y el diálogo abajo en el centro, dependiendo si es diálgo lineal o si toca elegir opciones.
 
@@ -168,7 +171,7 @@ Las citas estarán basadas en fragmentos de las distintas películas de Hitchcoc
 
 Marion Crane (Psicosis) --> Se recreará la escena en la que Norman invita a comer a Marion, en la primera noche en la que esta llega al al Motel Bates.
 
-Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eva Kendall en el buffet del tren. En este caso, Roger Thornhill sería también interpretado por Norman Bates, con todas las características descritas en este GDD.
+Eve Kendall (Con la Muerte en los Talones) --> Se recreará la escena en la que Roger Thornhill conoce por primera vez a Eve Kendall en el buffet del tren. En este caso, Roger Thornhill sería también interpretado por Norman Bates, con todas las características descritas en este GDD.
 
 ### <a name = "Objetos">4.2 Objetos</a>
 Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a la mitad. Las puedes utilizar en cualquier momento de la cita.
