@@ -6,11 +6,6 @@ h1{
     color: pink;
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    color : black;
-    transition:  color 100ms ease-in-out;
-}
-a:link:hover, a:visited:hover{
-    color: red;
+.links{
+    text-align: center;
 }
