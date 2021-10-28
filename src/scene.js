@@ -1,5 +1,4 @@
-import Player from './player.js';
-import Platform from './platform.js';
+import Button from './button.js';
 
 /**
  * Escena principal del juego. La escena se compone de una serie de plataformas 
@@ -21,16 +20,8 @@ export default class Level extends Phaser.Scene {
    * Creación de los elementos de la escena principal de juego
    */
   create() {
-    this.stars = 10;
-    this.bases = this.add.group();
-    this.player = new Player(this, 200, 300);
+    this.Button=new Button(this,20,20);
 
-    new Platform(this, this.player, this.bases, 150, 350);
-    new Platform(this, this.player, this.bases, 850, 350);
-    new Platform(this, this.player, this.bases, 500, 200);
-    new Platform(this, this.player, this.bases, 150, 100);
-    new Platform(this, this.player, this.bases, 850, 100);
-    this.spawn();
   }
 
   /**
@@ -38,24 +29,7 @@ export default class Level extends Phaser.Scene {
    * @param {Array<Base>} from Lista de bases sobre las que se puede crear una estrella
    * Si es null, entonces se crea aleatoriamente sobre cualquiera de las bases existentes
    */
-  spawn(from = null) {
-    Phaser.Math.RND.pick(from || this.bases.children.entries).spawn();
-  }
-
-  /**
-   * Método que se ejecuta al coger una estrella. Se pasa la base
-   * sobre la que estaba la estrella cogida para evitar repeticiones
-   * @param {Base} base La base sobre la que estaba la estrella que se ha cogido
-   */
-  starPickt (base) {
-    this.player.point();
-      if (this.player.score == this.stars) {
-        this.scene.start('end');
-      }
-      else {
-        let s = this.bases.children.entries;
-        this.spawn(s.filter(o => o !== base));
-
-      }
+  spawn() {
+    console.log("asi e asi e");
   }
 }
