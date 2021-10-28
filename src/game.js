@@ -1,10 +1,7 @@
 import Boot from './boot.js';
-import Level from './scene.js';
+import TempEnd from './end.js';
+import Menu from './menu.js';
 
-/**
- * Inicio del juego en Phaser. Creamos el archivo de configuración del juego y creamos
- * la clase Game de Phaser, encargada de crear e iniciar el juego.
- */
 let config = {
     type: Phaser.CANVAS,
     canvas: document.getElementById("juego"),
@@ -15,7 +12,7 @@ let config = {
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
     },
     pixelArt: true,
-    scene: [Boot, Level]
+    scene: [Boot, Menu,TempEnd]
 };
 
 new Phaser.Game(config);
