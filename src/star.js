@@ -13,20 +13,21 @@ export default class Star extends Phaser.GameObjects.Sprite {
    * @param {number} x coordenada x
    * @param {number} y coordenada y
    */
-  constructor(scene, base, x, y) {
+  constructor(scene, mov, x, y) {
     super(scene, x, y, 'star');
     this.scene.add.existing(this);
-    this.y -= this.height;
+    this.mov = mov;
   }
 
   /**
    * Redefinición del preUpdate de Phaser
    * @override
    */
-  preUpdate() {
+  preUpdate(t, dt) {
     // IMPORTANTE: Si no ponemos esta instrucción y el sprite está animado
     // no se podrá ejecutar la animación del sprite. 
-    super.preUpdate();
+    super.preUpdate(t, dt);
     
+    this.setPosition(this.x + this.mov/dt, this.y);
   }
 }

@@ -10,16 +10,10 @@ export default class Button extends Phaser.GameObjects.Sprite {
    * @param {Phaser.Scene} scene Escena a la que pertenece el jugador
    */
   constructor(scene, x, y) {
-    super(scene, x, y, 'button');
+    super(scene, x, y, 'player');
     this.scene.add.existing(this).setInteractive();
-    this.on("pointerdown",(pointer,currentlyOver)=>{
-      console.log(typeof(currentlyOver));
-        if(pointer.leftButtonDown()){
-            currentlyOver.forEach(gO=>{
-              console.log(gO);
-              if(gO===this){this.scene.spawn()}
-            })
-        }
+    this.on("pointerdown", () =>{
+      this.scene.spawn()
     });
   }
   

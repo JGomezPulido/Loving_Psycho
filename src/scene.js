@@ -1,4 +1,5 @@
 import Button from './button.js';
+import Star from './star.js';
 
 /**
  * Escena principal del juego. La escena se compone de una serie de plataformas 
@@ -20,8 +21,11 @@ export default class Level extends Phaser.Scene {
    * Creación de los elementos de la escena principal de juego
    */
   create() {
-    this.Button=new Button(this,20,20);
-
+    let canvas = document.getElementById("juego");
+    let canvasW = canvas.width/2;
+    let canvasH = canvas.height/2;
+    this.button=new Button(this,canvasW,canvasH);
+    this.hearts = [];
   }
 
   /**
@@ -31,5 +35,12 @@ export default class Level extends Phaser.Scene {
    */
   spawn() {
     console.log("asi e asi e");
+    let starNumber = 10;
+    for(let i = 0; i<starNumber;i++){
+      let mov = 5;
+      this.hearts.push(new Star(this, mov * Math.pow(-1,i), this.button.x, this.button.y));
+      console.log(this.hearts[i].mov);
+    }
+    this.scene.start("level");
   }
 }
