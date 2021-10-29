@@ -1,32 +1,22 @@
-/**
- * Escena de fin de juego. Cuando se han recogido todas las estrellas, se presenta un
- * texto que indica que el juego se ha acabado.
- * Si se pulsa cualquier tecla, se vuelve a iniciar el juego.
- */
-export default class End extends Phaser.Scene {
-  /**
-   * Constructor de la escena
-   */
-  constructor() {
-    super({ key: 'end' });
+ export default class TempEnd extends Phaser.Scene {
+
+    constructor() {
+      super({ key: 'tempend' });
+    }
+
+    create(){
+        this.loving_p=this.make.image({
+            x:500,y:250,
+            key:'marion',
+            scale:{
+                x:0.35,
+                y:0.35
+            },
+            add:true
+        });
+
+        this.text=this.add.text(200,0,"A partir de aqui, el jugador elegiria su cita y empezaria a jugar");
+    }
+
+
   }
-
-  /**
-   * Creación de la escena. Tan solo contiene el texto que indica que el juego se ha acabado
-   * @override
-   */
-  create() {
-    this.add.text(500, 250, 'Se acabó!\nPulsa cualquier tecla para volver a jugar')
-        .setOrigin(0.5, 0.5)  // Colocamos el pivote en el centro de cuadro de texto 
-        .setAlign('center');  // Centramos el texto dentro del cuadro de texto
-
-    // Añadimos el listener para cuando se haya pulsado una tecla. Es probable que no
-    // lleguemos a ver el mensaje porque veníamos con una tecla pulsada del juego (al 
-    // ir moviendo al jugador). Se puede mejorar añadiendo un temporizador que 
-    // añada este listener pasado un segundo
-    this.input.keyboard.on('keydown', function (event) { 
-      this.scene.start('level');
-    }, this);
-  }
-
-}
