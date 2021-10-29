@@ -7,7 +7,7 @@
     create(){
         this.loving_p=this.make.image({
             x:500,y:250,
-            key:'loving_psycho',
+            key:'marion',
             scale:{
                 x:0.35,
                 y:0.35
