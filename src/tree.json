@@ -1,0 +1,34 @@
+[
+    {
+        "id":0,
+        "obj_id":1,
+        "text":"bromita",
+        "options":[]
+    },
+    {
+        "id":1,
+        "obj_id":-2,
+        "text":"opciones",
+        "options":[{
+            "text":"op1",
+            "obj-id":2
+        },
+        {
+            "text":"op2",
+            "obj-id":3
+        }
+    ]
+    },
+    {
+        "id":2,
+        "obj_id":-1,
+        "text":"terminar",
+        "options":[]
+    },
+    {
+        "id":3,
+        "obj_id":-1,
+        "text":"terminar 2",
+        "options":[]
+    }
+]
