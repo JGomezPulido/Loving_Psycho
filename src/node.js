@@ -6,7 +6,7 @@ export default class Node{
  */
     constructor(){
         this.dialog=[];
-        this.sons=[];
+        this.children=[];
         this.min_score=0;
         this.max_score=0;
     }
