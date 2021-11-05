@@ -83,7 +83,9 @@ Logotipo y portada del juego |
     4.3 [Personajes y enemigos](#Personajes_y_enemigos)  
     4.4 [Objetos](#Objetos)  
 
-5. [Referencias](#Referencias)  
+5. [Referencias](#Referencias) 
+
+6. [Diagrama UML](#uml)
 
 --------------------------------------------
 
@@ -185,5 +187,5 @@ Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a
  Con la muerte en los talones - Alfred Hitchcock   
  Telltale Games
 
- ## 6. Diagrama UML
+ ## <a name = "uml">6. Diagrama UML</a>
  ![uml](./imagenes/uml.png  "uml")
