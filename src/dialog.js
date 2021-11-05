@@ -1,3 +1,5 @@
+import DialogBox from "./dialog_box";
+
 /**
  * Manages the dialog logic.
  */
@@ -9,16 +11,12 @@ export default class Dialog {
      * @param {string} text - the dialog text
      * @param {number} points - the punctuation that the dialog adds to the psycho bar
      * @param {Options[]} options - the options that the dialog has, if none leave undefined
-     * @param {PsycoBar} bar - the scene psycho bar
-     * @param {Girl} girl - 
      */
-    constructor(scene, text, points, options, bar, girl){
+    constructor(scene, text, points, options){
         this.scene = scene;
         this.text = text;
-        this. points = points;
+        this.points = points;
         this.options = options;
-        this.bar = bar;
-        this.girl = girl;
     }
 
     mostrar(pos){
