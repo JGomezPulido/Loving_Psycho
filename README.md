@@ -184,3 +184,6 @@ Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a
  Psicosis - Alfred Hitchcock  
  Con la muerte en los talones - Alfred Hitchcock   
  Telltale Games
+
+ ## 6. Diagrama UML
+ ![uml](./imagenes/uml.png  "uml")
