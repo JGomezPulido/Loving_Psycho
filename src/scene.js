@@ -24,7 +24,7 @@ import Node from "./node.js";
 
         this.treeJson = this.cache.json.get("tree");
         console.log(this.treeJson[0]);
-        this.tree = new Node(this.treeJson[0]);
+        this.tree = new Node(this.treeJson[0],this);
         console.log(this.tree);
 
     }

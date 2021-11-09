@@ -10,7 +10,7 @@ export default class Node{
      * @param {Nodo} node node from dialog tree
      */
     constructor(node, scene){
-        this.dialogs= node.text;
+        this.dialogs= node.dialogs;
         this.id= node.id;
         this.id_obj = node.id_obj;
         this.options  = null;
