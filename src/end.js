@@ -21,6 +21,7 @@ import DialogBox from "./dialog_box.js";
 
         this.dialoge = new DialogBox(this, document.getElementById("juego").height, document.getElementById("juego").width / 2, 'hola');
 
+        console.log(this.cache.json.get("tree"));
     }
 
       
