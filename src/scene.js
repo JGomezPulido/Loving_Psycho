@@ -1,10 +1,10 @@
 import DialogBox from "./dialog_box.js";
 import Node from "./node.js";
 
- export default class TempEnd extends Phaser.Scene {
+ export default class Scene extends Phaser.Scene {
 
     constructor() {
-      super({ key: 'tempend' });
+      super({ key: 'Scene' });
     }
 
     create(){

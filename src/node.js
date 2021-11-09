@@ -7,20 +7,18 @@ export default class Node{
 
     /**
      * Creates a new node.
-     * @param {int} id - id of the node.
-     * @param {int} id_obj - id of the next node, -1 if terminal node, -2 if the node has options.
-     * @param {string[]} dialogs - array with the texts of the node's dialogs.
-     * @param {Option} options - array with the options, null if the node has no options.
+     * @param {Nodo} node node from dialog tree
      */
-    constructor(node){
+    constructor(node, scene){
         this.dialogs= node.text;
         this.id= node.id;
-        this.id_obj = node.obj_id;
+        this.id_obj = node.id_obj;
         this.options  = null;
+        this.scene = scene;
         if(this.id_obj === -2){
             this.options = [];
             node.options.forEach(el => {
-                let op = new Option(scene, el.text, el.maxS, el.minS, el.score, id_obj = el.id_obj, x = x, y = y);
+                let op = new Option(this.scene, el.text, el.maxS, el.minS, el.score, id_obj = el.id_obj, x = x, y = y);
                 this.options.push(op);
             });
         }

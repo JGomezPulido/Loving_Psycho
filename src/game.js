@@ -1,5 +1,5 @@
 import Boot from './boot.js';
-import TempEnd from './end.js';
+import Scene from './scene.js';
 import Menu from './menu.js';
 
 let config = {
@@ -12,7 +12,7 @@ let config = {
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
     },
     pixelArt: true,
-    scene: [Boot, Menu,TempEnd]
+    scene: [Boot, Menu, Scene]
 };
 
 new Phaser.Game(config);
