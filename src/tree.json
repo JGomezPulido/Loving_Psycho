@@ -1,34 +1,40 @@
 [
     {
         "id":0,
-        "obj_id":1,
-        "text":"bromita",
+        "id_obj":1,
+        "dialogs":["bromita"],
         "options": null
     },
     {
         "id":1,
-        "obj_id":-2,
-        "text":"opciones",
+        "id_obj":-2,
+        "dialogs":["opciones"],
         "options":[{
             "text":"op1",
-            "obj-id":2
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj":2
         },
         {
             "text":"op2",
-            "obj-id":3
+            "maxScore": 100,
+            "minScore": 20,
+            "score": -10,
+            "id_obj":3
         }
     ]
     },
     {
         "id":2,
-        "obj_id":-1,
-        "text":"terminar",
-        "options":null
+        "id_obj":-1,
+        "dialogs":["terminar"],
+        "options": null
     },
     {
         "id":3,
-        "obj_id":-1,
-        "text":"terminar 2",
+        "id_obj":-1,
+        "dialogs":["terminar 2"],
         "options":null
     }
 ]
