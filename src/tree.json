@@ -3,7 +3,7 @@
         "id":0,
         "obj_id":1,
         "text":"bromita",
-        "options":[]
+        "options": null
     },
     {
         "id":1,
@@ -23,12 +23,12 @@
         "id":2,
         "obj_id":-1,
         "text":"terminar",
-        "options":[]
+        "options":null
     },
     {
         "id":3,
         "obj_id":-1,
         "text":"terminar 2",
-        "options":[]
+        "options":null
     }
 ]

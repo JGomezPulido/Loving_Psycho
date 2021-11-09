@@ -1,4 +1,5 @@
 import DialogBox from "./dialog_box.js";
+import Node from "./node.js";
 
  export default class TempEnd extends Phaser.Scene {
 
@@ -21,7 +22,11 @@ import DialogBox from "./dialog_box.js";
 
         this.dialoge = new DialogBox(this, document.getElementById("juego").height, document.getElementById("juego").width / 2, 'hola');
 
-        console.log(this.cache.json.get("tree"));
+        this.treeJson = this.cache.json.get("tree");
+        console.log(this.treeJson[0]);
+        this.tree = new Node(this.treeJson[0]);
+        console.log(this.tree);
+
     }
 
       
