@@ -8,9 +8,5 @@ export default class Button extends Phaser.GameObjects.Sprite {
     });
   }
   
-  preUpdate() {
-    super.preUpdate();
-    
-  }
   
 }

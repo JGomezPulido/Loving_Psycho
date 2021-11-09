@@ -19,11 +19,11 @@ import DialogBox from "./dialog_box.js";
 
         this.text=this.add.text(200,0,"A partir de aqui, el jugador elegiria su cita y empezaria a jugar");
 
-        // let x = document.getElementById("juego").height;
-        // let y = document.getElementById("juego").width;
-        //this.dialoge = new DialogBox(this, 1000, 500);
+        this.dialoge = new DialogBox(this, document.getElementById("juego").height, document.getElementById("juego").width / 2, 'hola');
 
     }
+
+      
 
 
   }
