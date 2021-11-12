@@ -1,6 +1,7 @@
 import DialogBox from "./dialog_box.js";
 import Node from "./node.js";
 import DialogManager from "./dialog_manager.js";
+import Pill from "./pill.js";
 
  export default class Scene extends Phaser.Scene {
 
@@ -29,7 +30,7 @@ import DialogManager from "./dialog_manager.js";
         console.log(this.tree);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
         this.dialoge = new DialogBox(this, document.getElementById("juego").height, document.getElementById("juego").width / 2, this.dialogManager);
-
+        this.pills = new Pill(this, 100,200);
     }
 
       
