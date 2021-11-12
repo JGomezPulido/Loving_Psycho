@@ -6,8 +6,11 @@ export default class Option extends Phaser.GameObjects.Text{
         this.score = score;
         this.id_obj = id_obj;
         this.scene = scene;
+        this.text=text;
+        this.x=x;
+        this.y=y;
         this.setInteractive();
-        this.on("pointerdown", this.clickOption(), this);
+        this.on("pointerdown", this.clickOption, this);
     }
 
     clickOption(){

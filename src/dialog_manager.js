@@ -12,9 +12,9 @@ export default class DialogManager {
         this.scene = scene;
         this.tree = tree;
 
-        this.scene.events.on('optionClicked', this.changeNode(id_obj), this)
+        this.scene.events.on('optionClicked', this.changeNode, this)
 
-        this.scene.events.on('dialogBoxClicked', this.changeNode(id_obj), this)
+        this.scene.events.on('dialogBoxClicked', this.changeNode, this)
     }
 
     changeNode(id_obj){
