@@ -1,5 +1,5 @@
 export default class DialogBox extends Phaser.GameObjects.Container{
-    constructor(scene, x, y, iniText){
+    constructor(scene, x, y, dialog_manager){
         super(scene, x, y);
         
         //Creación del cuadro de diálogo
@@ -12,7 +12,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         
         //Creación del texto
         const SPACING = 50;
-        this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - w / 2 + SPACING, this.dialogeBackground.y - h / 2 + SPACING / 2, iniText);
+        this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - w / 2 + SPACING, this.dialogeBackground.y - h / 2 + SPACING / 2, '');
         this.text.setWordWrapWidth(w - SPACING * 2);
 
         //Creación del container
@@ -29,23 +29,16 @@ export default class DialogBox extends Phaser.GameObjects.Container{
               this.textoEscrito = true;
             }
             else{
-              this.cont = 0;
-              this.contParrafos++;
-              this.parrafo = this.arrayParrafos[this.contParrafos % this.arrayParrafos.length];
-              this.actParrafo = '';
-              this.delay = 0;
+              this.cont = 0;    
+              this.delay = 0;      
+              this.actParrafo = '';        
               this.textoEscrito = false;
+              this.scene.events.emit('dialogBoxClicked', dialog_manager.getActualNode().id_obj);
+              this.parrafo = dialog_manager.getActualNode().dialogs;
             }
           });
-
-          //esto se irá
-          this.arrayParrafos = ['Durante su mandato al frente del Ejército y de la Jefatura del Estado, especialmente durante la guerra civil y los primeros años del régimen, se produjo una fuerte represión, en particular contra los partidarios del bando republicano que fue derrotado en la contienda, a la que se sumó el exilio de centenares de miles de españoles al extranjero. La cifra total de víctimas mortales varía en torno a varios centenares de miles de personas, que perecieron en su mayoría en campos de concentración, ejecuciones extrajudiciales o en prisión.',
-          'Bajo la dirección de Hitler, las fuerzas alemanas y sus aliados ocuparon en 1941 la mayor parte de Europa y África del Norte. Esas conquistas territoriales decrecieron paulatinamente después de la batalla de Stalingrado, hasta 1945, cuando los ejércitos aliados derrotaron al ejército alemán. Por motivos raciales, Hitler causó la muerte de diecisiete millones de personas,6​ incluyendo una cifra en torno a seis millones de judíos7​ y entre medio y millón y medio de gitanos, en lo que posteriormente se denominó «Holocausto».',
-          'Benito Amilcare Andrea Mussolini (Predappio, 29 de julio de 1883 - Giulino, 28 de abril de 1945) fue un político, militar y dictador italiano, presidente del Consejo de Ministros Reales de Italia desde 1922 hasta 1943 y Duce —guía— de la República Social Italiana desde 1943 hasta 1945. Llevó al poder al Partido Nacional Fascista y posteriormente al Partido Fascista Republicano y estableció un régimen totalitario durante el período conocido como fascismo italiano, bajo el beneplácito del rey Víctor Manuel III, hasta su colapso en la Segunda Guerra Mundial.'];         
-          this.contParrafos = 0;
-          //esto se pillará de otra clase que le pase los diálogos
-          this.parrafo = this.arrayParrafos[this.contParrafos];
-          //esto se queda
+           
+          this.parrafo =  dialog_manager.getActualNode().dialogs;
           this.actParrafo = '';
           this.cont = 0;
           this.delay = 0;
