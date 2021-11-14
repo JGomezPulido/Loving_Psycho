@@ -29,11 +29,14 @@ import Pill from "./pill.js";
         this.tree = new Node(this.treeJson[0],this);
         console.log(this.tree);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
-        this.dialoge = new DialogBox(this, document.getElementById("juego").height, document.getElementById("juego").width / 2, this.dialogManager);
-        this.pills = new Pill(this, 100,200);
+        let canvasW = document.getElementById("juego").width;
+        let canvasH = document.getElementById("juego").height;
+        this.dialoge = new DialogBox(this, canvasW / 2, canvasH, 0.5, 0.5, true, this.dialogManager);
+        this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 + 50, 0.55, 0.2, false, this.dialogManager);
+        this.pills = new Pill(this, 100,150);
     }
 
-      
+    
 
 
   }

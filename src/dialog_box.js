@@ -1,26 +1,41 @@
 export default class DialogBox extends Phaser.GameObjects.Container{
-    constructor(scene, x, y, dialog_manager){
+    constructor(scene, x, y, w, h, inter, dialog_manager){
         super(scene, x, y);
         
+        this.scene.events.on('optionsStart', this.showOptionDialog, this);
+
         //Creación del cuadro de diálogo
         this.dialogeBackground = new Phaser.GameObjects.Sprite(this.scene, 0, 0, 'cuadroDialogo');
-        const DIA_SCALE = 0.5;
-        this.dialogeBackground.scale *= DIA_SCALE;
-        let h = (DIA_SCALE * this.dialogeBackground.height);
-        let w = (DIA_SCALE * this.dialogeBackground.width);
+        this.dialogeBackground.setScale(w, h);
+        let sizeH = (h * this.dialogeBackground.height);
+        let sizeW = (w * this.dialogeBackground.width);
         this.dialogeBackground.setOrigin(0.5, 0.5);
         
         //Creación del texto
-        const SPACING = 50;
-        this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - w / 2 + SPACING, this.dialogeBackground.y - h / 2 + SPACING / 2, '');
-        this.text.setWordWrapWidth(w - SPACING * 2);
+        const SPACING = 35;
+        this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - sizeW / 2 + SPACING, this.dialogeBackground.y - sizeH / 2 + SPACING / 2, '');
+        this.text.setWordWrapWidth(sizeW - SPACING * 2);
 
         //Creación del container
         this.add(this.dialogeBackground);
         this.add(this.text);
-        this.setPosition(this.x, this.y - h / 2);  
+        if (inter)
+          this.setPosition(this.x, this.y - sizeH / 2);           
+        else{
+          this.setPosition(this.x, this.y);
+          this.setVisible(false);
+          this.setActive(false);
+        }          
         this.scene.add.existing(this);    
         
+        //Variables para gestionar la escritura del diálogo
+        this.parrafo =  dialog_manager.getActualNode().dialogs;
+        this.actParrafo = '';
+        this.cont = 0;
+        this.delay = 0;
+        this.textoEscrito = false;
+        this.textSpeed = 0.005; 
+
         //Convierto el cuadro en un botón para gestionar el texto
         this.dialogeBackground.setInteractive();
         this.dialogeBackground.on('pointerdown', pointer => {
@@ -28,25 +43,41 @@ export default class DialogBox extends Phaser.GameObjects.Container{
               this.text.setText(this.parrafo);
               this.textoEscrito = true;
             }
-            else{
-              this.cont = 0;    
-              this.delay = 0;      
-              this.actParrafo = '';        
-              this.textoEscrito = false;
-              this.scene.events.emit('dialogBoxClicked', dialog_manager.getActualNode().id_obj);
-              this.parrafo = dialog_manager.getActualNode().dialogs;
+            else if (inter){
+              this.reset();
+              this.scene.events.emit('dialogBoxClicked', dialog_manager.getActualNode().id_obj);             
+              if (dialog_manager.isOption()){              
+                this.scene.events.emit('optionsStart', dialog_manager.getActualNode().dialogs);
+              }
+              else{
+                this.parrafo = dialog_manager.getActualNode().dialogs;
+              }
             }
           });
            
-          this.parrafo =  dialog_manager.getActualNode().dialogs;
-          this.actParrafo = '';
-          this.cont = 0;
-          this.delay = 0;
-          this.textoEscrito = false;
-          this.textSpeed = 0.005;
+          
+          this.b = inter;
     }
 
+    showOptionDialog(nextDialog){
+      if (this.b){
+        this.setVisible(false);
+        this.setActive(false);
+      }       
+      else{
+        this.reset();
+        this.parrafo = nextDialog;
+        this.setVisible(true);
+        this.setActive(true);
+      }       
+    }
 
+    reset(){
+      this.actParrafo = '';
+      this.cont = 0;
+      this.delay = 0;
+      this.textoEscrito = false;
+    }
 
     preUpdate(t, dt) {
         if (!this.textoEscrito){

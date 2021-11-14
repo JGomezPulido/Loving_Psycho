@@ -12,10 +12,7 @@ export default class DialogManager {
         console.log(this.tree);
 
         this.scene.events.on('optionClicked', this.changeNode, this)
-
-        this.scene.events.on('dialogBoxClicked', this.changeNode, this)
-
-        
+        this.scene.events.on('dialogBoxClicked', this.changeNode, this)       
     }
 
     changeNode(id_obj){
@@ -39,6 +36,10 @@ export default class DialogManager {
 
     getActualNode(){
         return this.actNode;
+    }
+
+    isOption(){
+        return this.actNode.id_obj === -2;
     }
     
 

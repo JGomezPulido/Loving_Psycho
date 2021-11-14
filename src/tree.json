@@ -20,7 +20,7 @@
     {
         "id":3,
         "id_obj":-2,
-        "dialogs":"opciones",
+        "dialogs":"opciones opciones opciones opciones opciones opciones opciones opciones opciones opciones opciones opciones",
         "options":[{
             "text":"op1",
             "maxScore": 100,
