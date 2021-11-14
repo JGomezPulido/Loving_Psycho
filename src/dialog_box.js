@@ -34,13 +34,14 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         this.cont = 0;
         this.delay = 0;
         this.textoEscrito = false;
-        this.textSpeed = 0.005; 
+        this.textSpeed = 0.0005; 
 
         //Convierto el cuadro en un botón para gestionar el texto
         this.dialogeBackground.setInteractive();
         this.dialogeBackground.on('pointerdown', pointer => {
-            if (!this.textoEscrito && this.cont < this.parrafo.length){
+            if (!this.textoEscrito){              
               this.text.setText(this.parrafo);
+              this.scene.events.emit('changePsychoBar', dialog_manager.getActualNode().score);
               this.textoEscrito = true;
             }
             else if (inter){
@@ -56,6 +57,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
           });
            
           
+          this.dm = dialog_manager;
           this.b = inter;
     }
 
@@ -87,7 +89,11 @@ export default class DialogBox extends Phaser.GameObjects.Container{
                 this.text.setText(this.actParrafo);
                 this.cont++;
                 this.delay = this.textSpeed;
-            }
+              }
+              else{
+                this.textoEscrito = true;
+                this.scene.events.emit('changePsychoBar', this.dm.getActualNode().score);
+              }
             }    
             else this.delay -= dt;
           }

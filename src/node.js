@@ -13,6 +13,7 @@ export default class Node{
         this.dialogs= node.dialogs;
         this.id= node.id;
         this.id_obj = node.id_obj;
+        this.score = node.score;
         this.options  = null;
         this.scene = scene;
         if(this.id_obj === -2){

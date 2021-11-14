@@ -2,6 +2,7 @@ import DialogBox from "./dialog_box.js";
 import Node from "./node.js";
 import DialogManager from "./dialog_manager.js";
 import Pill from "./pill.js";
+import PsychoBar from "./psycho_bar.js";
 
  export default class Scene extends Phaser.Scene {
 
@@ -33,7 +34,8 @@ import Pill from "./pill.js";
         let canvasH = document.getElementById("juego").height;
         this.dialoge = new DialogBox(this, canvasW / 2, canvasH, 0.5, 0.5, true, this.dialogManager);
         this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 + 50, 0.55, 0.2, false, this.dialogManager);
-        this.pills = new Pill(this, 100,150);
+        this.psychoBar = new PsychoBar(this, 60, 350);
+        this.pills = new Pill(this, 60, 350);    
     }
 
     
