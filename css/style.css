@@ -1,52 +1,91 @@
 body {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	background:radial-gradient(circle at center,#80393c,#861d21, #460001) ;
-}
-footer {
-	background: #dad1d1;
-	height: 80px;
+	margin: 0;
+	padding: 0;
+	background:rgb(255, 255, 255);
 	font-family: 'Courgette', cursive;
-	text-align: center;
 }
-header {
-	background: #8a8a8a;
-	height: 80px;
-	font-family: 'Courgette', cursive;
+.container{
+	width: 85%;
+	margin:0 auto;
+	display:flex;
+	justify-content: space-between;
 	align-items: center;
-}	
-.game_area{
-	margin:100px 0 100px 0;
 }
-.logo {
-	float: left;
-	text-decoration:none;
+
+.logo{
+	font-size:2rem;
 }
-h1{
-	padding: 20px 0 0 20px;
-	font-size: 35px;
+header{
+	background: rgb(39, 39, 39);
+	text-decoration: none;
+	padding:1.5rem 0;
+	font-size: 1.5rem;
+	margin-bottom: 8rem;
+}
+header a{
+	text-decoration: none;
 	color:white;
+	border-radius:15px;
+}
+header a:hover{
+	background:rgb(46, 46, 46);
+}
+header ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+header ul li{
+	display: inline-block;
+}
+header ul li a {
+	display:block;
+	padding:0.5rem 1rem;
 }
 
-.redes{
-	float : center;
-	padding-top: 1.25rem;
-}
 
-.redes a {
-    margin: 0;
-	padding: 0 0.3rem 0 0;
+.footer-container{
+	width: 85%;
+	margin:0 auto;
 }
-.redes a img{
-	width: 2.5rem;
-	height: 2.5rem;
-}
-
-.info{
-	float:right;
+footer{
+	background: rgb(177, 177, 177);
+	padding:2rem 0;
 	text-align:center;
-}
-.info div a{
-	text-decoration:none;
+	margin-top:8rem;
+
 }
 
+footer img{
+	width:2.5rem;
+	height: 2.5rem;
+	padding:0 0.25rem;
+	
+}
+
+.about_us{
+	text-align: center;
+	font-size: 2.5rem;
+}
+.about_us p{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.5rem;
+	padding: 0 25rem;
+}
+
+.our_game{
+	padding: 0 4rem;
+	display:flex;
+	justify-content: space-between;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.our_game img{
+	padding-left: 3rem;
+	width: 500px;
+	height: 500px;
+}
+.our_game p{
+	text-align: left;
+	font-size: 1.5rem;
+	padding: 1rem 3rem;
+}
