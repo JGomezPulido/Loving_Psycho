@@ -1,48 +1,56 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: #666;
-	background: #f2f2f2; 
-	font-size: 20px;
+	background:radial-gradient(circle at center,#80393c,#861d21, #460001) ;
 	line-height: 50%
 }
-
-h1 {
-	font-size: 35px;
-	line-height: 50%;
-	margin: 15px 0;
-	text-align: center;
-	font-weight: 300;
-}
-
-header {
-	background: #333;
-	color: white;
+footer {
+	background: #160101;
 	height: 80px;
-	margin-bottom: 100px   ;
+	font-family: 'Courgette', cursive;
+}
+header {
+	background: #160101;
+	height: 80px;
+	font-family: 'Courgette', cursive;
 }	
-
+.game_area{
+	margin:100px 0 100px 0;
+	border:2px solid darksalmon;
+}
 .logo {
 	float: left;
-	padding: 15px 0 0 20px;
+	text-decoration:none;
+}
+h1{
+	padding: 20px 0 0 20px;
+	font-size: 35px;
+	margin: 15px 0;
+	color:rgb(255, 255, 255);
 }
 
-nav {
-	float: right;
+.info{
+	float : right;
+	align-items: center;
 }
-nav ul {
+
+.info ul {
     margin: 0;
-    padding: 0;
-    padding-right: 20px;
+	padding: 15px 20px 0 0;
 }
 	
-nav ul li {
-    display: inline-block; /*para que aparezcan en una linea*/   
+.info ul li {
+    display: inline-block;   
     line-height: 80px;
-    padding-top:5%;
 }
         
-nav ul li a {
+.info ul li a {
     display: block;
     padding: 0 10px;
+	
+}
+
+.info ul li a img{
+	width: 40px;
+	height: 40px;
 }

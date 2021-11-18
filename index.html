@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="./lib/phaser.min.js"></script>
 
     <title>Loving Psycho</title>
@@ -14,22 +15,29 @@
 <body>
 
     <header>
-        <h1 class="logo">Loving Psycho</h1>
-    <nav>
-        <ul>
-            <li><a href="https://github.com/jgomez18UCM/Loving_Psycho/"><img src="./imagenes/github.png" width=50 height=50></img></a></li>
-            <li><a href="https://www.instagram.com/loving_psycho_official"><img src="./imagenes/instagram.png" width=50 height=50></img></a></li>
-            <li><a href="https://twitter.com/psycho_loving"><img src="./imagenes/twitter.png" width=50 height=50></img></a></li>
-            <li><a href="https://www.reddit.com/r/Loving_Psycho/"><img src="./imagenes/reddit.png" width=50 height=50></img></a></p></li>
-        </ul>
-    </nav>
+        <a class="logo" href=./index.html><h1>3! - 1 : Loving Psycho</h1></a><!--logo-->
+        <div class="info">
+            <div><a>Sobre nosotros</a></div>
+        </div>
         
     </header>
 
+    <div class="game_area">
+        <canvas id="juego"></canvas>
+        <script src="./src/game.js" type="module"></script>
+    </div>
+    
 
-    <canvas id="juego"></canvas>
-    <script src="./src/game.js" type="module"></script>
-
+    <footer>
+        <nav class="info">
+            <ul>
+                <li><a href="https://github.com/jgomez18UCM/Loving_Psycho/"><img src="./imagenes/github.png"></img></a></li>
+                <li><a href="https://www.instagram.com/loving_psycho_official"><img src="./imagenes/instagram.png"></img></a></li>
+                <li><a href="https://twitter.com/psycho_loving"><img src="./imagenes/twitter.png"></img></a></li>
+                <li><a href="https://www.reddit.com/r/Loving_Psycho/"><img src="./imagenes/reddit.png"></img></a></p></li>
+            </ul>
+        </nav>
+    </footer>
         
 </body>
 </html>
