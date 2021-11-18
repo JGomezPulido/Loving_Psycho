@@ -1,22 +1,22 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 	background:radial-gradient(circle at center,#80393c,#861d21, #460001) ;
-	line-height: 50%
 }
 footer {
-	background: #160101;
+	background: #dad1d1;
 	height: 80px;
 	font-family: 'Courgette', cursive;
+	text-align: center;
 }
 header {
-	background: #160101;
+	background: #8a8a8a;
 	height: 80px;
 	font-family: 'Courgette', cursive;
+	align-items: center;
 }	
 .game_area{
 	margin:100px 0 100px 0;
-	border:2px solid darksalmon;
 }
 .logo {
 	float: left;
@@ -25,32 +25,28 @@ header {
 h1{
 	padding: 20px 0 0 20px;
 	font-size: 35px;
-	margin: 15px 0;
-	color:rgb(255, 255, 255);
+	color:white;
+}
+
+.redes{
+	float : center;
+	padding-top: 1.25rem;
+}
+
+.redes a {
+    margin: 0;
+	padding: 0 0.3rem 0 0;
+}
+.redes a img{
+	width: 2.5rem;
+	height: 2.5rem;
 }
 
 .info{
-	float : right;
-	align-items: center;
+	float:right;
+	text-align:center;
+}
+.info div a{
+	text-decoration:none;
 }
 
-.info ul {
-    margin: 0;
-	padding: 15px 20px 0 0;
-}
-	
-.info ul li {
-    display: inline-block;   
-    line-height: 80px;
-}
-        
-.info ul li a {
-    display: block;
-    padding: 0 10px;
-	
-}
-
-.info ul li a img{
-	width: 40px;
-	height: 40px;
-}
