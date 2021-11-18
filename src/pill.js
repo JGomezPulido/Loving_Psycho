@@ -11,7 +11,7 @@ export default class Pill extends Phaser.GameObjects.Container{
         this.amount = 3;
         this.text = scene.add.text(50,50,this.amount);
         this.add(this.text);
-        //this.bar = this.scene.bar;
+        this.bar = this.scene.psychoBar;
         this.sprite.on('pointerdown', this.takePill, this);
         this.space = this.scene.input.keyboard.addKey(' ');
         this.space.on('down', this.takePill, this);
@@ -21,7 +21,7 @@ export default class Pill extends Phaser.GameObjects.Container{
     takePill(){
         if(this.amount>0){
             console.log("A");
-            this.scene.events.emit("pillTaken");
+            this.bar.changePsychoBar(-10);
             this.amount--;
             this.text.text = this.amount;
         }else{
