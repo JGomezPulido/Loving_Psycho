@@ -77,15 +77,22 @@ footer img{
 	padding: 0 4rem;
 	display:flex;
 	justify-content: space-between;
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .our_game img{
-	padding-left: 3rem;
-	width: 500px;
+	width: 600px;
 	height: 500px;
 }
 .our_game p{
 	text-align: left;
+	font-size: 1.25rem;
+	line-height: 1.7rem;
+	padding: 0 3rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.desc{
+	text-align: left;
 	font-size: 1.5rem;
-	padding: 1rem 3rem;
+	padding: 0 3rem 1rem 3rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
