@@ -3,6 +3,7 @@ import Node from "./node.js";
 import DialogManager from "./dialog_manager.js";
 import Pill from "./pill.js";
 import PsychoBar from "./psycho_bar.js";
+import Option from "./option.js";
 
  export default class Scene extends Phaser.Scene {
 
@@ -35,7 +36,8 @@ import PsychoBar from "./psycho_bar.js";
         this.dialoge = new DialogBox(this, canvasW / 2, canvasH, 0.5, 0.5, true, this.dialogManager);
         this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 + 50, 0.55, 0.2, false, this.dialogManager);
         this.psychoBar = new PsychoBar(this, 60, 350);
-        this.pills = new Pill(this, 60, 350);    
+        this.pills = new Pill(this, 60, 350);
+        this.Option = new Option(this, "Musolini mola", 100, 0, 25, 3, 200, 50) ;  
     }
 
     

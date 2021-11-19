@@ -87,6 +87,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
               if (this.cont < this.parrafo.length){
                 this.actParrafo += this.parrafo[this.cont];
                 this.text.setText(this.actParrafo);
+                
                 this.cont++;
                 this.delay = this.textSpeed;
               }
