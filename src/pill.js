@@ -21,7 +21,7 @@ export default class Pill extends Phaser.GameObjects.Container{
     takePill(){
         if(this.amount>0){
             console.log("A");
-            this.bar.changePsychoBar(-10);
+            this.bar.pillEffect();
             this.amount--;
             this.text.text = this.amount;
         }else{

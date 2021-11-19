@@ -4,17 +4,23 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         this.setOrigin(0.5, 1);
         this.scaleY = 0;
         this.scene.add.existing(this);
+        this.score = 0;
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);
     }
 
     changePsychoBar(n){
-        
+        this.score += n;
         this.scaleY += n / 100;
 
         if (this.scaleY > 1)
             this.scaleY = 1;
         else if (this.scaleY < 0)
             this.scaleY = 0; 
+    }
+
+    pillEffect(){
+        this.score /= 2;
+        this.scaleY /= 2;
     }
 }
