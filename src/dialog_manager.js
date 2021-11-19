@@ -10,12 +10,14 @@ export default class DialogManager {
         this.scene = scene;
         this.tree = tree;
         console.log(this.tree);
-
+       
+        this.scene.events.emit('changePsychoBar', this.getActualNode().score);
         this.scene.events.on('optionClicked', this.changeNode, this)
         this.scene.events.on('dialogBoxClicked', this.changeNode, this)       
     }
 
     changeNode(id_obj){
+        
         console.log(this.tree);
         if(id_obj === -1){
             //end
@@ -24,6 +26,7 @@ export default class DialogManager {
             let i=0;
             while(i<this.tree.length && this.tree[i].id !== id_obj){i++}
             this.actNode = this.tree[i];
+            this.scene.events.emit('changePsychoBar', this.getActualNode().score);
         }
     }
 

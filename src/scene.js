@@ -30,12 +30,14 @@ import Option from "./option.js";
         console.log(this.treeJson[0]);
         this.tree = new Node(this.treeJson[0],this);
         console.log(this.tree);
+        this.psychoBar = new PsychoBar(this, 60, 350);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
         let canvasW = document.getElementById("juego").width;
         let canvasH = document.getElementById("juego").height;
+       
         this.dialoge = new DialogBox(this, canvasW / 2, canvasH, 0.5, 0.5, true, this.dialogManager);
         this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 + 50, 0.55, 0.2, false, this.dialogManager);
-        this.psychoBar = new PsychoBar(this, 60, 350);
+        
         this.pills = new Pill(this, 60, 350);
         this.Option = new Option(this, "Musolini mola", 100, 0, 25, 3, 200, 50) ;  
     }

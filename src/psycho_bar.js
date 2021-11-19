@@ -13,7 +13,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         this.score += n;
         this.scaleY += n / 100;
 
-        if (this.scaleY > 1)
+        if (this.score >= 100)
             this.scaleY = 1;
         else if (this.scaleY < 0)
             this.scaleY = 0; 

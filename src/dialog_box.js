@@ -41,7 +41,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         this.dialogeBackground.on('pointerdown', pointer => {
             if (!this.textoEscrito){              
               this.text.setText(this.parrafo);
-              this.scene.events.emit('changePsychoBar', dialog_manager.getActualNode().score);
+              //this.scene.events.emit('changePsychoBar', dialog_manager.getActualNode().score);
               this.textoEscrito = true;
             }
             else if (inter){
@@ -93,7 +93,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
               }
               else{
                 this.textoEscrito = true;
-                this.scene.events.emit('changePsychoBar', this.dm.getActualNode().score);
+                //this.scene.events.emit('changePsychoBar', this.dm.getActualNode().score);
               }
             }    
             else this.delay -= dt;
