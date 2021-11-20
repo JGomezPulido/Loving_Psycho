@@ -3,29 +3,58 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         super(scene, x, y, 'psychoBar');
         this.setOrigin(0.5, 1);
         this.scaleY = 0;
-        this.scene.add.existing(this);
         this.score = 0;
+        this.scene.add.existing(this);
+        
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);
+        this.scene.events.on('writtenText', this.prematureFillBar, this);
+
+        this.tween = this.scene.tweens.add({
+            targets: [] })
     }
 
     changePsychoBar(n){
         this.score += n;
-        this.scaleY += n / 100;
-
+        
         if (this.score >= 100){
-            this.scaleY = 1;
             this.score = 100;
             console.log("has matado a tu cita");
         }
             
-        else if (this.score < 0)
-            this.scaleY = 0; 
+        else if (this.score < 0){
             this.score = 0;
+        } 
+        
+        this.tween.stop();
+        this.tween = this.scene.tweens.add({
+            targets: [ this ],
+            scaleY: this.score / 100,
+            duration: 4000,
+            ease: 'Linear:',
+            yoyo: false,
+            repeat: 0
+        });
+
+         
     }
 
     pillEffect(){
         this.score /= 2;
-        this.scaleY /= 2;
+
+        this.tween.stop();
+        this.tween = this.scene.tweens.add({
+            targets: [ this ],
+            scaleY: this.score / 100,
+            duration: 3000,
+            ease: 'Expo.Out',
+            yoyo: false,
+            repeat: 0
+        });
+    }
+
+    prematureFillBar(){
+        this.tween.stop();
+        this.scaleY = this.score / 100;
     }
 }
