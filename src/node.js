@@ -14,6 +14,7 @@ export default class Node{
         this.id= node.id;
         this.id_obj = node.id_obj;
         this.score = node.score;
+        this.expresion = node.expresion;
         this.options  = null;
         this.scene = scene;
         if(this.id_obj === -2){

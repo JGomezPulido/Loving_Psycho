@@ -11,6 +11,12 @@ export default class Boot extends Phaser.Scene {
     this.load.image('marion','marion_crane_demo.jpg');
     this.load.image('cuadroDialogo','cuadro_dialogo.png');
     this.load.image('psychoBar','psycho_bar.png');
+    this.load.image('neutral','neutral.png');
+    this.load.image('sorprendida','sorprendida.png');
+    this.load.image('enfadada','enfadada.png');
+    this.load.image('sonrojada','sonrojada.png');
+    this.load.image('horrorizada','horrorizada.png');
+    this.load.image('feliz','feliz.png');
     this.load.json('tree','../../src/tree.json');
   }
   
