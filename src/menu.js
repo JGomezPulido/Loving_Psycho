@@ -22,7 +22,7 @@ export default class Menu extends Phaser.Scene {
       this.hearts.push(new Corazon(this, mov, this.button.x, this.button.y));
     }
     setTimeout(()=>{
-      this.scene.start('Scene');
+      this.scene.start('deathScene');
     },1000)
 
   }

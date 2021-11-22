@@ -1,7 +1,6 @@
 export default class Background extends Phaser.GameObjects.Image{
-    constructor(scene, x, y){
+    constructor(scene, x, y,){
         super(scene, x, y, 'blackBackground');
-        this.setScale(this.height,this.height);
         this.scene.events.on('changeBackground', this.changeBackground, this);
         this.scene.add.existing(this);
     }

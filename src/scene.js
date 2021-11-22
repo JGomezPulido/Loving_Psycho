@@ -14,6 +14,7 @@ import Background from "./background.js";
     }
 
     create(){
+
         // this.loving_p=this.make.image({
         //     x:500,y:250,
         
@@ -35,7 +36,7 @@ import Background from "./background.js";
         this.tree = new Node(this.treeJson[0],this);
         console.log(this.tree);
         
-        this.background = new Background(this, canvasW, canvasH);
+        this.background = new Background(this,canvasW/2, canvasH/2);
         this.psychoBar = new PsychoBar(this, 60, 350);
         this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
