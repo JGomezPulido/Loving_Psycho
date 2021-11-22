@@ -5,8 +5,8 @@ import Menu from './menu.js';
 let config = {
     type: Phaser.CANVAS,
     canvas: document.getElementById("juego"),
-    width:  1000,
-    height: 500,
+    width:  1280,
+    height: 720,
     scale: {
         // mode: Phaser.Scale.FIT,  
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
