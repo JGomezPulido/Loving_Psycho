@@ -1,10 +1,10 @@
 export default class Option extends Phaser.GameObjects.Container{
 
     constructor(scene, text, maxS, minS, score, id_obj, x, y){
-        let textoOption = new Phaser.GameObjects.Text(scene,0,0,text);
+        let textoOption = scene.add.text(0,0,text);
         let sprite = scene.add.sprite(x, y, 'cuadroDialogo');
-        super(scene, x, y, textoOption, sprite);
-        sprite.setScale(0.5,0.1);
+        super(scene, x, y, [textoOption, sprite]);
+        sprite.setScale(0.25,0.1);
         this.maxScore = maxS;
         this.minScore = minS;
         this.score = score;

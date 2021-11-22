@@ -40,9 +40,22 @@ import Girl from "./girl.js";
        
         
         this.dialoge = new DialogBox(this, canvasW / 2, canvasH, 0.5, 0.5, true, this.dialogManager);
+        // this.dialoge.setVisible(false);
+        let optionsXOffset = 50;
+        let rightOptionsX = 3*canvasW/4-optionsXOffset;
+        let upOptionsY=canvasH/2+150;
+        let leftOptoinsX = canvasW/4+optionsXOffset;
+        let downOptionsY=canvasH/2+200;
         this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 + 50, 0.55, 0.2, false, this.dialogManager);
-        
-        
+        this.optionsGroup = this.add.group();
+        this.op1 = new Option(this, "hola", 0, 100, 20, 0, canvasW/4+50, upOptionsY);
+        this.op2 = new Option(this, "adios", 0, 100, 20, 0, rightOptionsX, downOptionsY);
+        this.op3 = new Option(this, "a", 0, 100, 20, 0, rightOptionsX, upOptionsY);
+        this.op4 = new Option(this, "o", 0, 100, 20, 0, leftOptoinsX, downOptionsY);
+        this.optionsGroup.addMultiple([this.op1,this.op2,this.op3,this.op4]);
+        this.optionsGroup.setActive(false);
+        this.optionsGroup.setVisible(false);
+
         this.pills = new Pill(this, 60, 350);
         //this.Option = new Option(this, "Musolini mola", 100, 0, 25, 3, 200, 50) ;  
     }
