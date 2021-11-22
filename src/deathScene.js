@@ -1,9 +1,16 @@
-export default class Scene extends Phaser.Scene {
+import Background from "./background.js";
+
+export default class DeathScene extends Phaser.Scene {
 
     constructor() {
-      super({ key: 'deathScene' });
+      super({ key:'deathScene'});
     }
     create(){
       
+      console.log("Aqui me hallo");
+      let canvasW = document.getElementById("juego").width;
+      let canvasH = document.getElementById("juego").height;
+      this.background = new Background(this,canvasW/2, canvasH/2);     
+      this.add.text(50,50,"You lost");
     }
 }
