@@ -15,7 +15,6 @@ export default class Pill extends Phaser.GameObjects.Container{
         this.sprite.on('pointerdown', this.takePill, this);
         this.space = this.scene.input.keyboard.addKey(' ');
         this.space.on('down', this.takePill, this);
-        
     }
 
     takePill(){

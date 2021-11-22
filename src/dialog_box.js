@@ -42,7 +42,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
             if (!this.textoEscrito){              
               this.text.setText(this.parrafo);
               this.textoEscrito = true;
-              this.scene.events.emit('writtenText'); 
+              this.scene.events.emit('writtenText');             
             }
             else if (inter){
               this.reset();

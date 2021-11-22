@@ -1,4 +1,4 @@
-export default class Background extends Phaser.Image{
+export default class Background extends Phaser.GameObjects.Image{
     constructor(scene, x, y){
         super(scene, x, y, 'blackBackground');
         this.setScale(this.height,this.height);
