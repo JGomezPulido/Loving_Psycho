@@ -5,6 +5,7 @@ import Pill from "./pill.js";
 import PsychoBar from "./psycho_bar.js";
 import Option from "./option.js";
 import Girl from "./girl.js";
+import Background from "./background.js";
 
  export default class Scene extends Phaser.Scene {
 
@@ -15,6 +16,7 @@ import Girl from "./girl.js";
     create(){
         // this.loving_p=this.make.image({
         //     x:500,y:250,
+        
         //     key:'marion',
         //     scale:{
         //         x:0.35,
@@ -33,6 +35,7 @@ import Girl from "./girl.js";
         this.tree = new Node(this.treeJson[0],this);
         console.log(this.tree);
         
+        this.background = new Background(this, canvasW, canvasH);
         this.psychoBar = new PsychoBar(this, 60, 350);
         this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
