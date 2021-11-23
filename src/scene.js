@@ -11,7 +11,7 @@ import Background from "./background.js";
 
     constructor() {
       super({ key: 'Scene' });
-      this.events.on('badEnding', this.terminalScene);
+      
     }
 
     create(){
@@ -43,7 +43,7 @@ import Background from "./background.js";
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
 
        
-        
+        // this.psychoBar.events.on('badEnding', this.terminalScene, this);
         this.dialoge = new DialogBox(this, canvasW / 2, canvasH, 0.5, 0.5, true, this.dialogManager);
         // this.dialoge.setVisible(false);
         let optionsXOffset = 50;
