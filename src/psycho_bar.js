@@ -9,7 +9,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);
         this.scene.events.on('writtenText', this.prematureFillBar, this);
-        this.scene.events.on('barraTope', this.barraTope, this);
+        this.scene.events.on('dialogBoxClicked', this.barraTope, this);
         this.tween = this.scene.tweens.add({
             targets: [] })
     }

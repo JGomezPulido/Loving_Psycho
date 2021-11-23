@@ -24,7 +24,6 @@ export default class DialogManager {
             //end
         }
         else{
-            this.scene.events.emit('barraTope');
             let i=0;
             while(i<this.tree.length && this.tree[i].id !== id_obj){i++}
             this.actNode = this.tree[i];
