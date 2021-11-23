@@ -4,6 +4,7 @@ body {
 	background:rgb(209, 209, 209);
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	/*background: radial-gradient(red,rgb(138, 17, 17),rgb(0, 0, 0));*/
+	word-wrap: break-word;
 }
 
 
@@ -46,9 +47,13 @@ header ul li a {
 	font-size:2em;
 }
 
+
 main{
-	margin:2em auto;
+	margin:10em auto;
+	min-height: 30em;
+	max-height: 100em;
 }
+
 
 /*footer*/
 
@@ -67,12 +72,14 @@ footer{
 	justify-content: space-between;
 	align-items: center;
 }
+footer nav{
+	padding-top:2em;
+}
 footer img{
 	width:3.5em;
 	height: 3.5em;
 	border-radius:1em;	
 	margin:0 0.6rem;
-	
 }
 footer img:hover{
 	background:rgb(0, 0, 0);
@@ -84,16 +91,39 @@ footer p{
 
 
 
-/*other html*/
+/*about us html*/
 .about_us{
-	text-align: center;
+	width: 95%;
 	font-size: 2.5rem;
+	margin:0 auto;
+	display:flex;
+	justify-content: space-between;
 }
-.about_us p{
-	font-size: 1.5rem;
-	padding: 0 25rem;
+.about_us a{
+	text-decoration: none;
+	color: black;
+}
+.about_text{
+	padding-left: 2em;
+	margin-top: 0;
+	font-size: 0.7em;
+}
+.about_text .title{
+	font-size: 2em;
+	border-radius:0.25em;
+}
+.about_text .title:hover{
+	background: rgb(148, 148, 148);
 }
 
+
+
+/*our game html*/
+.desc{
+	text-align: left;
+	font-size: 1.75rem;
+	padding: 0 3rem 1rem 3rem;
+}
 .our_game{
 	padding: 0 4rem;
 	display:flex;
@@ -102,16 +132,13 @@ footer p{
 .our_game img{
 	width: 37.5em;
 	height: 31.25em;
+	max-width: 37.5em;
+	max-height: 31.25em;
 }
 .our_game p{
 	text-align: left;
-	font-size: 1.25rem;
-	line-height: 1.7rem;
+	font-size: 1.5rem;
+	line-height: 1.9rem;
 	padding: 0 3rem;
 }
-.desc{
-	text-align: left;
-	font-size: 1.5rem;
-	padding: 0 3rem 1rem 3rem;
 
-}
