@@ -11,6 +11,6 @@ export default class DeathScene extends Phaser.Scene {
       let canvasW = document.getElementById("juego").width;
       let canvasH = document.getElementById("juego").height;
       this.background = new Background(this,canvasW/2, canvasH/2);     
-      this.add.text(50,50,"You lost");
+      this.sprite = this.add.sprite(canvasW/2, canvasH/2, 'sheDied');
     }
 }
