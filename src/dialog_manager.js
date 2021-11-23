@@ -24,10 +24,7 @@ export default class DialogManager {
             //end
         }
         else{
-            if (this.getActualNode().score === 100){
-                console.log("has matado a tu cita");
-                this.scene.events.emit('badEnding');
-            }
+            this.scene.events.emit('barraTope');
             let i=0;
             while(i<this.tree.length && this.tree[i].id !== id_obj){i++}
             this.actNode = this.tree[i];
