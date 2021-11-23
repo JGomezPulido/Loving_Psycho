@@ -20,6 +20,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         if (this.score >= 100){
             this.score = 100;
             console.log("has matado a tu cita");
+            this.scene.events.emit('badEnding');
         }
             
         else if (this.score < 0){

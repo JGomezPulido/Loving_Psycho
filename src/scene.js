@@ -11,6 +11,7 @@ import Background from "./background.js";
 
     constructor() {
       super({ key: 'Scene' });
+      this.events.on('badEnding', this.terminalScene);
     }
 
     create(){
@@ -64,7 +65,9 @@ import Background from "./background.js";
         //this.Option = new Option(this, "Musolini mola", 100, 0, 25, 3, 200, 50) ;  
     }
 
-    
+    terminalScene(){
+      this.scene.start('deathScene');
+    }
 
 
   }
