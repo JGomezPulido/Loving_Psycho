@@ -48,7 +48,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
               this.reset();
               this.scene.events.emit('dialogBoxClicked', dialog_manager.getActualNode().id_obj);             
               if (dialog_manager.isOption()){              
-                this.scene.events.emit('optionsStart', dialog_manager.getActualNode().dialogs);
+                this.scene.events.emit('optionsStart', dialog_manager.getActualNode());
               }
               else{
                 this.parrafo = dialog_manager.getActualNode().dialogs;
@@ -68,7 +68,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
       }       
       else{
         this.reset();
-        this.parrafo = nextDialog;
+        this.parrafo = nextDialog.dialogs;
         this.setVisible(true);
         this.setActive(true);
       }       
@@ -79,6 +79,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
       this.cont = 0;
       this.delay = 0;
       this.textoEscrito = false;
+      this.parrafo = this.dm.getActualNode().dialogs;
     }
 
     preUpdate(t, dt) {

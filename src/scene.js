@@ -58,11 +58,37 @@ import Background from "./background.js";
         this.op3 = new Option(this, "a", 0, 100, 20, 0, rightOptionsX, upOptionsY);
         this.op4 = new Option(this, "o", 0, 100, 20, 0, leftOptoinsX, downOptionsY);
         this.optionsGroup.addMultiple([this.op1,this.op2,this.op3,this.op4]);
-        this.optionsGroup.setActive(false);
-        this.optionsGroup.setVisible(false);
-
+        this.optionsGroup.children.iterate(ch =>{
+          this.optionsGroup.killAndHide(ch);
+        });
         this.pills = new Pill(this, 60, 350);
-        //this.Option = new Option(this, "Musolini mola", 100, 0, 25, 3, 200, 50) ;  
+        this.events.on("optionsStart", (node) => {
+          this.optionsGroup.shuffle();
+          let i  =0;
+          while(i < node.options.length){
+            if(node.options[i].minScore <= this.psychoBar.score && node.options[i].maxScore >= this.psychoBar.score){
+              let option = this.optionsGroup.getFirst();
+              option.setActive(true);
+              option.setVisible(true);
+              option.setOption(node.options[i]);
+              
+            }
+            i++;
+            
+          }
+          console.log(this.psychoBar.score);
+        });
+        this.events.on("optionClicked", (id_obj)  => {
+          this.dialogeOption.setActive(false);
+          this.dialogeOption.setVisible(false);
+          this.dialoge.reset();
+          this.dialoge.setActive(true);
+          this.dialoge.setVisible(true);      
+          this.optionsGroup.children.iterate(ch => {
+            this.optionsGroup.killAndHide(ch);
+          })
+          console.log(this.psychoBar.score);
+        });
     }
 
     terminalScene(){

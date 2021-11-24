@@ -18,7 +18,7 @@
     {
         "id":2,
         "id_obj":3,
-        "score": 20,
+        "score": -20,
         "expresion": "horrorizada",
         "dialogs":"Benito Amilcare Andrea Mussolini (Predappio, 29 de julio de 1883 - Giulino, 28 de abril de 1945) fue un político, militar y dictador italiano, presidente del Consejo de Ministros Reales de Italia desde 1922 hasta 1943 y Duce —guía— de la República Social Italiana desde 1943 hasta 1945. Llevó al poder al Partido Nacional Fascista y posteriormente al Partido Fascista Republicano y estableció un régimen totalitario durante el período conocido como fascismo italiano, bajo el beneplácito del rey Víctor Manuel III, hasta su colapso en la Segunda Guerra Mundial.",
         "options": null
@@ -34,26 +34,28 @@
             "maxScore": 100,
             "minScore": 0,
             "score": 10,
-            "id_obj":2
+            "id_obj":4
         },
         {
             "text":"op2",
             "maxScore": 100,
             "minScore": 20,
             "score": -10,
-            "id_obj":3
+            "id_obj":5
         }
     ]
     },
     {
-        "id":2,
+        "id":4,
         "id_obj":-1,
+        "score":0,
         "dialogs":"terminar",
         "options": null
     },
     {
-        "id":3,
+        "id":5,
         "id_obj":-1,
+        "score":0,
         "dialogs":"terminar 2",
         "options":null
     }

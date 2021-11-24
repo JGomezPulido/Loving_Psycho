@@ -19,7 +19,7 @@ export default class DialogManager {
 
     changeNode(id_obj){
         
-        console.log(this.tree);
+        //console.log(this.tree);
         if(id_obj === -1){
             //end
         }
@@ -29,6 +29,7 @@ export default class DialogManager {
             this.actNode = this.tree[i];
             this.scene.events.emit('changePsychoBar', this.getActualNode().score);
             this.scene.events.emit('changeExpresion', this.getActualNode().expresion);
+            console.log(this.actNode);
         }
     }
 
