@@ -54,14 +54,18 @@
         "id_obj":-1,
         "score":0,
         "dialogs":"terminar",
+        "expresion": "sonrojada",
         "escena": "goodEnding",
+        "match": 100,
         "options": null
     },
     {
         "id":5,
         "id_obj":-1,
         "score":0,
+        "expresion": "neutral",
         "dialogs":"terminar 2",
+        "match": 50,
         "escena": "neutralEnding",
         "options":null
     }

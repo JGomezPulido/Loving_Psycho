@@ -21,7 +21,7 @@ export default class DialogManager {
         
         console.log(this.tree);
         if(id_obj === -1){
-            this.scene.events.emit('changeEscena', this.getActualNode().escena);
+            this.scene.scene.start("matchScene", { "match": this.actNode.match});
             //end
         }
         else{

@@ -90,6 +90,7 @@ import Background from "./background.js";
           })
           console.log(this.psychoBar.score);
         });
+        
     }
 
     changeScene(s){

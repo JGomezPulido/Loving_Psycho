@@ -24,6 +24,8 @@ export default class Node{
                 let op = new Option(this.scene, el.text, el.maxS, el.minS, el.score, id_obj = el.id_obj, x = x, y = y);
                 this.options.push(op);
             });
+        }else if(this.id_obj == -1){
+            this.match = node.match;
         }
     }
 }
