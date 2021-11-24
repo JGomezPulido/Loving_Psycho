@@ -39,7 +39,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
 
     barraTope(){
         if (this.score === 100){
-            this.scene.events.emit('changeEscena', "deathScene");
+            this.scene.events.emit('badEnding');
         }
     }
 

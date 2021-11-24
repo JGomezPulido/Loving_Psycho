@@ -7,7 +7,6 @@ export default class DeathScene extends Phaser.Scene {
     }
     create(){
       
-      console.log("Aqui me hallo");
       let canvasW = document.getElementById("juego").width;
       let canvasH = document.getElementById("juego").height;
       this.background = new Background(this,canvasW/2, canvasH/2);     

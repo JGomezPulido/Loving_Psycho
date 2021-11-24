@@ -26,8 +26,7 @@ import Background from "./background.js";
         //     },
         //     add:true
         // });
-        //this.events.on('badEnding', this.terminalScene, this);
-        this.events.on('changeEscena', this.changeScene, this);
+        this.events.on('badEnding', this.terminalScene, this);
         // this.text=this.add.text(200,0,"A partir de aqui, el jugador elegiria su cita y empezaria a jugar");
         let canvasW = document.getElementById("juego").width;
         let canvasH = document.getElementById("juego").height;
@@ -93,8 +92,8 @@ import Background from "./background.js";
         
     }
 
-    changeScene(s){
-      this.scene.start(s);
+    terminalScene(){
+      this.scene.start('deathScene');
     }
 
   }
