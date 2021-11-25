@@ -38,7 +38,7 @@ import Background from "./background.js";
         console.log(this.tree);
         
         this.background = new Background(this,canvasW/2, canvasH/2);
-        this.psychoBar = new PsychoBar(this, 60, 350);
+        this.psychoBar = new PsychoBar(this, 125, 500);
         this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
 
@@ -61,7 +61,7 @@ import Background from "./background.js";
         this.optionsGroup.children.iterate(ch =>{
           this.optionsGroup.killAndHide(ch);
         });
-        this.pills = new Pill(this, 60, 350);
+        this.pills = new Pill(this, 125, 500);
         this.events.on("optionsStart", (node) => {
           this.optionsGroup.shuffle();
           let i  =0;
