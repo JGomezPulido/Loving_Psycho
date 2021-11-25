@@ -4,7 +4,8 @@ export default class Pill extends Phaser.GameObjects.Container{
         
         
         super(scene,x,y);
-        this.sprite = scene.add.sprite(0, 0, 'corazon')
+        this.sprite = scene.add.sprite(70, 40, 'pastilla')
+        this.sprite.setScale(0.45, 0.45);
         this.add(this.sprite);
         this.scene.add.existing(this);
         this.sprite.setInteractive();
