@@ -5,6 +5,9 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         this.scaleY = 0;
         this.score = 0;
         this.scene.add.existing(this);
+        let rect = this.scene.add.rectangle(x,y, 64,256, 0, 0);
+        rect.setOrigin(0.5,1);
+        rect.setStrokeStyle(2, 0xFF0000);
         
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);

@@ -5,6 +5,7 @@ export default class Button extends Phaser.GameObjects.Sprite {
     this.scene.add.existing(this).setInteractive();
     this.on("pointerdown", () =>{
       this.scene.spawn()
+      this.off("pointerdown");
     });
   }
   
