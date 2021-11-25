@@ -30,7 +30,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         this.tween = this.scene.tweens.add({
             targets: [ this ],
             scaleY: this.score / 100,
-            duration: 4000,
+            duration: 1000,
             ease: 'Linear:',
             yoyo: false,
             repeat: 0

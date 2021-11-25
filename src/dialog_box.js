@@ -15,6 +15,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         const SPACING = 35;
         this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - sizeW / 2 + SPACING, this.dialogeBackground.y - sizeH / 2 + SPACING / 2, '');
         this.text.setWordWrapWidth(sizeW - SPACING * 2);
+        this.text.setFontSize(28);
 
         //Creación del container
         this.add(this.dialogeBackground);
@@ -22,7 +23,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         if (inter)
           this.setPosition(this.x, this.y - sizeH / 2);           
         else{
-          this.setPosition(this.x, this.y);
+          this.setPosition(this.x, this.y + 100);
           this.setVisible(false);
           this.setActive(false);
         }          
