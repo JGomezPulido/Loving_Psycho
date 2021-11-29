@@ -38,6 +38,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
             yoyo: false,
             repeat: 0
         });
+        this.scene.events.emit('changeBlood');
     }
 
     barraTope(){
@@ -58,6 +59,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
             yoyo: false,
             repeat: 0
         });
+        this.scene.events.emit('changeBlood');
     }
 
     prematureFillBar(){
