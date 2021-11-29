@@ -38,10 +38,12 @@ import Background from "./background.js";
         console.log(this.tree);
         
         this.background = new Background(this,canvasW/2, canvasH/2);
+        this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
         this.blood = new Background(this,canvasW/2, canvasH/2);
         this.blood.changeBackground('blood');
+        this.blood.setAlpha(0);
+        this.tween = this.tweens.add({targets: [] })
         this.psychoBar = new PsychoBar(this, 125, 500);
-        this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
         this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
 
        
@@ -92,6 +94,7 @@ import Background from "./background.js";
           console.log(this.psychoBar.score);
         });
         
+        this.changeBlood();
         this.events.on('changeBlood', this.changeBlood, this);
     }
 
@@ -100,8 +103,19 @@ import Background from "./background.js";
     }
 
     changeBlood(){
-      this.alpha = this.psychoBar.score/100;
-      this.blood.setAlpha(this.alpha);
+      if (this.psychoBar.score <= 15){
+        this.alpha = 0;
+      }
+      else{
+        this.alpha = this.psychoBar.score/100;
+      }
+      this.tween.stop();
+      this.tween = this.tweens.add({
+        targets: this.blood,
+        alpha: { value: this.alpha, duration: 1000,},
+        yoyo: false
+        });
+      
       console.log(this.alpha)
     }
   }
