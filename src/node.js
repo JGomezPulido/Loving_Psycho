@@ -16,14 +16,12 @@ export default class Node{
      * Construye un nuevo nodo.
      * @param {Nodo} node nodo del arbol de dialogos (JSON).
      */
-    constructor(node, scene){
-        
+    constructor(node, scene){       
         this.dialogs= node.dialogs;
         this.id= node.id;
         this.id_obj = node.id_obj;
         this.score = node.score;
         this.expresion = node.expresion;
-        this.escena = node.escena;
         this.options  = null;
         this.scene = scene;
         if(this.id_obj === -2){
