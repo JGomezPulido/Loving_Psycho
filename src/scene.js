@@ -44,7 +44,7 @@ import Background from "./background.js";
         this.blood.setAlpha(0);
         this.tween = this.tweens.add({targets: [] })
         this.psychoBar = new PsychoBar(this, 125, 500);
-        this.dialogManager = new DialogManager(null, null, this.tree, this.treeJson, this);
+        this.dialogManager = new DialogManager(this.tree, this.treeJson, this);
 
        
         // this.psychoBar.events.on('badEnding', this.terminalScene, this);
