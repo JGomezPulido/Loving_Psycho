@@ -5,14 +5,14 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         this.scene.events.on('optionsStart', this.showOptionDialog, this);
 
         //Creación del cuadro de diálogo
-        this.dialogeBackground = new Phaser.GameObjects.Sprite(this.scene, 0, 0, 'cuadroDialogo');
+        this.dialogeBackground = new Phaser.GameObjects.Sprite(this.scene, 0, -50, 'cuadroDialogo');
         this.dialogeBackground.setScale(w, h);
         let sizeH = (h * this.dialogeBackground.height);
         let sizeW = (w * this.dialogeBackground.width);
         this.dialogeBackground.setOrigin(0.5, 0.5);
         
         //Creación del texto
-        const SPACING = 35;
+        const SPACING = 45;
         this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - sizeW / 2 + SPACING, this.dialogeBackground.y - sizeH / 2 + SPACING / 2, '');
         this.text.setWordWrapWidth(sizeW - SPACING * 2);
         this.text.setFontStyle('bold');

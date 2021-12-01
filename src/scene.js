@@ -55,7 +55,7 @@ import Background from "./background.js";
         let upOptionsY=canvasH/2+250;
         let leftOptoinsX = canvasW/4+optionsXOffset;
         let downOptionsY=canvasH/2+300;
-        this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 + 50, 0.55, 0.2, false, this.dialogManager);
+        this.dialogeOption = new DialogBox(this, canvasW / 2, canvasH / 2 +120, 0.55, 0.2, false, this.dialogManager);
         this.optionsGroup = this.add.group();
         this.op1 = new Option(this, "hola", 0, 100, 20, 0, canvasW/4+50, upOptionsY);
         this.op2 = new Option(this, "adios", 0, 100, 20, 0, rightOptionsX, downOptionsY);
