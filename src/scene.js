@@ -40,7 +40,7 @@ import Background from "./background.js";
         this.background = new Background(this,canvasW/2, canvasH/2);
         this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
         this.blood = new Background(this,canvasW/2, canvasH/2);
-        this.blood.changeBackground('blood');
+        this.blood.changeBackground('sangre');
         this.blood.setAlpha(0);
         this.tween = this.tweens.add({targets: [] })
         this.psychoBar = new PsychoBar(this, 125, 500);

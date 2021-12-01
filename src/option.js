@@ -37,7 +37,7 @@ export default class Option extends Phaser.GameObjects.Container{
     }
 
     hoverIn(){
-        this.sprite.setTexture('selectOpcion');
+        this.sprite.setTexture('selecOpcion');
     }
     hoverOut(){
         this.sprite.setTexture('cuadroOpcion');
