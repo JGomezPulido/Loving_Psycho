@@ -3,11 +3,11 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         super(scene, x, y, 'barraPsycho');
         this.setOrigin(0.5, 1);
         this.scaleY = 0;
-        this.score = 0;
+        this._score = 0;
         this.scene.add.existing(this);
-        let rect = this.scene.add.rectangle(x,y, 64,256, 0, 0);
-        rect.setOrigin(0.5,1);
-        rect.setStrokeStyle(2, 0xFF0000);
+        this.rect = this.scene.add.rectangle(x,y, this.width, this.height, 0, 0);
+        this.rect.setOrigin(0.5,1);
+        this.rect.setStrokeStyle(2, 0xFF0000);
         
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);
@@ -18,21 +18,21 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
     }
 
     changePsychoBar(n){
-        this.score += n;
+        this._score += n;
         
-        if (this.score >= 100){
-            this.score = 100;
+        if (this._score >= 100){
+            this._score = 100;
             
         }
             
-        else if (this.score < 0){
-            this.score = 0;
+        else if (this._score < 0){
+            this._score = 0;
         } 
         
         this.tween.stop();
         this.tween = this.scene.tweens.add({
             targets: [ this ],
-            scaleY: this.score / 100,
+            scaleY: this._score / 100,
             duration: 1000,
             ease: 'Linear:',
             yoyo: false,
@@ -42,18 +42,18 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
     }
 
     barraTope(){
-        if (this.score === 100){
+        if (this._score === 100){
             this.scene.events.emit('badEnding');
         }
     }
 
     pillEffect(){
-        this.score /= 2;
+        this._score /= 2;
 
         this.tween.stop();
         this.tween = this.scene.tweens.add({
             targets: [ this ],
-            scaleY: this.score / 100,
+            scaleY: this._score / 100,
             duration: 3000,
             ease: 'Expo.Out',
             yoyo: false,
@@ -64,6 +64,10 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
 
     prematureFillBar(){
         this.tween.stop();
-        this.scaleY = this.score / 100;
+        this.scaleY = this._score / 100;
+    }
+
+    getScore(){
+        return this._score;
     }
 }

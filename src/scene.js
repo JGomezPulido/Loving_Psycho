@@ -70,7 +70,7 @@ import Background from "./background.js";
           this.optionsGroup.shuffle();
           let i  =0;
           while(i < node.options.length){
-            if(node.options[i].minScore <= this.psychoBar.score && node.options[i].maxScore >= this.psychoBar.score){
+            if(node.options[i].minScore <= this.psychoBar._score && node.options[i].maxScore >= this.psychoBar._score){
               let option = this.optionsGroup.getFirst();
               option.setActive(true);
               option.setVisible(true);
@@ -80,7 +80,7 @@ import Background from "./background.js";
             i++;
             
           }
-          console.log(this.psychoBar.score);
+          console.log(this.psychoBar._score);
         });
         this.events.on("optionClicked", (id_obj)  => {
           this.dialogeOption.setActive(false);
@@ -91,7 +91,6 @@ import Background from "./background.js";
           this.optionsGroup.children.iterate(ch => {
             this.optionsGroup.killAndHide(ch);
           })
-          console.log(this.psychoBar.score);
         });
         
         this.changeBlood();
@@ -103,11 +102,11 @@ import Background from "./background.js";
     }
 
     changeBlood(){
-      if (this.psychoBar.score <= 15){
+      if (this.psychoBar.getScore() <= 15){
         this.alpha = 0;
       }
       else{
-        this.alpha = this.psychoBar.score/100;
+        this.alpha = this.psychoBar.getScore()/100;
       }
       this.tween.stop();
       this.tween = this.tweens.add({
