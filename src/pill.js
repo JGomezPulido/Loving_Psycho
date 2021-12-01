@@ -11,6 +11,8 @@ export default class Pill extends Phaser.GameObjects.Container{
         this.sprite.setInteractive();
         this.amount = 3;
         this.text = scene.add.text(50,50,this.amount);
+        this.text.setFontSize(25);
+        this.text.setFontStyle('bold');
         this.add(this.text);
         this.bar = this.scene.psychoBar;
         this.sprite.on('pointerdown', this.takePill, this);
