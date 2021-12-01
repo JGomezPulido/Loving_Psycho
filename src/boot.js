@@ -1,3 +1,6 @@
+/**
+ * Escena para cargar los recursos del juego.
+ */
 export default class Boot extends Phaser.Scene {
 
   constructor() {
