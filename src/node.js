@@ -17,20 +17,24 @@ export default class Node{
      * @param {Nodo} node nodo del arbol de dialogos (JSON).
      */
     constructor(node, scene){       
-        this.dialogs= node.dialogs;
-        this.id= node.id;
+
+        this.dialogs = node.dialogs;
+        this.id = node.id;
         this.id_obj = node.id_obj;
         this.score = node.score;
         this.expresion = node.expresion;
         this.options  = null;
         this.scene = scene;
-        if(this.id_obj === -2){
+
+        if(this.id_obj === -2){//tiene opciones
             this.options = [];
+
             node.options.forEach(el => {
                 let op = new Option(this.scene, el.text, el.maxS, el.minS, el.score, id_obj = el.id_obj, x = x, y = y);
                 this.options.push(op);
             });
-        }else if(this.id_obj == -1){
+
+        }else if(this.id_obj == -1){//nodo terminal
             this.match = node.match;
         }
     }
