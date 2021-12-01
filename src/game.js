@@ -1,8 +1,8 @@
 import Boot from './boot.js';
 import Scene from './scene.js';
 import Menu from './menu.js';
-import DeathScene from './deathScene.js';
-import MatchScene from './matchScene.js';
+import DeathScene from './death_scene.js';
+import MatchScene from './match_scene.js';
 
 let config = {
     type: Phaser.CANVAS,
