@@ -15,7 +15,9 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         const SPACING = 35;
         this.text = new Phaser.GameObjects.Text(this.scene, this.dialogeBackground.x - sizeW / 2 + SPACING, this.dialogeBackground.y - sizeH / 2 + SPACING / 2, '');
         this.text.setWordWrapWidth(sizeW - SPACING * 2);
+        this.text.setFontStyle('bold');
         this.text.setFontSize(28);
+        this.text.setColor('#000'),
 
         //Creación del container
         this.add(this.dialogeBackground);

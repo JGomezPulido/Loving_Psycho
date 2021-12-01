@@ -3,7 +3,7 @@ export default class Option extends Phaser.GameObjects.Container{
     constructor(scene, text, maxS, minS, score, id_obj, x, y){
         let textoOption = new Phaser.GameObjects.Text(scene, 0,0,text);
         textoOption.setOrigin(0.5,0.5);
-        let sprite = scene.add.sprite(0, 0, 'cuadroDialogo');
+        let sprite = scene.add.sprite(0, 0, 'cuadroOpcion');
         super(scene, x, y, [ sprite, textoOption]);
         this.textoOption = textoOption;
         sprite.setScale(0.25,0.1);
@@ -12,6 +12,8 @@ export default class Option extends Phaser.GameObjects.Container{
         this.score = score;
         this.id_obj = id_obj;
         sprite.setInteractive();
+        sprite.on("pointerover", this.changeBox, this);
+        //sprite.on("pointerout", this.changeBox, this);
         sprite.on("pointerdown", this.clickOption, this);
         this.scene.add.existing(this);
     }
@@ -31,5 +33,10 @@ export default class Option extends Phaser.GameObjects.Container{
         this.score = optionNode.score;
         this.id_obj = optionNode.id_obj;
         console.log(this);
+    }
+
+    changeBox(){
+        this.sprite.setTexture('selectOpcion')
+        console.log("Hello")
     }
 }
