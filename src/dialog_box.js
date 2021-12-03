@@ -6,13 +6,13 @@ import DialogManager from "./dialog_manager.js";
 export default class DialogBox extends Phaser.GameObjects.Container{
   /**
    * 
-   * @param {Phaser.Scene} scene 
-   * @param {number} x 
-   * @param {number} y 
-   * @param {number} width 
-   * @param {number} height 
-   * @param {number} inter 
-   * @param {DialogManager} dialogManager 
+   * @param {Phaser.Scene} scene - Escena a la que pertenece la dialogBox. 
+   * @param {number} x - Posicion en x. 
+   * @param {number} y - Posicion en y.
+   * @param {number} width - Ancho.
+   * @param {number} height - Alto.
+   * @param {boolean} inter -  True si el cuadro de dialogo es interactivo, False si no lo es.
+   * @param {DialogManager} dialogManager - DialogManager de la escena.
    */
     constructor(scene, x, y, width, height, inter, dialogManager){
         super(scene, x, y);
@@ -27,8 +27,8 @@ export default class DialogBox extends Phaser.GameObjects.Container{
 
     /**
      * Crea el sprite del cuadro de dialogo
-     * @param {number} w 
-     * @param {number} h 
+     * @param {number} w - ancho
+     * @param {number} h - alto
      * @returns {Phser.GameObjects.Sprite} - El sprite del cuadro de dialogo.
      */
     createDialogBox(w, h){
