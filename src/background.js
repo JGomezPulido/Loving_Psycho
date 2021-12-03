@@ -3,10 +3,11 @@
  */
 export default class Background extends Phaser.GameObjects.Image{
     /**
+     * Construye un nuevo objeto Background
      * @param {Phaser.Scene} scene 
-     * @param {number} x 
-     * @param {number} y 
-     * @param {string} texture
+     * @param {number} x - posición en el eje x
+     * @param {number} y - posición en el eje y
+     * @param {string} texture - nombre de la textura a dar al objeto
      */
     constructor(scene, x, y, texture){
         super(scene, x, y, texture);

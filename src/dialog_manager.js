@@ -4,6 +4,7 @@
 export default class DialogManager {
 
     /**
+     * Construye un nuevo objeto DialogManager
      * @param {Node} node 
      * @param {Node[]} tree 
      * @param {Phaser.Scene} scene 

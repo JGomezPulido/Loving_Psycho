@@ -3,10 +3,11 @@
  */
 export default class Girl extends Phaser.GameObjects.Sprite{
     /**
+     * Construye un nuevo objeto Girl
      * @param {Phaser.Scene} scene 
      * @param {number} x - posición en eje x
      * @param {number} y - posición en eje y
-     * @param {number} h - proporción
+     * @param {number} h - proporción/ escala
      */
     constructor(scene, x, y, h){
         super(scene, x, y, 'neutral');
