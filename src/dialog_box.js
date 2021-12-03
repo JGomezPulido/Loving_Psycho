@@ -78,6 +78,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
      * @param {number} h - alto del sprite.
      */
     initContainer(inter, w, h){
+
       this._interactive = inter;
       //Creación del cuadro de diálogo
       this._dialogBackground = this.createDialogBox(w,h);
@@ -106,7 +107,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
      * Inicializa las propiedades necesarias para la escritura progresiva del texto.
      */
     initProperties(){
-      this._parrafo =  this._dialogManager.getActualNode().dialogs;
+      this._paragraph =  this._dialogManager.getActualNode().dialogs;
       this._actParrafo = '';
       this._cont = 0;
       this._delay = 0;
@@ -115,9 +116,12 @@ export default class DialogBox extends Phaser.GameObjects.Container{
 
     }
 
+    /**
+     * Escribe el diálogo que hay en el nodo actual de _dialogManager en el texto. 
+     */
     writeText(){
       if (!this._textoEscrito){              
-        this._text.setText(this._parrafo);
+        this._text.setText(this._paragraph);
         this._textoEscrito = true;
         this.scene.events.emit('writtenText');             
       }
@@ -128,11 +132,15 @@ export default class DialogBox extends Phaser.GameObjects.Container{
           this.scene.events.emit('optionsStart', this._dialogManager.getActualNode());
         }
         else{
-          this._parrafo = this._dialogManager.getActualNode().dialogs;
+          this._paragraph = this._dialogManager.getActualNode().dialogs;
         }
       }
     }
 
+    /**
+     * Oculta el cuadro de dialogo si es interactivo, en caso contrario lo resetea y escribe en su diálogo el diálogo del nodo actual.
+     * @param {Node} nextDialog - 
+     */
     showOptionDialog(nextDialog){
       if (this._interactive){
         this.setVisible(false);
@@ -140,25 +148,30 @@ export default class DialogBox extends Phaser.GameObjects.Container{
       }       
       else{
         this.reset();
-        this._parrafo = nextDialog.dialogs;
+        this._paragraph = nextDialog.dialogs;
         this.setVisible(true);
         this.setActive(true);
       }       
     }
+
+    /**
+     * Resetea las variables de estado del cuadro de diálogo y cambia su texto al del nodo actual del dialog manager.
+     */
 
     reset(){
       this._actParrafo = '';
       this._cont = 0;
       this._delay = 0;
       this._textoEscrito = false;
-      this._parrafo = this._dialogManager.getActualNode().dialogs;
+      this._paragraph = this._dialogManager.getActualNode().dialogs;
     }
 
     preUpdate(t, dt) {
+      //Escribe el texto guardado en this._paragraph progresivamente
         if (!this._textoEscrito){
             if (this._delay <= 0){
-              if (this._cont < this._parrafo.length){
-                this._actParrafo += this._parrafo[this._cont];
+              if (this._cont < this._paragraph.length){
+                this._actParrafo += this._paragraph[this._cont];
                 this._text.setText(this._actParrafo);             
                 this._cont++;
                 this._delay = this._textSpeed;
