@@ -37,9 +37,9 @@ import Background from "./background.js";
         this.tree = new Node(this.treeJson[0],this);
         console.log(this.tree);
         
-        this.background = new Background(this,canvasW/2, canvasH/2);
+        this.background = new Background(this,canvasW/2, canvasH/2, 'fondoNegro');
         this.girl = new Girl(this, canvasW / 2, canvasH / 2, canvasH);
-        this.blood = new Background(this,canvasW/2, canvasH/2);
+        this.blood = new Background(this,canvasW/2, canvasH/2, 'sangre');
         this.blood.changeBackground('sangre');
         this.blood.setAlpha(0);
         this.tween = this.tweens.add({targets: [] })
