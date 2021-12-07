@@ -41,7 +41,7 @@ export default class Scene extends Phaser.Scene {
       this.pills = new Pill(this, 125, 500);
       this.intiOptions()
       this.initBackgrounds();
-      this.configMenu = new ConfigMenu(this, 200, 200);
+      this.configMenu = new ConfigMenu(this, this._canvasW/2, this._canvasH/2);
 
       this.esc = this.input.keyboard.addKey("ESC");
 
