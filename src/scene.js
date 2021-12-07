@@ -42,6 +42,9 @@ export default class Scene extends Phaser.Scene {
       this.intiOptions()
       this.initBackgrounds();
       this.configMenu = new ConfigMenu(this, this._canvasW/2, this._canvasH/2);
+      this.jazzSound = this.sound.add('jazz');
+      this.jazzSound.play();
+      this.jazzSound.setLoop(true);
 
       this.esc = this.input.keyboard.addKey("ESC");
 

@@ -27,6 +27,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('sangre','blood.png');
     this.load.image('marionCraneMenu','marion_crane.jpg');
     this.load.image('eveKendallMenu','eve_kendall.png');
+    this.load.audio('jazz', '../audio/jazz_music.mp3')
     this.load.json('tree','../JSON/tree.json');
     this.load.json('tree2','../JSON/tree2.json');
   }
