@@ -37,30 +37,28 @@ export default class Menu extends Phaser.Scene {
     let canvasH = canvas.height;
 
     this.add.text(canvasW / 2, canvasH * 0.05, 'Loving Psycho').setOrigin(0.5, 0).setFontSize(80);
-    let y = 0.375;
-    this.buttonMarionCrane = new DateButton(this,canvasW * 0.25,canvasH * y, 'marionCraneMenu',this.cache.json.get("tree"));
-    this.buttonEveKendall = new DateButton(this,canvasW * 0.75,canvasH * y, 'eveKendallMenu',this.cache.json.get("tree2"));
-    this.dificil = false;
-    y = 0.65;
-    this.add.text(canvasW / 2, canvasH * y, '< Dificultad >').setOrigin(0.5, 0).setFontSize(30).setOrigin(0.5, 0.6).setFontStyle('bold');
-    this.buttonNormal = new DifficultyButton(this, canvasW * 0.275, canvasH * y, "Normal", false);
-    this.buttonDificil = new DifficultyButton(this, canvasW * 0.725, canvasH * y, "Difícil", true);
-    this.events.emit('difficultyButtonClicked', this.dificil);
-    this.configButton = new ConfigButton(this, canvasW / 2, canvasH * 0.85);
-    
+
+    this.buttonMarionCrane = new DateButton(this,canvasW * 0.25,canvasH / 3, 'marionCraneMenu',this.cache.json.get("tree"));
+    this.buttonEveKendall = new DateButton(this,canvasW * 0.75,canvasH / 3, 'eveKendallMenu',this.cache.json.get("tree2"));
+
+    this.add.text(canvasW / 2, canvasH / 3 * 2, '< Dificultad >').setOrigin(0.5, 0.5).setFontSize(30).setOrigin(0.5, 0.5).setFontStyle('bold');
+    this.buttonNormal = new DifficultyButton(this, canvasW / 4, canvasH / 3 * 2, "Normal", false);
+    this.buttonDificil = new DifficultyButton(this, canvasW * 3 / 4, canvasH / 3 * 2, "Difícil", true);
+
+    this.configButton = new ConfigButton(this, canvasW / 2, canvasH / 6 * 5);
     
 
-
-
+    this.hard = false;
+    this.events.emit('difficultyButtonClicked', this.hard);
   }
 
   startScene(tree){
-    this.scene.start('Scene', { cita: tree, dificultad: this.dificil});
+    this.scene.start('Scene', { cita: tree, dificultad: this.hard});
   }
 
-  setDifficulty(b){
-    this.dificil = b;
-    console.log("Dificil: " + b);
+  setDifficulty(isHard){
+    this.hard = isHard;
+    console.log("hard: " + isHard);
   }
 
 }
