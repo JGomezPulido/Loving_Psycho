@@ -2,11 +2,10 @@ import Button from "./button.js";
 
 export default class DifficultyButton extends Button {
     constructor(scene, x, y, text, difficulty){
-        super(scene, x, y, 'boton', text);
+        super(scene, x, y, 'boton', text,0.8,0.8);
         this.scene.events.on('difficultyButtonClicked', this.changeColor, this);
 
-        this.setScale(0.8, 0.8);
-        this.text.setOrigin(0.5, 0.6).setFontSize(40);
+        this.text.setFontSize(40);
 
         this.sprite.on("pointerdown", () =>{
             this.scene.setDifficulty(difficulty);

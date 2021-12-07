@@ -102,8 +102,8 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         return this._score;
     }
 
-    setPasiveFill(b){
-        this.pasiveFill = b;      
+    setPasiveFill(pasFill){
+        this.pasiveFill = pasFill;      
     }
 
     resetPasiveFillCont(){
