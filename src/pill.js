@@ -58,6 +58,7 @@ export default class Pill extends Phaser.GameObjects.Container{
     takePill(){
         if(this._amount>0){
             this._bar.pillEffect();
+            this._bar.resetPasiveFillCont();
             this._amount--;
             this._text.text = this._amount;
         }else{

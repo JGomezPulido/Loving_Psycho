@@ -17,20 +17,24 @@ export default class Scene extends Phaser.Scene {
       super({ key: 'Scene' });
     }
 
+    init(datos){
+      this.treeJson = datos.cita;
+      this.dificil = datos.dificultad;
+    }
+
     create(){
 
       this._canvasW = document.getElementById("juego").width;
       this._canvasH = document.getElementById("juego").height;
 
       //Obtenemos el árbol de nodos
-      this.treeJson = this.cache.json.get("tree");
       this.tree = new Node(this.treeJson[0],this);
       
       //Creamos los objetos del juego
       this.dialogManager = new DialogManager(this.tree, this.treeJson, this);
       this.girl = new Girl(this, this._canvasW / 2, this._canvasH / 2, this._canvasH);
       this.tween = this.tweens.add({targets: [] })
-      this.psychoBar = new PsychoBar(this, 125, 500);    
+      this.psychoBar = new PsychoBar(this, 125, 500, this.dificil);    
       this.dialoge = new DialogBox(this, this._canvasW / 2, this._canvasH, 0.5, 0.5, true, this.dialogManager);
       this.dialogeOption = new DialogBox(this, this._canvasW / 2, this._canvasH / 2 + 120, 0.55, 0.2, false, this.dialogManager);
       this.pills = new Pill(this, 125, 500);
@@ -109,6 +113,8 @@ export default class Scene extends Phaser.Scene {
      * @param {number} id_obj - id del nodo objetivo
      */
     optionClicked(id_obj){
+        this.psychoBar.setPasiveFill(false);
+
         this.dialogeOption.setActive(false);
         this.dialogeOption.setVisible(false);
         this.dialoge.reset();
@@ -125,6 +131,11 @@ export default class Scene extends Phaser.Scene {
        * @param {Node} node 
        */
       optionsStart(node){
+        if (this.dificil){
+          this.psychoBar.setPasiveFill(true);
+          this.psychoBar.resetPasiveFillCont();
+        }
+          
 
         this.optionsGroup.shuffle();
         let i = 0;

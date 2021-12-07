@@ -8,15 +8,9 @@ export default class Button extends Phaser.GameObjects.Sprite {
    * @param {number} x 
    * @param {number} y 
    */
-  constructor(scene, x, y) {
-
-    super(scene, x, y, 'boton');
+  constructor(scene, x, y, sprite) {
+    super(scene, x, y, sprite);
 
     this.scene.add.existing(this).setInteractive();
-
-    this.on("pointerdown", () =>{
-      this.scene.spawn()
-      this.off("pointerdown");
-    });
   }
 }

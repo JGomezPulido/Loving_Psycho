@@ -1,0 +1,20 @@
+[
+    {
+        "id":0,
+        "id_obj":1,
+        "score": 50,
+        "expresion": "neutral",
+        "dialogs":"sexoooooooooooooooooooo",
+        "options": null
+    },
+    {
+        "id":1,
+        "id_obj":-1,
+        "score": 60,
+        "expresion": "neutral",
+        "dialogs":"Hola (tómate una pastilla para bajar tu instinto asesino)",
+        "options": null,
+        "match": 50
+    }
+]
+

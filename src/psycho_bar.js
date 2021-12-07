@@ -18,6 +18,11 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         this._rect.setOrigin(0.5,1);
         this._rect.setStrokeStyle(2, 0xFF0000);
         
+        this.pasiveFill = false;
+        this.pasiveIncr = 0.05;
+        this.pasiveFillDelay = 5000;
+        this.pasiveFillCont = 0;
+        
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);
         this.scene.events.on('writtenText', this.prematureFillBar, this);
@@ -58,7 +63,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
      * Método que comprueba si la barra ha llegado al tope y lanza el final malo
      */
     fullBar(){
-        if (this._score === 100){
+        if (this._score >= 100){
             this.scene.events.emit('badEnding');
         }
     }
@@ -95,5 +100,26 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
      */
     getScore(){
         return this._score;
+    }
+
+    setPasiveFill(b){
+        this.pasiveFill = b;      
+    }
+
+    resetPasiveFillCont(){
+        this.pasiveFillCont = 0;
+    }
+
+    preUpdate(t, dt) {
+        if (this.pasiveFill){
+            if (this.pasiveFillCont < this.pasiveFillDelay){
+                this.pasiveFillCont += dt;
+            }
+            else{
+                this._score += this.pasiveIncr;
+                this.scaleY = this._score / 100;
+                this.fullBar();
+            }           
+        }
     }
 }
