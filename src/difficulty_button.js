@@ -11,7 +11,6 @@ export default class DifficultyButton extends Button {
         this.on("pointerdown", () =>{
             this.scene.setDifficulty(difficulty);
             this.scene.events.emit('difficultyButtonClicked', difficulty);
-            this.scene.spawnHearts(x, y);
         });
         this.dif = difficulty;
     }

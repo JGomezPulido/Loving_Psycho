@@ -1,5 +1,4 @@
 import ConfigButton from './config_button.js';
-import Corazon from './corazon.js';
 import DateButton from './date_button.js';
 import DifficultyButton from './difficulty_button.js';
 
@@ -53,18 +52,6 @@ export default class Menu extends Phaser.Scene {
 
 
 
-  }
-
-
-
-
-  spawnHearts(x, y) {
-    let hearts = [];
-    let heartNumber = 10;
-    for(let i = 0; i<heartNumber;i++){
-      let mov = new Phaser.Math.Vector2(30*Math.pow(-1,i)*(heartNumber/(i+1)),50);
-      hearts.push(new Corazon(this, mov, x, y));
-    }
   }
 
   startScene(tree){
