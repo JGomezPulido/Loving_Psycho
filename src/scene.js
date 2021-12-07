@@ -6,6 +6,7 @@ import PsychoBar from "./psycho_bar.js";
 import Option from "./option.js";
 import Girl from "./girl.js";
 import Background from "./background.js";
+import ConfigMenu from "./config_menu.js";
 
 /**
  * Representa la escena principal del juego
@@ -40,12 +41,16 @@ export default class Scene extends Phaser.Scene {
       this.pills = new Pill(this, 125, 500);
       this.intiOptions()
       this.initBackgrounds();
+      this.configMenu = new ConfigMenu(this, 200, 200);
+
+      this.esc = this.input.keyboard.addKey("ESC");
 
       //Suscripción a eventos
       this.events.on('badEnding', this.terminalScene, this);
       this.events.on("optionsStart", this.optionsStart, this);
       this.events.on("optionClicked", this.optionClicked, this);
       this.events.on('changeBlood', this.changeBlood, this);
+      this.esc.on('down', this.showMenu, this);
     }
 
     /**
@@ -149,5 +154,18 @@ export default class Scene extends Phaser.Scene {
           }
           i++;
         } 
+      }
+
+      showMenu(){
+        if(this.configMenu.active) {
+          this.configMenu.setActive(false);
+          this.configMenu.setVisible(false);
+          
+        }
+        else {
+          this.configMenu.setActive(true);
+          this.configMenu.setVisible(true);
+        
+        }
       }
 }
