@@ -29,7 +29,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
      * Crea el sprite del cuadro de dialogo
      * @param {number} w - ancho
      * @param {number} h - alto
-     * @returns {Phser.GameObjects.Sprite} - El sprite del cuadro de dialogo.
+     * @returns {Phaser.GameObjects.Sprite} - El sprite del cuadro de dialogo.
      */
     createDialogBox(w, h){
       let dialogeBackground = new Phaser.GameObjects.Sprite(this.scene, 0, -50, 'cuadroDialogo');
