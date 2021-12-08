@@ -60,6 +60,7 @@ export default class Scene extends Phaser.Scene {
      * Método que cambia a la escena de muerte
      */
     terminalScene(){
+      this.jazzSound.stop();
       this.scene.start('deathScene');
     }
 
