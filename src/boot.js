@@ -30,6 +30,7 @@ export default class Boot extends Phaser.Scene {
     this.load.audio('jazz', '../audio/jazz_music.mp3')
     this.load.audio('stab', '../audio/stab_sound.mp3')
     this.load.audio('scream', '../audio/scream_sound.mp3')
+    this.load.audio('menu', '../audio/menu_music.mp3')
     this.load.json('tree','../JSON/tree.json');
     this.load.json('tree2','../JSON/tree2.json');
   }
