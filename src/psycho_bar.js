@@ -20,7 +20,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         
         this.pasiveFill = false;
         this.pasiveIncr = 0.05;
-        this.pasiveFillDelay = 5000;
+        this._pasiveFillDelay = 5000;
         this.pasiveFillCont = 0;
         
 
@@ -102,21 +102,28 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         return this._score;
     }
 
+    /**
+     * Método que activa y desactiva la subida pasiva de la barra
+     * @param {boolean} pasFill 
+     */
     setPasiveFill(pasFill){
         this.pasiveFill = pasFill;      
     }
 
+    /**
+     * Método que restea el contador para que se inicie
+     */
     resetPasiveFillCont(){
         this.pasiveFillCont = 0;
     }
 
     preUpdate(t, dt) {
         if (this.pasiveFill){
-            if (this.pasiveFillCont < this.pasiveFillDelay){
+            if (this.pasiveFillCont < this._pasiveFillDelay){
                 this.pasiveFillCont += dt;
             }
             else{
-                this._score += this.pasiveIncr;
+                this._score += dt / 1000;
                 this.scaleY = this._score / 100;
                 this.fullBar();
             }           

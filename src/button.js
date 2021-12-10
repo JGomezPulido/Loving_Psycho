@@ -6,10 +6,10 @@ export default class Button extends Phaser.GameObjects.Container {
   /**
    * 
    * @param {Phaser.Scene} scene 
-   * @param {number} x 
-   * @param {number} y 
-   * @param {Phaser.GameObjects.Sprite} sprite 
-   * @param {Phaser.GameObjects.Text} text 
+   * @param {number} x - posición en el eje x
+   * @param {number} y - posición en el eje x
+   * @param {Phaser.GameObjects.Sprite} sprite - sprite del boton 
+   * @param {Phaser.GameObjects.Text} text - texto del boton
    */
   constructor(scene, x, y, sprite, text, w, h) {
     super(scene, x, y);

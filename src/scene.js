@@ -119,6 +119,7 @@ export default class Scene extends Phaser.Scene {
 
     /**
      * Método que desactiva las opciones y pasa al nodo objetivo al pulsar una opción
+     * También avisa a la barra de instinto asesino de que se deje de llenar pasivamente
      * @param {number} id_obj - id del nodo objetivo
      */
     optionClicked(id_obj){
@@ -137,6 +138,7 @@ export default class Scene extends Phaser.Scene {
 
       /**
        * Método que reorganiza los nodos aleatoriamente y los habilita si cumplen los requisitos de puntuación de la barra de instinto asesino
+       * * También avisa a la barra de instinto asesino de que se empiece a llenar pasivamente
        * @param {Node} node 
        */
       optionsStart(node){
