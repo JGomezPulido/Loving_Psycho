@@ -10,7 +10,7 @@
     {
         "id":1,
         "id_obj":2,
-        "score": 70,
+        "score": 200,
         "expresion": "neutral",
         "dialogs":"Hola (tómate una pastilla para bajar tu instinto asesino)",
         "options": null
@@ -18,7 +18,7 @@
     {
         "id":2,
         "id_obj":-2,
-        "score": 0,
+        "score": 40,
         "expresion": "feliz",
         "dialogs":"¿A qué te dedicas?",
         "options":[{
@@ -139,7 +139,7 @@
     {
         "id":8,
         "id_obj":11,
-        "score": 10,
+        "score": 30,
         "expresion": "sonrojada",
         "dialogs":"Oh, qué mono",
         "options": null

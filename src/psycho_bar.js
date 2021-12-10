@@ -26,9 +26,10 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
 
         this.scene.events.on('changePsychoBar', this.changePsychoBar, this);
         this.scene.events.on('writtenText', this.prematureFillBar, this);
-        this.scene.events.on('dialogBoxClicked', this.fullBar, this);
+        //this.scene.events.on('dialogBoxClicked', this.fullBar, this);
         this._tween = this.scene.tweens.add({
-            targets: [] })
+            targets: [] });
+        
     }
 
     /**
@@ -48,14 +49,20 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         } 
         
         this._tween.stop();
-        this._tween = this.scene.tweens.add({
-            targets: [ this ],
-            scaleY: this._score / 100,
-            duration: 1000,
-            ease: 'Linear:',
-            yoyo: false,
-            repeat: 0
-        });
+        if (n !== 0){
+            this._tween = this.scene.tweens.add({
+                targets: [ this ],
+                scaleY: this._score / 100,
+                duration: 1000,
+                ease: 'Linear:',
+                yoyo: false,
+                repeat: 0
+            });
+            this._tween.on('complete', () =>{
+                this.fullBar();
+            });
+        }
+        
         this.scene.events.emit('changeBlood');
     }
 
@@ -92,6 +99,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
     prematureFillBar(){
         this._tween.stop();
         this._scaleY = this._score / 100;
+        this.fullBar();
     }
 
     /**
@@ -120,10 +128,10 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
     preUpdate(t, dt) {
         if (this.pasiveFill){
             if (this.pasiveFillCont < this._pasiveFillDelay){
-                this.pasiveFillCont += dt;
+                this.pasiveFillCont += dt / 1000;
             }
             else{
-                this._score += dt / 1000;
+                this._score += dt ;
                 this.scaleY = this._score / 100;
                 this.fullBar();
             }           
