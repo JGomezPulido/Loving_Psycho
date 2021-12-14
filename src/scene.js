@@ -42,7 +42,7 @@ export default class Scene extends Phaser.Scene {
       this.pills = new Pill(this, 125, 500);
       this.intiOptions()
       this.initBlood();
-      this.configMenu = new ConfigMenu(this, this._canvasW/2, this._canvasH/2);
+      //this.configMenu = new ConfigMenu(this, this._canvasW/2, this._canvasH/2);
       this.jazzSound = this.sound.add('jazz');
       this.jazzSound.play();
       this.jazzSound.setLoop(true);
@@ -161,15 +161,12 @@ export default class Scene extends Phaser.Scene {
       }
 
       showMenu(){
-        if(this.configMenu.active) {
-          this.configMenu.setActive(false);
-          this.configMenu.setVisible(false);
-          
-        }
-        else {
-          this.configMenu.setActive(true);
-          this.configMenu.setVisible(true);
+        console.log(this.scene.isPaused("Scene"));
+        this.scene.run("config");
+        //this.scene.moveAbove("config");
+        this.scene.pause("Scene");
+        this.scene.setVisible(true, "config");
         
-        }
+         
       }
 }

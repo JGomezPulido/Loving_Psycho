@@ -3,6 +3,8 @@ import Scene from './scene.js';
 import Menu from './menu.js';
 import DeathScene from './death_scene.js';
 import MatchScene from './match_scene.js';
+import ConfigMenu from './config_menu.js';
+
 
 let config = {
     type: Phaser.CANVAS,
@@ -14,7 +16,7 @@ let config = {
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
     },
     pixelArt: true,
-    scene: [Boot, Menu, Scene, DeathScene, MatchScene]
+    scene: [Boot, Menu, Scene, DeathScene, MatchScene, ConfigMenu]
 };
 
 new Phaser.Game(config);
