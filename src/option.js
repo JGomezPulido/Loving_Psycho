@@ -29,10 +29,10 @@ export default class Option extends Phaser.GameObjects.Container{
         this._score = score;
         this._id_obj = id_obj;
 
-        sprite.setInteractive();
-        sprite.on("pointerover", this.hoverIn, this);
-        sprite.on("pointerout", this.hoverOut, this);
-        sprite.on("pointerdown", this.clickOption, this);
+        this._sprite.setInteractive();
+        this._sprite.on("pointerover", this.hoverIn, this);
+        this._sprite.on("pointerout", this.hoverOut, this);
+        this._sprite.on("pointerdown", this.clickOption, this);
 
         this.scene.add.existing(this);
     }
