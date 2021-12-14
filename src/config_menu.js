@@ -1,8 +1,8 @@
 import ConfigButton from "./config_button.js";
 
-export default class ConfigMenu extends Phaser.Scene{
+export default class PauseMenu extends Phaser.Scene{
     constructor(){
-        super({key: "config"});
+        super({key: "pause"});
        
         
 
@@ -22,9 +22,9 @@ export default class ConfigMenu extends Phaser.Scene{
         console.log(this.scene.isPaused("Scene"));
         this.scene.run("Scene");
         //this.scene.bringToTop("Scene");
-        this.scene.setVisible(false,"config");
+        this.scene.setVisible(false,"pause");
        
         
-        this.scene.pause("config");
+        this.scene.pause("pause");
     }
 }

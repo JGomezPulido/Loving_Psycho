@@ -6,7 +6,7 @@ import PsychoBar from "./psycho_bar.js";
 import Option from "./option.js";
 import Girl from "./girl.js";
 import Background from "./background.js";
-import ConfigMenu from "./config_menu.js";
+import PauseMenu from "./config_menu.js";
 
 /**
  * Representa la escena principal del juego
@@ -162,11 +162,8 @@ export default class Scene extends Phaser.Scene {
 
       showMenu(){
         console.log(this.scene.isPaused("Scene"));
-        this.scene.run("config");
-        //this.scene.moveAbove("config");
+        this.scene.run("pause");
         this.scene.pause("Scene");
-        this.scene.setVisible(true, "config");
-        
-         
+        this.scene.setVisible(true, "pause");         
       }
 }
