@@ -6,7 +6,7 @@ import PsychoBar from "./psycho_bar.js";
 import Option from "./option.js";
 import Girl from "./girl.js";
 import Background from "./background.js";
-import PauseMenu from "./config_menu.js";
+import PauseMenu from "./pause_menu.js";
 
 /**
  * Representa la escena principal del juego
