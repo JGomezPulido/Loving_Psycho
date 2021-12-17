@@ -17,7 +17,8 @@ export default class DialogManager {
         this._scene.events.emit('changePsychoBar', this.getActualNode().score);
         this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
         this._scene.events.on('optionClicked', this.changeNode, this)
-        this._scene.events.on('dialogBoxClicked', this.changeNode, this)       
+        this._scene.events.on('dialogBoxClicked', this.changeNode, this)     
+ 
     }
 
     /**

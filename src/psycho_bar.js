@@ -29,6 +29,11 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
         //this.scene.events.on('dialogBoxClicked', this.fullBar, this);
         this._tween = this.scene.tweens.add({
             targets: [] });
+
+        this.on("destroy",()=>{
+            this.scene.events.off('changePsychoBar');
+            this.scene.events.off('writtenText');
+        });
         
     }
 
@@ -136,5 +141,6 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
                 this.fullBar();
             }           
         }
+        
     }
 }

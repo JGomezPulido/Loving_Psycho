@@ -55,6 +55,13 @@ export default class Scene extends Phaser.Scene {
       this.events.on("optionClicked", this.optionClicked, this);
       this.events.on('changeBlood', this.changeBlood, this);
       this.esc.on('down', this.showMenu, this);
+
+      this.events.on("shutdown", ()=>{
+        this.events.off('badEnding');
+        this.events.off("optionsStart");
+        this.events.off("optionClicked");
+        this.events.off('changeBlood');
+      } )
     }
 
     /**

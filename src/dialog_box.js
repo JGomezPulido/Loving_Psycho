@@ -23,6 +23,10 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         
         //Variables para gestionar la escritura del diálogo
         this.initProperties();
+
+        this.on("destroy",()=>{
+          this.scene.events.off('optionsStart');
+      });
     }
 
     /**

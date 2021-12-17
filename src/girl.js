@@ -14,6 +14,11 @@ export default class Girl extends Phaser.GameObjects.Sprite{
         this.setScale(h / this.height, h / this.height);
         this.scene.events.on('changeExpresion', this.changeGirlFace, this);
         this.scene.add.existing(this);
+
+        this.on("destroy",()=>{
+            this.scene.events.off('changeExpresion');
+
+        });
     }
         
     /**

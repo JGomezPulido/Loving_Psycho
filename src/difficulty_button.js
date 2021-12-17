@@ -22,6 +22,10 @@ export default class DifficultyButton extends Button {
             this.scene.events.emit('difficultyButtonClicked', difficulty);
         });
         this.dif = difficulty;
+
+        this.on("destroy",()=>{
+            this.scene.events.off('difficultyButtonClicked')
+        });
     }
 
     /**

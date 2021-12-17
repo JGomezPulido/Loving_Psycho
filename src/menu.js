@@ -42,6 +42,7 @@ export default class Menu extends Phaser.Scene {
   startScene(tree){
     this.menuMusic.stop();
     this.scene.start('Scene', { cita: tree, dificultad: this.hard});
+    this.scene.stop("menu");
   }
 
   setDifficulty(isHard){
