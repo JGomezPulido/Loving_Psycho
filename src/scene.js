@@ -140,7 +140,7 @@ export default class Scene extends Phaser.Scene {
        * @param {Node} node 
        */
       optionsStart(node){
-        if (this.dificil){
+        if (this.dificil){        
           this.psychoBar.setPasiveFill(true);
           this.psychoBar.resetPasiveFillCont();
         }

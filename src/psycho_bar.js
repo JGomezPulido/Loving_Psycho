@@ -128,10 +128,11 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
     preUpdate(t, dt) {
         if (this.pasiveFill){
             if (this.pasiveFillCont < this._pasiveFillDelay){
-                this.pasiveFillCont += dt / 1000;
+                this.pasiveFillCont += dt;
+                console.log('a');
             }
             else{
-                this._score += dt ;
+                this._score += dt / 1000;
                 this.scaleY = this._score / 100;
                 this.fullBar();
             }           
