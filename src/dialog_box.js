@@ -27,6 +27,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
 
         this.on("destroy",()=>{
           this.scene.events.off('optionsStart');
+          this.scene.events.off('changeDialogBox');
       });
     }
 
