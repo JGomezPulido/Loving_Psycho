@@ -35,6 +35,7 @@ export default class DialogManager {
             this._actNode = this._tree[i];
             this._scene.events.emit('changePsychoBar', this.getActualNode().score);
             this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
+            this._scene.events.emit('changeDialogBox', this.getActualNode().speaker);
         }
     }
 
