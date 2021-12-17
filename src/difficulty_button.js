@@ -17,6 +17,7 @@ export default class DifficultyButton extends Button {
 
         this.text.setFontSize(40);
         this.text.setColor('#000');
+        this.text.setFontStyle('bold');
         
         this.sprite.on("pointerdown", () =>{
             this.scene.setDifficulty(difficulty);
