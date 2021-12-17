@@ -18,6 +18,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
         super(scene, x, y);
         
         this.scene.events.on('optionsStart', this.showOptionDialog, this);
+        this.scene.events.on('changeDialogBox', this.changeDialogeBox, this);
         this.initContainer(inter, width, height);
         this._dialogManager = dialogManager;
         
@@ -36,7 +37,7 @@ export default class DialogBox extends Phaser.GameObjects.Container{
      * @returns {Phaser.GameObjects.Sprite} - El sprite del cuadro de dialogo.
      */
     createDialogBox(w, h){
-      let dialogBackground = new Phaser.GameObjects.Sprite(this.scene, 0, -50, 'cuadroDialogo');
+      let dialogBackground = new Phaser.GameObjects.Sprite(this.scene, 0, -50, 'F');
       dialogBackground.setScale(w, h);
       dialogBackground.setOrigin(0.5, 0.5);
       return dialogBackground
@@ -168,6 +169,10 @@ export default class DialogBox extends Phaser.GameObjects.Container{
       this._delay = 0;
       this._textoEscrito = false;
       this._paragraph = this._dialogManager.getActualNode().dialogs;
+    }
+
+    changeDialogeBox(speaker){
+      this._dialogBackground.setTexture(speaker);
     }
 
     preUpdate(t, dt) {

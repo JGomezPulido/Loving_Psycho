@@ -14,8 +14,8 @@ export default class DialogManager {
         this._scene = scene;
         this._tree = tree;
        
-        this._scene.events.emit('changePsychoBar', this.getActualNode().score);
-        this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
+        // this._scene.events.emit('changePsychoBar', this.getActualNode().score);
+        // this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
         this._scene.events.on('optionClicked', this.changeNode, this)
         this._scene.events.on('dialogBoxClicked', this.changeNode, this)     
  
@@ -34,8 +34,10 @@ export default class DialogManager {
             let i=0;
             while(i<this._tree.length && this._tree[i].id !== id_obj){i++}
             this._actNode = this._tree[i];
+            //console.log(this.getActualNode());
             this._scene.events.emit('changePsychoBar', this.getActualNode().score);
             this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
+            this._scene.events.emit('changeDialogBox', this.getActualNode().speaker);
         }
     }
 

@@ -4,6 +4,7 @@
         "id_obj":1,
         "score": 50,
         "expresion": "neutral",
+        "speaker":"F",
         "dialogs":"sexoooooooooooooooooooo",
         "options": null
     },
@@ -12,6 +13,7 @@
         "id_obj":-1,
         "score": 60,
         "expresion": "neutral",
+        "speaker":"M",
         "dialogs":"Hola (tómate una pastilla para bajar tu instinto asesino)",
         "options": null,
         "match": 50
