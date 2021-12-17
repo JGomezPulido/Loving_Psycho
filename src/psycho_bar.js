@@ -38,30 +38,24 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite{
      */
     changePsychoBar(n){
         this._score += n;
-        
-        if (this._score >= 100){
-            this._score = 100;
-            
-        }
-            
-        else if (this._score < 0){
+               
+        if (this._score >= 100)
+            this._score = 100;           
+        else if (this._score < 0)
             this._score = 0;
-        } 
-        
+      
         this._tween.stop();
-        if (n !== 0){
-            this._tween = this.scene.tweens.add({
-                targets: [ this ],
-                scaleY: this._score / 100,
-                duration: 1000,
-                ease: 'Linear:',
-                yoyo: false,
-                repeat: 0
-            });
-            this._tween.on('complete', () =>{
-                this.fullBar();
-            });
-        }
+        this._tween = this.scene.tweens.add({
+            targets: [ this ],
+            scaleY: this._score / 100,
+            duration: 1000,
+            ease: 'Linear:',
+            yoyo: false,
+            repeat: 0
+        });
+        this._tween.once('complete', () =>{
+            this.fullBar();
+        });
         
         this.scene.events.emit('changeBlood');
     }
