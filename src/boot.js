@@ -10,7 +10,8 @@ export default class Boot extends Phaser.Scene {
   preload() {
     this.load.setPath('assets/sprites/');
     this.load.image('pastilla', 'pasti.png');
-    this.load.image('boton', 'button.png');
+    this.load.image('boton', 'heart_button.png');
+    this.load.image('botonCuchillo', 'heart_button_stabbed.png');
     this.load.image('marion','marion_crane_demo.jpg');
     this.load.image('F','cuadro_dialogo_rosa.png');
     this.load.image('M','cuadro_dialogo_azul.png');
