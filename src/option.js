@@ -1,7 +1,7 @@
 /**
  * Representa una opción de un nodo
  */
-export default class Option extends Phaser.GameObjects.Container{
+export default class Option extends Phaser.GameObjects.Container {
 
     /**
      * Construye una nueva opción
@@ -14,16 +14,16 @@ export default class Option extends Phaser.GameObjects.Container{
      * @param {number} x - posición en el eje x
      * @param {number} y - posición en el eje y
      */
-    constructor(scene, text, maxS, minS, score, id_obj, x, y){
-        let textoOption = new Phaser.GameObjects.Text(scene, 0,0,text);
-        textoOption.setOrigin(0.5,0.5);
+    constructor(scene, text, maxS, minS, score, id_obj, x, y) {
+        let textoOption = new Phaser.GameObjects.Text(scene, 0, 0, text);
+        textoOption.setOrigin(0.5, 0.5);
         let sprite = scene.add.sprite(0, 0, 'cuadroOpcion');
 
-        super(scene, x, y, [ sprite, textoOption]);
-        
+        super(scene, x, y, [sprite, textoOption]);
+
         this._textoOption = textoOption;
         this._sprite = sprite;
-        this._sprite.setScale(0.25,0.1);
+        this._sprite.setScale(0.25, 0.1);
         this._maxScore = maxS;
         this._minScore = minS;
         this._score = score;
@@ -40,7 +40,7 @@ export default class Option extends Phaser.GameObjects.Container{
     /**
      * Este metodo se encarga de emitir eventos cuando se elige una opción
      */
-    clickOption(){
+    clickOption() {
         this.scene.events.emit('optionClicked', this._id_obj);
         this.scene.events.emit('changePsychoBar', this._score);
 
@@ -50,7 +50,7 @@ export default class Option extends Phaser.GameObjects.Container{
      * Este método le da la información a la opción sobre el dialogo a representar
      * @param {object} optionNode 
      */
-    setOption(optionNode){
+    setOption(optionNode) {
         this._textoOption.setText(optionNode.text);
         this._text = optionNode.text;
         this._minS = optionNode.minS;
@@ -62,13 +62,13 @@ export default class Option extends Phaser.GameObjects.Container{
     /**
      * Cambia el sprite del cuadro de dialogo de la opcion cuando nos ponemos encima de ella
      */
-    hoverIn(){
+    hoverIn() {
         this._sprite.setTexture('selecOpcion');
     }
     /**
      * Cambia el sprite del cuadro de dialogo de la opcion cuando salimos de encima de ella
      */
-    hoverOut(){
+    hoverOut() {
         this._sprite.setTexture('cuadroOpcion');
     }
 }

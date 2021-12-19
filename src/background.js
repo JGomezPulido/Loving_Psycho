@@ -1,7 +1,7 @@
 /**
  * Representa el fondo de la cita.
  */
-export default class Background extends Phaser.GameObjects.Image{
+export default class Background extends Phaser.GameObjects.Image {
     /**
      * Construye un nuevo objeto Background
      * @param {Phaser.Scene} scene 
@@ -9,16 +9,16 @@ export default class Background extends Phaser.GameObjects.Image{
      * @param {number} y - posición en el eje y
      * @param {string} texture - nombre de la textura a dar al objeto
      */
-    constructor(scene, x, y, texture){
+    constructor(scene, x, y, texture) {
         super(scene, x, y, texture);
         this.scene.add.existing(this);
     }
-    
+
     /**
      * Este método sirve para cambiar la imagen del Background.
      * @param {string} background - El nuevo fondo al que hay que cambiar. 
      */
-    changeBackground(background){
+    changeBackground(background) {
         this.setTexture(background);
     }
 }
