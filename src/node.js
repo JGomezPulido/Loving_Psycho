@@ -24,6 +24,7 @@ export default class Node {
         this.score = node.score;
         this.speaker = node.speaker;
         this.expresion = node.expresion;
+        this.location = node.location;
         this.options = null;
         this.scene = scene;
 

@@ -34,12 +34,12 @@ export default class Scene extends Phaser.Scene {
 
     //Creamos los objetos del juego
     this.dialogManager = new DialogManager(this.tree, this.treeJson, this);
-    this.background = new Background(this, this._canvasW / 2, this._canvasH / 2, 'motel');
+    this.background = new Background(this, this._canvasW / 2, this._canvasH / 2, this.dialogManager.getActualNode().location);
     this.girl = new Girl(this, this._canvasW / 2, this._canvasH / 2, this._canvasH);
     this.tween = this.tweens.add({
       targets: []
     })
-    this.psychoBar = new PsychoBar(this, 125, 500, this.dificil);
+    this.psychoBar = new PsychoBar(this, 125, 500);
     this.dialoge = new DialogBox(this, this._canvasW / 2, this._canvasH, 0.5, 0.5, true, this.dialogManager);
     this.dialogeOption = new DialogBox(this, this._canvasW / 2, this._canvasH / 2 + 120, 0.55, 0.2, false, this.dialogManager);
     this.pills = new Pill(this, 125, 500);

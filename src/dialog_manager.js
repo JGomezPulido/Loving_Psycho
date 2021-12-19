@@ -14,12 +14,8 @@ export default class DialogManager {
         this._scene = scene;
         this._tree = tree;
 
-        // this._scene.events.emit('changePsychoBar', this.getActualNode().score);
-        // this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
         this._scene.events.on('optionClicked', this.changeNode, this)
         this._scene.events.on('dialogBoxClicked', this.changeNode, this)
-
-        //parece que aqui no hace falta hacer off
     }
 
     /**
@@ -37,11 +33,13 @@ export default class DialogManager {
             while (i < this._tree.length && this._tree[i].id !== id_obj) {
                 i++
             }
-            this._actNode = this._tree[i];
-            //console.log(this.getActualNode());
+            this._actNode = this._tree[i];         
             this._scene.events.emit('changePsychoBar', this.getActualNode().score);
             this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
             this._scene.events.emit('changeDialogBox', this.getActualNode().speaker);
+            let location = this.getActualNode().location;
+            if (location !== null)
+                this._scene.events.emit('changeLocation', location);
         }
     }
 
