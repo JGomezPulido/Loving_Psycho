@@ -533,7 +533,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"¡Hay Dios, qué hago aquí!",  
+        "dialogs":"Vamos entre, siéntese",  
         "location": null,     
         "options": null
     },
@@ -992,5 +992,483 @@
         "options": null,
         "match": 0
     },
+
+
+    {
+        "id": 4,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"No se preocupe, ¿es ella así con usted siempre?",
+        "location": null,   
+        "options":[{
+            "text":"No, de normal es una persona encantadora",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 7
+        },
+        {
+            "text":"Siempre se pone así cuando hay visita",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 7
+        }
+    ]
+    },
+
+    {
+        "id": 9,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Bueno, ya que ha preparado usted eso vamos a cenar aquí",
+        "location": null,   
+        "options":[{
+            "text":"Sí, está bien",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 17
+        },
+        {
+            "text":"¿En su cuarto?",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 5,
+            "id_obj": 13
+        },
+        {
+            "text":"No, mejor vayamos a mi despacho",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 89
+        }
+    ]
+    },
+
+    {
+        "id": 14,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Sí... ¿Ocurre algo?",
+        "location": null,   
+        "options":[{
+            "text":"No, nada, entremos",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 17
+        },
+        {
+            "text":"Preferiría que cenemos en mi despacho",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -5,
+            "id_obj": 89
+        }
+    ]
+    },
+
+    {
+        "id": 19,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Sí, es acogedora",
+        "location": null,   
+        "options":[{
+            "text":"He escogido la mejor para usted",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 23
+        },
+        {
+            "text":"El motel está vacío",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 26
+        },
+        {
+            "text":"Es la que más cerca está al desapacho",
+            "maxScore": 100,
+            "minScore": 60,
+            "score": 5,
+            "id_obj": 85
+        }
+    ]
+    },
+
+    {
+        "id": 25,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Suele pasar mucha gente por aquí?",
+        "location": null,   
+        "options":[{
+            "text":"Tan guapas como usted no, se lo aseguro",
+            "maxScore": 40,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 31
+        },
+        {
+            "text":"El negocio va mal",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 49
+        },
+        {
+            "text":"La verdad es que no",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 49
+        },
+        {
+            "text":"A mi madre no le gustan las visitas",
+            "maxScore": 100,
+            "minScore": 60,
+            "score": -5,
+            "id_obj": 81
+        }
+    ]
+    },
+
+    {
+        "id": 32,
+        "id_obj": -2,
+        "score": 10,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Pero estoy segura de que le dices eso mismo a otras huéspedes, ¿verdad?",
+        "location": null,   
+        "options":[{
+            "text":"No, se lo aseguro",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 36
+        },
+        {
+            "text":"...",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 36
+        },
+        {
+            "text":"La verdad es que no pasa mucha gente por aquí",
+            "maxScore": 40,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 49
+        }
+    ]
+    },
+
+    {
+        "id": 39,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Pero hoy ha sido un día muy ajetreado para mí y quiero dormir",
+        "location": null,   
+        "options":[{
+            "text":"Descansa bien",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 43
+        },
+        {
+            "text":"Buenas noches, espero volver a verte mañana",
+            "maxScore": 50,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 44
+        },
+        {
+            "text":"Sí, la verdad es que pareces muerta del sueño... (+5)",
+            "maxScore": 100,
+            "minScore": 50,
+            "score": 5,
+            "id_obj": 47
+        }
+    ]
+    },
+
+    {
+        "id": 52,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Y qué te lo impide?",
+        "location": null,   
+        "options":[{
+            "text":"Tengo que cuidar a mi madre",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -5,
+            "id_obj": 56
+        },
+        {
+            "text":"Mi madre no se puede quedar sola",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 56
+        },
+        {
+            "text":"...",
+            "maxScore": 60,
+            "minScore": 0,
+            "score": 5,
+            "id_obj": 66
+        }
+    ]
+    },
+
+    {
+        "id": 58,
+        "id_obj": -2,
+        "score": 30,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿No has barajado la posibilidad de llevarla a algún sitio, a que la cuiden?",
+        "location": null,   
+        "options":[{
+            "text":"No, jamás",
+            "maxScore": 100,
+            "minScore": 55,
+            "score": -10,
+            "id_obj": 62
+        },
+        {
+            "text":"No puedo hacer eso",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 62
+        },
+        {
+            "text":"...",
+            "maxScore": 65,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 66
+        }
+    ]
+    },
+
+    {
+        "id": 71,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"¿Qué me dices?",
+        "location": null,   
+        "options":[{
+            "text":"No puedo hacer eso",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 74
+        },
+        {
+            "text":"Estaría encantado",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 80
+        }
+    ]
+    },
+
+    {
+        "id": 94,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"¿Lo dice usted por esos?",
+        "location": null,   
+        "options":[{
+            "text":"No, desde luego...",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 97
+        },
+        {
+            "text":"Lo digo por usted",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 100
+        }
+    ]
+    },
+
+    {
+        "id": 99,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Y dígame... ¿a qué se dedica?",
+        "location": null,   
+        "options":[{
+            "text":"Soy taxidermista",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 105
+        },
+        {
+            "text":"Trabajo en el motel",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 137
+        },
+        {
+            "text":"Cuido de mi madre",
+            "maxScore": 100,
+            "minScore": 35,
+            "score": -10,
+            "id_obj": 149
+        }
+    ]
+    },
+
+    {
+        "id": 108,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Es un pasatiempo extraño, curioso",
+        "location": null,   
+        "options":[{
+            "text":"Sí, y no es muy común",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 112
+        },
+        {
+            "text":"Y no hay que emplear mucho dinero en ello",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 112
+        },
+        {
+            "text":"¿Sabe? A usted no la disecaría...",
+            "maxScore": 100,
+            "minScore": 30,
+            "score": 0,
+            "id_obj": 117
+        }
+    ]
+    },
+
+    {
+        "id": 122,
+        "id_obj": -2,
+        "score": 10,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Quédese unos días más...",
+        "location": null,   
+        "options":[{
+            "text":"...aún tengo más pájaros en la colección",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 126
+        },
+        {
+            "text":"...puedo enseñarte más cosas sobre mí a parte de pájaros",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 129
+        },
+        {
+            "text":"...no es hora de salir de la jaula todavía",
+            "maxScore": 100,
+            "minScore": 70,
+            "score": 0,
+            "id_obj": 136
+        }
+    ]
+    },
+
+    {
+        "id": 140,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Y no se siente solo?",
+        "location": null,   
+        "options":[{
+            "text":"Ahora que está usted aquí no",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 143
+        },
+        {
+            "text":"No estoy solo, vivo con mi madre",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -5,
+            "id_obj": 149
+        }
+    ]
+    },
+
+    {
+        "id": 146,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Nunca ha pensado en salir de aquí?",
+        "location": null,   
+        "options":[{
+            "text":"...",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 66
+        },
+        {
+            "text":"Debo cuidar de mi madre",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -5,
+            "id_obj": 56
+        }
+    ]
+    }
 ]
 
