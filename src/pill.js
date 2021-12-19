@@ -1,7 +1,7 @@
 /**
  * Respresenta las pastillas que bajan la barra de instinto asesino
  */
-export default class Pill extends Phaser.GameObjects.Container{
+export default class Pill extends Phaser.GameObjects.Container {
 
     /**
      * Construye un nuevo objecto Pill
@@ -9,11 +9,11 @@ export default class Pill extends Phaser.GameObjects.Container{
      * @param {number} x - posición en el eje x
      * @param {number} y - posición en el eje y
      */
-    constructor(scene, x, y){
-        
-        super(scene,x,y);
+    constructor(scene, x, y) {
+
+        super(scene, x, y);
         this.scene.add.existing(this);
-        this._sprite = this.initSprite(0.12, 0, 10); 
+        this._sprite = this.initSprite(0.12, 0, 10);
         this._amount = 3;
         this._text = this.initText(25, 50, 50);
         this._bar = this.scene.psychoBar;
@@ -29,7 +29,7 @@ export default class Pill extends Phaser.GameObjects.Container{
      * @param {number} y 
      * @returns 
      */
-    initText(fontSize, x, y){
+    initText(fontSize, x, y) {
         let text = this.scene.add.text(x, y, this._amount);
         text.setFontSize(fontSize);
         text.setFontStyle('bold');
@@ -44,9 +44,9 @@ export default class Pill extends Phaser.GameObjects.Container{
      * @param {number} y 
      * @returns 
      */
-    initSprite(scale, x, y){
-        let sprite = this.scene.add.sprite(x,y, 'pastilla');
-        sprite.setScale(scale,scale);
+    initSprite(scale, x, y) {
+        let sprite = this.scene.add.sprite(x, y, 'pastilla');
+        sprite.setScale(scale, scale);
         this.add(sprite);
         sprite.setInteractive();
         return sprite;
@@ -55,16 +55,16 @@ export default class Pill extends Phaser.GameObjects.Container{
     /**
      * Método que se llama al tomarse una pastilla 
      */
-    takePill(){
-        if(this._amount>0){
+    takePill() {
+        if (this._amount > 0) {
             this._bar.pillEffect();
             this._bar.resetPasiveFillCont();
             this._amount--;
             this._text.text = this._amount;
-        }else{
+        } else {
             this._sprite.off("pointerdown");
             this._space.off('down');
         }
     }
-    
+
 }

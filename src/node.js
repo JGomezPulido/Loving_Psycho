@@ -10,25 +10,25 @@ import Option from "./option.js"
  * @property {Option[]} [options] - El array de Opciones asociado al nodo si este tiene opciones.
  * @property {number} [match] - Match con el que terminará la cita si el nodo es terminal.
  */
-export default class Node{ 
+export default class Node {
 
     /**
      * Construye un nuevo nodo.
      * @param {Nodo} node nodo del arbol de dialogos (JSON).
      */
-    constructor(node, scene){       
+    constructor(node, scene) {
 
         this.dialogs = node.dialogs;
         this.id = node.id;
         this.id_obj = node.id_obj;
         this.score = node.score;
         this.speaker = node.speaker;
-        this.expresion = node.expresion;     
-        this.options  = null;
+        this.expresion = node.expresion;
+        this.options = null;
         this.scene = scene;
-        
 
-        if(this.id_obj === -2){//tiene opciones
+
+        if (this.id_obj === -2) { //tiene opciones
             this.options = [];
 
             node.options.forEach(el => {
@@ -36,7 +36,7 @@ export default class Node{
                 this.options.push(op);
             });
 
-        }else if(this.id_obj == -1){//nodo terminal
+        } else if (this.id_obj == -1) { //nodo terminal
             this.match = node.match;
         }
     }
