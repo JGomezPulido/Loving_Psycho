@@ -46,6 +46,7 @@ export default class Scene extends Phaser.Scene {
     this.intiOptions()
     this.initBlood();
 
+    
     this.jazzSound = this.sound.add('jazz');
     this.jazzSound.play();
     this.jazzSound.setLoop(true);
