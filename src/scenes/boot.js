@@ -10,11 +10,11 @@ export default class Boot extends Phaser.Scene {
   }
 
   preload() {
+    //Carga de 
     this.load.setPath('assets/sprites/');
     this.load.image('pastilla', 'pasti.png');
     this.load.image('boton', 'heart_button.png');
     this.load.image('botonCuchillo', 'heart_button_stabbed.png');
-    this.load.image('marion', 'marion_crane_demo.jpg');
     this.load.image('F', 'cuadro_dialogo_rosa.png');
     this.load.image('M', 'cuadro_dialogo_azul.png');
     this.load.image('cuadroOpcion', 'cuadro_opcion.png');
@@ -34,15 +34,23 @@ export default class Boot extends Phaser.Scene {
     this.load.image('sangre', 'blood.png');
     this.load.image('marionCraneMenu', 'marion_crane.jpg');
     this.load.image('eveKendallMenu', 'eve_kendall.png');
-    this.load.audio('jazz', '../audio/jazz_music.mp3')
-    this.load.audio('stab', '../audio/stab_sound.mp3')
-    this.load.audio('scream', '../audio/scream_sound.mp3')
-    this.load.audio('menu', '../audio/menu_music.mp3')
-    this.load.json('tree', '../JSON/tree.json');
-    this.load.json('tree2', '../JSON/tree2.json');
+    this.load.image('configButton', 'black_button.png');
+
+    //Carga de audio
+    this.load.setPath("assets/audio/")
+    this.load.audio('jazz', 'jazz_music.mp3')
+    this.load.audio('stab', 'stab_sound.mp3')
+    this.load.audio('scream', 'scream_sound.mp3')
+    this.load.audio('menu', 'menu_music.mp3')
+
+    //Carga de JSON
+    this.load.setPath("assets/JSON/")
+    this.load.json('tree', 'tree.json');
+    this.load.json('tree2', 'tree2.json');
   }
 
   create() {
+    this.game.sound.volume = 0.50;
     this.scene.start('menu');
   }
 }

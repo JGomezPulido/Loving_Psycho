@@ -22,7 +22,7 @@ export default class Button extends Phaser.GameObjects.Container {
     this.scene.add.existing(this);
     this.sprite.setInteractive();
 
-    this.text.setFontSize(40);
+    this.text.setFontSize(35);
     this.text.setColor('#000');
     this.text.setFontStyle('bold');
 

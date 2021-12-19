@@ -5,7 +5,10 @@ export default class ConfigButton extends Button {
         super(scene, x, y, 'boton', "Configuración", 1, 1);
 
         this.sprite.on("pointerdown", () => {
-            console.log("El código va aquí")
+           
+            this.scene.configMenu.show();
         });
+
+        
     }
 }
