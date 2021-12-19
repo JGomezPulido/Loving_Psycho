@@ -5,7 +5,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Buenas noches, le traigo la cena", 
+        "dialogs":"Buenas noches, le traigo la cena.", 
         "location": null,    
         "options": null
     },
@@ -15,7 +15,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Oh, no se preocupe, tenía pensado dormir sin cenar",  
+        "dialogs":"Oh, no se preocupe, tenía pensado dormir sin cenar...",  
         "location": null,     
         "options": null
     },
@@ -25,17 +25,17 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Insisto, quiero disculparme por los ruidos de antes",  
+        "dialogs":"Insisto, quiero disculparme por los ruidos de antes.",  
         "location": null,     
         "options": null
     },
     {
         "id": 3,
         "id_obj": 4,
-        "score": 15,
+        "score": 25,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"A veces mi madre puede ser un poco insoportable",  
+        "dialogs":"A veces mi madre puede ser un poco insoportable.",  
         "location": null,     
         "options": null
     },
@@ -45,7 +45,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Oh, ya veo",  
+        "dialogs":"Oh, ya veo...",  
         "location": null,     
         "options": null
     },
@@ -62,7 +62,7 @@
     {
         "id": 13,
         "id_obj": 14,
-        "score": 10,
+        "score": 20,
         "expresion": "neutral",
         "speaker":"M",
         "dialogs":"¿A solas?",  
@@ -75,7 +75,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Dejaré la comida en esta mesa",  
+        "dialogs":"Dejaré la comida en esta mesa.",  
         "location": null,     
         "options": null
     },
@@ -92,10 +92,10 @@
     {
         "id": 23,
         "id_obj": 24,
-        "score": 5,
+        "score": 10,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Oh, qué considerado por su parte",  
+        "dialogs":"Oh, qué considerado por su parte.",  
         "location": null,     
         "options": null
     },
@@ -112,10 +112,10 @@
     {
         "id": 31,
         "id_obj": 32,
-        "score": 20,
+        "score": 35,
         "expresion": "spicy",
         "speaker":"F",
-        "dialogs":"Oh, me halagas",  
+        "dialogs":"Oh, me halagas.",  
         "location": null,     
         "options": null
     },
@@ -125,17 +125,17 @@
         "score": 0,
         "expresion": "spicy",
         "speaker":"F",
-        "dialogs":"Jeje",  
+        "dialogs":"Jeje...",  
         "location": null,     
         "options": null
     },
     {
         "id": 37,
         "id_obj": 38,
-        "score": 10,
+        "score": 20,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Has sido muy amable",  
+        "dialogs":"Has sido muy amable...",  
         "location": null,     
         "options": null
     },
@@ -145,7 +145,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Y la cena ha estado muy buena",  
+        "dialogs":"Y la cena ha estado muy buena.",  
         "location": null,     
         "options": null
     },
@@ -155,7 +155,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Buenas noches",  
+        "dialogs":"Buenas noches.",  
         "location": null,     
         "options": null,
         "match": 65
@@ -163,10 +163,10 @@
     {
         "id": 44,
         "id_obj": 45,
-        "score": 10,
+        "score": 20,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Me lo he pasado bien hablando contigo",  
+        "dialogs":"Me lo he pasado bien hablando contigo.",  
         "location": null,     
         "options": null
     },
@@ -183,10 +183,10 @@
     {
         "id": 46,
         "id_obj": -1,
-        "score": 15,
+        "score": 25,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Sí, lo mismo digo, buenas noches",  
+        "dialogs":"Sí, lo mismo digo, buenas noches.",  
         "location": null,     
         "options": null,
         "match": 80
@@ -194,7 +194,7 @@
     {
         "id": 47,
         "id_obj": 48,
-        "score": 10,
+        "score": 20,
         "expresion": "austada",
         "speaker":"M",
         "dialogs":"También deberías darte una buena ducha...",  
@@ -218,7 +218,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"El motel está alejado de la carretera principal",  
+        "dialogs":"El motel está alejado de la carretera principal.",  
         "location": null,     
         "options": null
     },
@@ -228,17 +228,17 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Desde que construyeron aquella carretera ya no vienen casi visitantes por aquí",  
+        "dialogs":"Desde que construyeron aquella carretera ya no vienen casi visitantes por aquí.",  
         "location": null,     
         "options": null
     },
     {
         "id": 51,
         "id_obj": 52,
-        "score": 20,
+        "score": 40,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"A veces pienso en huir de aquí, volar de este sitio, ser libre como un pájaro",  
+        "dialogs":"A veces pienso en huir de aquí, volar de este sitio, ser libre como un pájaro.",  
         "location": null,     
         "options": null
     },
@@ -248,7 +248,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Está enferma, necesita mi ayuda",  
+        "dialogs":"Está enferma, necesita mi ayuda.",  
         "location": null,     
         "options": null
     },
@@ -278,7 +278,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"En fin, muchas gracias por la hospitalidad, gracias por haberme traido la cena",  
+        "dialogs":"En fin, muchas gracias por la hospitalidad, gracias por haberme traido la cena.",  
         "location": null,     
         "options": null
     },
@@ -298,7 +298,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Buenas noches",  
+        "dialogs":"Buenas noches.",  
         "location": null,     
         "options": null,
         "match": 20
@@ -349,7 +349,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Así es",  
+        "dialogs":"Así es.",  
         "location": null,     
         "options": null
     },
@@ -359,27 +359,27 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Tenía pensado dormir una noche e irme mañana",  
+        "dialogs":"Tenía pensado dormir una noche e irme mañana.",  
         "location": null,     
         "options": null
     },
     {
         "id": 74,
         "id_obj": 75,
-        "score": -10,
+        "score": -15,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Debo cuidar de mi madre",  
+        "dialogs":"Debo cuidar de mi madre.",  
         "location": null,     
         "options": null
     },
     {
         "id": 75,
         "id_obj": 76,
-        "score": -10,
+        "score": -15,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"No puedo dejarla sola",  
+        "dialogs":"No puedo dejarla sola.",  
         "location": null,     
         "options": null
     },
@@ -389,7 +389,7 @@
         "score": 0,
         "expresion": "asustada",
         "speaker":"F",
-        "dialogs":"Sí entiendo, olvide lo que he dicho",  
+        "dialogs":"Sí entiendo, olvide lo que he dicho.",  
         "location": null,     
         "options": null
     },
@@ -399,7 +399,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Sería una locura, perdóneme no estoy teniendo el mejor de los días hoy",  
+        "dialogs":"Sería una locura, perdóneme no estoy teniendo el mejor de los días hoy.",  
         "location": null,     
         "options": null
     },
@@ -409,7 +409,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"No se preocupe señorita, buenas noches",  
+        "dialogs":"No se preocupe señorita, buenas noches.",  
         "location": null,     
         "options": null
     },
@@ -419,7 +419,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Buenas noches",  
+        "dialogs":"Buenas noches.",  
         "location": null,     
         "options": null,
         "match": 10
@@ -430,7 +430,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Bien, haga las maletas, mañana nos vamos",  
+        "dialogs":"Bien, haga las maletas, mañana nos vamos.",  
         "location": null,     
         "options": null,
         "match": 90
@@ -461,7 +461,7 @@
         "score": 0,
         "expresion": "austada",
         "speaker":"F",
-        "dialogs":"No se preocupe, tenía pensado irme mañana temprano",  
+        "dialogs":"No se preocupe, tenía pensado irme mañana temprano.",  
         "location": null,     
         "options": null
     },
@@ -479,20 +479,20 @@
     {
         "id": 26,
         "id_obj": 24,
-        "score": 5,
+        "score": 15,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Así que he tenido suerte, jeje",  
+        "dialogs":"Así que he tenido suerte, jeje.",  
         "location": null,     
         "options": null
     },
     {
         "id": 85,
         "id_obj": 86,
-        "score": 10,
+        "score": 20,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Desde allí no solo puedo oir todo lo que hace",  
+        "dialogs":"Desde allí no solo puedo oir todo lo que hace.",  
         "location": null,     
         "options": null
     },
@@ -509,7 +509,7 @@
     {
         "id": 87,
         "id_obj": 88,
-        "score": 15,
+        "score": 25,
         "expresion": "asustada",
         "speaker":"M",
         "dialogs":"Sino que también puedo verlo...",  
@@ -533,17 +533,17 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Vamos entre, siéntese",  
+        "dialogs":"Vamos entre, siéntese...",  
         "location": null,     
         "options": null
     },
     {
         "id": 90,
         "id_obj": 91,
-        "score": 5,
+        "score": 15,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Es usted muy amable",  
+        "dialogs":"Es usted muy amable.",  
         "location": null,     
         "options": null
     },
@@ -553,7 +553,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Cómaselo todo, yo no tengo apetito",  
+        "dialogs":"Cómaselo todo, yo no tengo apetito.",  
         "location": null,     
         "options": null
     },
@@ -570,10 +570,10 @@
     {
         "id": 93,
         "id_obj": 94,
-        "score": 5,
+        "score": 10,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Come usted como un pájaro",  
+        "dialogs":"Come usted como un pájaro.",  
         "location": null,     
         "options": null
     },
@@ -583,34 +583,34 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"...uno oye esa expresión, pero no es nada más que una falsedad",  
+        "dialogs":"...uno oye esa expresión, pero no es nada más que una falsedad...",  
         "location": null,     
         "options": null
     },
     {
         "id": 98,
         "id_obj": 99,
-        "score": 5,
+        "score": 10,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Porque los pájaros precisamente comen mucho... jeje",  
+        "dialogs":"Porque los pájaros precisamente comen mucho... jeje.",  
         "location": null,     
         "options": null
     },
     {
         "id": 100,
         "id_obj": 101,
-        "score": 10,
+        "score": 20,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Es usted más bella que cualquiera de estos",  
+        "dialogs":"Es usted más bella que cualquiera de estos.",  
         "location": null,     
         "options": null
     },
     {
         "id": 101,
         "id_obj": 99,
-        "score": 5,
+        "score": 10,
         "expresion": "spicy",
         "speaker":"F",
         "dialogs":"Jeje...",  
@@ -623,7 +623,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Me dedico a disecar pájaros como pasatiempo",  
+        "dialogs":"Me dedico a disecar pájaros como pasatiempo.",  
         "location": null,     
         "options": null
     },
@@ -663,7 +663,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Creo que me voy a ir volviendo a mi habitación",  
+        "dialogs":"Creo que me voy a ir volviendo a mi habitación.",  
         "location": null,     
         "options": null
     },
@@ -673,7 +673,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"¿Ya se va? Si aún no ha terminado",  
+        "dialogs":"¿Ya se va? Si aún no ha terminado.",  
         "location": null,     
         "options": null
     },
@@ -693,7 +693,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Buenas noches",  
+        "dialogs":"Buenas noches.",  
         "location": null,     
         "options": null,
         "match": 30
@@ -701,27 +701,27 @@
     {
         "id": 117,
         "id_obj": 118,
-        "score": 20,
+        "score": 40,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"...a pesar de ser tan bella como uno",  
+        "dialogs":"...a pesar de ser tan bella como uno.",  
         "location": null,     
         "options": null
     },
     {
         "id": 118,
         "id_obj": 119,
-        "score": 5,
+        "score": 15,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Oh, me halaga",  
+        "dialogs":"Oh, me halaga.",  
         "location": null,     
         "options": null
     },
     {
         "id": 119,
         "id_obj": 120,
-        "score": 20,
+        "score": 35,
         "expresion": "spicy",
         "speaker":"F",
         "dialogs":"Me sorprende que sea capaz  de coquetear con una mujer hablandola de pájaros disecados...",  
@@ -731,7 +731,7 @@
     {
         "id": 120,
         "id_obj": 121,
-        "score": 15,
+        "score": 25,
         "expresion": "spicy",
         "speaker":"M",
         "dialogs":"Jeje, y dígame, ¿hasta cuando tenía pensado quedarse?",  
@@ -744,7 +744,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Tenía pensado irme mañana a primera hora",  
+        "dialogs":"Tenía pensado irme mañana a primera hora.",  
         "location": null,     
         "options": null
     },
@@ -754,7 +754,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Jeje, ha sido usted muy amable, pero creo que no cambiaré de idea",  
+        "dialogs":"Jeje, ha sido usted muy amable, pero creo que no cambiaré de idea.",  
         "location": null,     
         "options": null
     },
@@ -764,7 +764,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Le agradezco la cena, buenas noches",  
+        "dialogs":"Le agradezco la cena, buenas noches.",  
         "location": null,     
         "options": null
     },
@@ -774,7 +774,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"S-sí, buenas noches",  
+        "dialogs":"S-sí, buenas noches.",  
         "location": null,     
         "options": null,
         "match": 50
@@ -785,24 +785,24 @@
         "score": 0,
         "expresion": "spicy",
         "speaker":"F",
-        "dialogs":"Mmm, vale está bien, creo que me quedaré unos días más",  
+        "dialogs":"Mmm, vale está bien, creo que me quedaré unos días más.",  
         "location": null,     
         "options": null
     },
     {
         "id": 130,
         "id_obj": 131,
-        "score": 20,
+        "score": 40,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"He disfrutado de la estancia, así que le volveré a ver mañana",  
+        "dialogs":"He disfrutado de la estancia, así que le volveré a ver mañana.",  
         "location": null,     
         "options": null
     },
     {
         "id": 131,
         "id_obj": 132,
-        "score": 10,
+        "score": 20,
         "expresion": "sonriente",
         "speaker":"M",
         "dialogs":"S-sí, le traeré el desayuno a su cuarto señorita...",  
@@ -812,10 +812,10 @@
     {
         "id": 132,
         "id_obj": 133,
-        "score": 5,
+        "score": 10,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Crane, Marion Crane y gracias por el desayuno",  
+        "dialogs":"Crane, Marion Crane y gracias por el desayuno.",  
         "location": null,     
         "options": null
     },
@@ -825,7 +825,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Norman",  
+        "dialogs":"Norman.",  
         "location": null,     
         "options": null
     },
@@ -835,7 +835,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Buenas noches Norman",  
+        "dialogs":"Buenas noches Norman.",  
         "location": null,     
         "options": null
     },
@@ -845,7 +845,7 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"M",
-        "dialogs":"Buenas noches",  
+        "dialogs":"Buenas noches.",  
         "location": null,     
         "options": null,
         "match": 100
@@ -867,7 +867,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Hago las camas, limpio las habitaciones, ese tipo de cosas",  
+        "dialogs":"Hago las camas, limpio las habitaciones, ese tipo de cosas.",  
         "location": null,     
         "options": null
     },
@@ -887,7 +887,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"No realmente, no suele pasar mucha gente por aquí",  
+        "dialogs":"No realmente, no suele pasar mucha gente por aquí.",  
         "location": null,     
         "options": null
     },
@@ -897,17 +897,17 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Oh, vaya",  
+        "dialogs":"Oh, vaya...",  
         "location": null,     
         "options": null
     },
     {
         "id": 144,
         "id_obj": 145,
-        "score": 5,
+        "score": 10,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Me halaga, pero debo decirle que pretendía partir mañana temprano",  
+        "dialogs":"Me halaga, pero debo decirle que pretendía partir mañana temprano.",  
         "location": null,     
         "options": null
     },
@@ -927,7 +927,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"M",
-        "dialogs":"Ella está enferma",  
+        "dialogs":"Ella está enferma.",  
         "location": null,     
         "options": null
     },
@@ -944,17 +944,17 @@
     {
         "id": 151,
         "id_obj": 152,
-        "score": -10,
+        "score": -15,
         "expresion": "asustada",
         "speaker":"M",
-        "dialogs":"De hecho a ella no le gustaría que usted estuviera aquí",  
+        "dialogs":"De hecho a ella no le gustaría que usted estuviera aquí.",  
         "location": null,     
         "options": null
     },
     {
         "id": 152,
         "id_obj": 153,
-        "score": -15,
+        "score": -25,
         "expresion": "asustada",
         "speaker":"M",
         "dialogs":"Ella se enfadaría...",  
@@ -1013,7 +1013,7 @@
             "text":"Siempre se pone así cuando hay visita",
             "maxScore": 100,
             "minScore": 0,
-            "score": 10,
+            "score": 20,
             "id_obj": 7
         }
     ]
@@ -1025,27 +1025,27 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Bueno, ya que ha preparado usted eso vamos a cenar aquí",
+        "dialogs":"Bueno, ya que ha preparado usted eso vamos a cenar aquí.",
         "location": null,   
         "options":[{
             "text":"Sí, está bien",
             "maxScore": 100,
             "minScore": 0,
-            "score": 0,
+            "score": 5,
             "id_obj": 17
         },
         {
             "text":"¿En su cuarto?",
             "maxScore": 100,
             "minScore": 0,
-            "score": 5,
+            "score": 15,
             "id_obj": 13
         },
         {
             "text":"No, mejor vayamos a mi despacho",
             "maxScore": 100,
             "minScore": 0,
-            "score": 10,
+            "score": 0,
             "id_obj": 89
         }
     ]
@@ -1063,7 +1063,7 @@
             "text":"No, nada, entremos",
             "maxScore": 100,
             "minScore": 0,
-            "score": 10,
+            "score": 20,
             "id_obj": 17
         },
         {
@@ -1082,13 +1082,13 @@
         "score": 0,
         "expresion": "sonriente",
         "speaker":"F",
-        "dialogs":"Sí, es acogedora",
+        "dialogs":"Sí, es acogedora.",
         "location": null,   
         "options":[{
             "text":"He escogido la mejor para usted",
             "maxScore": 100,
             "minScore": 0,
-            "score": 15,
+            "score": 25,
             "id_obj": 23
         },
         {
@@ -1102,7 +1102,7 @@
             "text":"Es la que más cerca está al desapacho",
             "maxScore": 100,
             "minScore": 60,
-            "score": 5,
+            "score": 10,
             "id_obj": 85
         }
     ]
@@ -1120,7 +1120,7 @@
             "text":"Tan guapas como usted no, se lo aseguro",
             "maxScore": 40,
             "minScore": 0,
-            "score": 20,
+            "score": 40,
             "id_obj": 31
         },
         {
@@ -1141,7 +1141,7 @@
             "text":"A mi madre no le gustan las visitas",
             "maxScore": 100,
             "minScore": 60,
-            "score": -5,
+            "score": -10,
             "id_obj": 81
         }
     ]
@@ -1150,7 +1150,7 @@
     {
         "id": 32,
         "id_obj": -2,
-        "score": 10,
+        "score": 20,
         "expresion": "spicy",
         "speaker":"F",
         "dialogs":"Pero estoy segura de que le dices eso mismo a otras huéspedes, ¿verdad?",
@@ -1159,14 +1159,14 @@
             "text":"No, se lo aseguro",
             "maxScore": 100,
             "minScore": 0,
-            "score": -10,
+            "score": -15,
             "id_obj": 36
         },
         {
             "text":"...",
             "maxScore": 100,
             "minScore": 0,
-            "score": 15,
+            "score": 25,
             "id_obj": 36
         },
         {
@@ -1185,7 +1185,7 @@
         "score": 0,
         "expresion": "spicy",
         "speaker":"F",
-        "dialogs":"Pero hoy ha sido un día muy ajetreado para mí y quiero dormir",
+        "dialogs":"Pero hoy ha sido un día muy ajetreado para mí y quiero dormir.",
         "location": null,   
         "options":[{
             "text":"Descansa bien",
@@ -1198,14 +1198,14 @@
             "text":"Buenas noches, espero volver a verte mañana",
             "maxScore": 50,
             "minScore": 0,
-            "score": 10,
+            "score": 20,
             "id_obj": 44
         },
         {
-            "text":"Sí, la verdad es que pareces muerta del sueño... (+5)",
+            "text":"Sí, la verdad es que pareces muerta del sueño...",
             "maxScore": 100,
             "minScore": 50,
-            "score": 5,
+            "score": 10,
             "id_obj": 47
         }
     ]
@@ -1223,7 +1223,7 @@
             "text":"Tengo que cuidar a mi madre",
             "maxScore": 100,
             "minScore": 0,
-            "score": -5,
+            "score": -10,
             "id_obj": 56
         },
         {
@@ -1237,7 +1237,7 @@
             "text":"...",
             "maxScore": 60,
             "minScore": 0,
-            "score": 5,
+            "score": 15,
             "id_obj": 66
         }
     ]
@@ -1246,7 +1246,7 @@
     {
         "id": 58,
         "id_obj": -2,
-        "score": 30,
+        "score": 45,
         "expresion": "neutral",
         "speaker":"F",
         "dialogs":"¿No has barajado la posibilidad de llevarla a algún sitio, a que la cuiden?",
@@ -1255,7 +1255,7 @@
             "text":"No, jamás",
             "maxScore": 100,
             "minScore": 55,
-            "score": -10,
+            "score": -20,
             "id_obj": 62
         },
         {
@@ -1269,7 +1269,7 @@
             "text":"...",
             "maxScore": 65,
             "minScore": 0,
-            "score": 10,
+            "score": 20,
             "id_obj": 66
         }
     ]
@@ -1319,7 +1319,7 @@
             "text":"Lo digo por usted",
             "maxScore": 100,
             "minScore": 0,
-            "score": 10,
+            "score": 20,
             "id_obj": 100
         }
     ]
@@ -1351,7 +1351,7 @@
             "text":"Cuido de mi madre",
             "maxScore": 100,
             "minScore": 35,
-            "score": -10,
+            "score": -15,
             "id_obj": 149
         }
     ]
@@ -1363,7 +1363,7 @@
         "score": 0,
         "expresion": "neutral",
         "speaker":"F",
-        "dialogs":"Es un pasatiempo extraño, curioso",
+        "dialogs":"Es un pasatiempo extraño, curioso.",
         "location": null,   
         "options":[{
             "text":"Sí, y no es muy común",
@@ -1392,7 +1392,7 @@
     {
         "id": 122,
         "id_obj": -2,
-        "score": 10,
+        "score": 20,
         "expresion": "neutral",
         "speaker":"M",
         "dialogs":"Quédese unos días más...",
@@ -1408,7 +1408,7 @@
             "text":"...puedo enseñarte más cosas sobre mí a parte de pájaros",
             "maxScore": 100,
             "minScore": 0,
-            "score": 15,
+            "score": 25,
             "id_obj": 129
         },
         {
@@ -1433,14 +1433,14 @@
             "text":"Ahora que está usted aquí no",
             "maxScore": 100,
             "minScore": 0,
-            "score": 20,
+            "score": 30,
             "id_obj": 143
         },
         {
             "text":"No estoy solo, vivo con mi madre",
             "maxScore": 100,
             "minScore": 0,
-            "score": -5,
+            "score": -10,
             "id_obj": 149
         }
     ]
@@ -1458,14 +1458,14 @@
             "text":"...",
             "maxScore": 100,
             "minScore": 0,
-            "score": 10,
+            "score": 20,
             "id_obj": 66
         },
         {
             "text":"Debo cuidar de mi madre",
             "maxScore": 100,
             "minScore": 0,
-            "score": -5,
+            "score": -10,
             "id_obj": 56
         }
     ]
