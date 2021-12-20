@@ -72,9 +72,11 @@ export default class Scene extends Phaser.Scene {
     })
 
     this.events.on('resume', (sys, data) =>{
+      if(data.textVelocity){
         this.textVelocity = data.textVelocity;
         this.dialoge.setTextVelocity(this.textVelocity);
         this.dialogeOption.setTextVelocity(this.textVelocity);
+      }
 
     });
   }

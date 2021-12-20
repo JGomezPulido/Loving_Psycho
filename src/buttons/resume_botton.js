@@ -8,7 +8,7 @@ export default class ResumeButton extends Button {
     }
 
     changeScene() {
-        this.scene.scene.run("Scene");
+        this.scene.scene.run("Scene", {textVelocity: this.scene.configMenu.getTextVelocity()});
         this.scene.scene.setVisible(false, "pause");
         this.scene.scene.pause("pause");
     }
