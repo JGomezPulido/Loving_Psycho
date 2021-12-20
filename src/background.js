@@ -12,7 +12,8 @@ export default class Background extends Phaser.GameObjects.Image {
     constructor(scene, x, y, texture) {
         super(scene, x, y, texture);
         this.scene.add.existing(this);
-        this.scene.events.on('changeLocation', this.changeBackground, this)
+        this.scene.events.on('changeLocation', this.changeBackground, this);
+        this.on('destroy', () => this.scene.events.off('changeLocation'));
     }
 
     /**

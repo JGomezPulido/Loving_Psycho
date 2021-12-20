@@ -6,6 +6,7 @@ import PsychoBar from "../psycho_bar.js";
 import Option from "../option.js";
 import Girl from "../girl.js";
 import Background from "../background.js";
+import Blood from "../blood.js";
 
 /**
  * Representa la escena principal del juego
@@ -60,6 +61,7 @@ export default class Scene extends Phaser.Scene {
     this.events.on("optionClicked", this.optionClicked, this);
     this.events.on('changeBlood', this.changeBlood, this);
     this.esc.on('down', this.showMenu, this);
+    this.events.on('detuneMusic', this.detuneMusic, this);
 
     this.events.on("shutdown", () => { //creo que no es necesrio aqui
       this.events.off('badEnding');
@@ -132,7 +134,7 @@ export default class Scene extends Phaser.Scene {
    * Método que crea los backgrounds del juego
    */
   initBlood() {
-    this.blood = new Background(this, this._canvasW / 2, this._canvasH / 2, 'sangre');
+    this.blood = new Blood(this, this._canvasW / 2, this._canvasH / 2, 'sangre');
     this.blood.setAlpha(0);
   }
 
@@ -185,5 +187,10 @@ export default class Scene extends Phaser.Scene {
     this.scene.run("pause", {textVelocity: this.textVelocity});
     this.scene.pause("Scene");
     this.scene.setVisible(true, "pause");
+  }
+
+  detuneMusic(detune){
+    this.jazzSound.setDetune(detune);
+    console.log(detune);
   }
 }

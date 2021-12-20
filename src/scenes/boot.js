@@ -30,13 +30,16 @@ export default class Boot extends Phaser.Scene {
     this.load.image('fondoNegro', 'background.png');
     this.load.image('parque', 'parque.png');
     this.load.image('motel', 'motel.png');
+    this.load.image('habitacion', 'habitacion.png');
+    this.load.image('puerta', 'puerta.png');
     this.load.image('muerta', 'she_died.png');
     this.load.image('sangre', 'blood.png');
     this.load.image('marionCraneMenu', 'marion_icon.png');
     this.load.image('marionCraneMenuRojo', 'marion_icon_border.png');
     this.load.image('eveKendallMenu', 'eve_kendall.png');
     this.load.image('configButton', 'black_button.png');
-    this.load.image('pauseMenu', 'motel_pausa.png')
+    this.load.image('pauseMenu', 'motel_pausa.png');
+    this.load.image('fondoMenu', 'fondo_menu.png');
     this.load.image('heartPauseButton','heart_pause_button.png')
 
     //Carga de audio
@@ -53,7 +56,6 @@ export default class Boot extends Phaser.Scene {
   }
 
   create() {
-    this.game.sound.volume = 0.5;
     this.scene.start('menu');
   }
 }

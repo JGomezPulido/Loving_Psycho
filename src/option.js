@@ -23,7 +23,7 @@ export default class Option extends Phaser.GameObjects.Container {
 
         this._textoOption = textoOption;
         this._sprite = sprite;
-        this._sprite.setScale(0.25, 0.1);
+        this._sprite.setScale(0.3, 0.1);
         this._maxScore = maxS;
         this._minScore = minS;
         this._score = score;
