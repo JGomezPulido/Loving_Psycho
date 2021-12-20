@@ -1,0 +1,1474 @@
+[
+    {
+        "id": 0,
+        "id_obj": 1,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Buenas noches, le traigo la cena.", 
+        "location": "puerta",    
+        "options": null
+    },
+    {
+        "id": 1,
+        "id_obj": 2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Oh, no se preocupe, tenía pensado dormir sin cenar...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 2,
+        "id_obj": 3,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Insisto, quiero disculparme por los ruidos de antes.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 3,
+        "id_obj": 4,
+        "score": 25,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"A veces mi madre puede ser un poco insoportable.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 7,
+        "id_obj": 8,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Oh, ya veo...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 8,
+        "id_obj": 9,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 13,
+        "id_obj": 14,
+        "score": 20,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"¿A solas?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 17,
+        "id_obj": 18,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Dejaré la comida en esta mesa.",  
+        "location": "habitacion",     
+        "options": null
+    },
+    {
+        "id": 18,
+        "id_obj": 19,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"¿Le gusta la habitación?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 23,
+        "id_obj": 24,
+        "score": 10,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Oh, qué considerado por su parte.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 24,
+        "id_obj": 25,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Pero sea sincero...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 31,
+        "id_obj": 32,
+        "score": 35,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Oh, me halagas.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 36,
+        "id_obj": 37,
+        "score": 0,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Jeje...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 37,
+        "id_obj": 38,
+        "score": 20,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Has sido muy amable...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 38,
+        "id_obj": 39,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Y la cena ha estado muy buena.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 43,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 65
+    },
+    {
+        "id": 44,
+        "id_obj": 45,
+        "score": 20,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Me lo he pasado bien hablando contigo.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 45,
+        "id_obj": 46,
+        "score": 0,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Oh...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 46,
+        "id_obj": -1,
+        "score": 25,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Sí, lo mismo digo, buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 80
+    },
+    {
+        "id": 47,
+        "id_obj": 48,
+        "score": 20,
+        "expresion": "austada",
+        "speaker":"M",
+        "dialogs":"También deberías darte una buena ducha...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 48,
+        "id_obj": -1,
+        "score": 100,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"Cla-claro... Bu-buenas noches...",  
+        "location": null,     
+        "options": null,
+        "match": 0
+    },
+    {
+        "id": 49,
+        "id_obj": 50,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"El motel está alejado de la carretera principal.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 50,
+        "id_obj": 51,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Desde que construyeron aquella carretera ya no vienen casi visitantes por aquí.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 51,
+        "id_obj": 52,
+        "score": 40,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"A veces pienso en huir de aquí, volar de este sitio, ser libre como un pájaro.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 56,
+        "id_obj": 57,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Está enferma, necesita mi ayuda.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 57,
+        "id_obj": 58,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Sí, haces bien, aunque...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 62,
+        "id_obj": 63,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Sí, entiendo... Debe cuidar de su madre como buen hijo que es usted...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 63,
+        "id_obj": 64,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"En fin, muchas gracias por la hospitalidad, gracias por haberme traido la cena.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 64,
+        "id_obj": 65,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Buenas noches...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 65,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 20
+    },
+    {
+        "id": 66,
+        "id_obj": 67,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Sabes? No eres el único que quiere huir de su rutina, de su aburrida vida...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 67,
+        "id_obj": 156,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Es posible, que sea lo que esté haciendo ahora mismo...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 156,
+        "id_obj": 68,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Tal vez tú...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 68,
+        "id_obj": 69,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Estás insinuando...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 69,
+        "id_obj": 70,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Así es.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 70,
+        "id_obj": 71,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Tenía pensado dormir una noche e irme mañana.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 74,
+        "id_obj": 75,
+        "score": -15,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Debo cuidar de mi madre.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 75,
+        "id_obj": 76,
+        "score": -15,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"No puedo dejarla sola.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 76,
+        "id_obj": 77,
+        "score": 0,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"Sí entiendo, olvide lo que he dicho.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 77,
+        "id_obj": 78,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Sería una locura, perdóneme no estoy teniendo el mejor de los días hoy.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 78,
+        "id_obj": 79,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"No se preocupe señorita, buenas noches.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 79,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 10
+    },
+    {
+        "id": 80,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Bien, haga las maletas, mañana nos vamos.",  
+        "location": null,     
+        "options": null,
+        "match": 90
+    },
+    {
+        "id": 81,
+        "id_obj": 82,
+        "score": 0,
+        "expresion": "austada",
+        "speaker":"F",
+        "dialogs":"¿Pe-perdone?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 82,
+        "id_obj": 83,
+        "score": 0,
+        "expresion": "austada",
+        "speaker":"F",
+        "dialogs":"¿No se supone que esto es un motel?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 83,
+        "id_obj": 84,
+        "score": 0,
+        "expresion": "austada",
+        "speaker":"F",
+        "dialogs":"No se preocupe, tenía pensado irme mañana temprano.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 84,
+        "id_obj": -1,
+        "score": 100,
+        "expresion": "austada",
+        "speaker":"M",
+        "dialogs":"Si es que llega a despertarse...",  
+        "location": null,     
+        "options": null,
+        "match": 0
+    },
+    {
+        "id": 26,
+        "id_obj": 24,
+        "score": 15,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Así que he tenido suerte, jeje.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 85,
+        "id_obj": 86,
+        "score": 20,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Desde allí no solo puedo oir todo lo que hace.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 86,
+        "id_obj": 87,
+        "score": 0,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"¿Pe-perdón?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 87,
+        "id_obj": 88,
+        "score": 25,
+        "expresion": "asustada",
+        "speaker":"M",
+        "dialogs":"Sino que también puedo verlo...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 88,
+        "id_obj": -1,
+        "score": 100,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"¡Hay Dios, qué hago aquí!",  
+        "location": null,     
+        "options": null,
+        "match": 100
+    },
+    {
+        "id": 89,
+        "id_obj": 90,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Vamos entre, siéntese...",  
+        "location": "motel",     
+        "options": null
+    },
+    {
+        "id": 90,
+        "id_obj": 91,
+        "score": 15,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Es usted muy amable.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 91,
+        "id_obj": 92,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Cómaselo todo, yo no tengo apetito.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 92,
+        "id_obj": 93,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"*da el primer bocado a la comida*",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 93,
+        "id_obj": 94,
+        "score": 10,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Come usted como un pájaro.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 97,
+        "id_obj": 98,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"...uno oye esa expresión, pero no es nada más que una falsedad...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 98,
+        "id_obj": 99,
+        "score": 10,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Porque los pájaros precisamente comen mucho... jeje.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 100,
+        "id_obj": 101,
+        "score": 20,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Es usted más bella que cualquiera de estos.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 101,
+        "id_obj": 99,
+        "score": 10,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Jeje...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 105,
+        "id_obj": 106,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Me dedico a disecar pájaros como pasatiempo.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 106,
+        "id_obj": 107,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Los diseco porque yo aborrezco ver a otros animales disecados, ¿sabe usted?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 107,
+        "id_obj": 108,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Como perros o gatos...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 112,
+        "id_obj": 113,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Ya veo...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 113,
+        "id_obj": 114,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Creo que me voy a ir volviendo a mi habitación.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 114,
+        "id_obj": 115,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"¿Ya se va? Si aún no ha terminado.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 115,
+        "id_obj": 116,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Bueno se podría decir que no como como un pájaro...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 116,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 30
+    },
+    {
+        "id": 117,
+        "id_obj": 118,
+        "score": 40,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"...a pesar de ser tan bella como uno.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 118,
+        "id_obj": 119,
+        "score": 15,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Oh, me halaga.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 119,
+        "id_obj": 120,
+        "score": 35,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Me sorprende que sea capaz  de coquetear con una mujer hablandola de pájaros disecados...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 120,
+        "id_obj": 121,
+        "score": 25,
+        "expresion": "spicy",
+        "speaker":"M",
+        "dialogs":"Jeje, y dígame, ¿hasta cuando tenía pensado quedarse?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 121,
+        "id_obj": 122,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Tenía pensado irme mañana a primera hora.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 126,
+        "id_obj": 127,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Jeje, ha sido usted muy amable, pero creo que no cambiaré de idea.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 127,
+        "id_obj": 128,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Le agradezco la cena, buenas noches.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 128,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"S-sí, buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 50
+    },
+    {
+        "id": 129,
+        "id_obj": 130,
+        "score": 0,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Mmm, vale está bien, creo que me quedaré unos días más.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 130,
+        "id_obj": 131,
+        "score": 40,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"He disfrutado de la estancia, así que le volveré a ver mañana.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 131,
+        "id_obj": 132,
+        "score": 20,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"S-sí, le traeré el desayuno a su cuarto señorita...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 132,
+        "id_obj": 133,
+        "score": 10,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Crane, Marion Crane y gracias por el desayuno.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 133,
+        "id_obj": 134,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Norman.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 134,
+        "id_obj": 135,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Buenas noches Norman.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 135,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"M",
+        "dialogs":"Buenas noches.",  
+        "location": null,     
+        "options": null,
+        "match": 100
+    },
+    {
+        "id": 136,
+        "id_obj": -1,
+        "score": 100,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"¿Disculpa?",  
+        "location": null,     
+        "options": null,
+        "match": 0
+    },
+    {
+        "id": 137,
+        "id_obj": 138,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Hago las camas, limpio las habitaciones, ese tipo de cosas.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 138,
+        "id_obj": 139,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Y suele estar muy atareado?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 139,
+        "id_obj": 140,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"No realmente, no suele pasar mucha gente por aquí.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 143,
+        "id_obj": 144,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Oh, vaya...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 144,
+        "id_obj": 145,
+        "score": 10,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Me halaga, pero debo decirle que pretendía partir mañana temprano.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 145,
+        "id_obj": 146,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Aunque me da usted un poco de pena...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 149,
+        "id_obj": 150,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Ella está enferma.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 150,
+        "id_obj": 151,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Vaya...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 151,
+        "id_obj": 152,
+        "score": -15,
+        "expresion": "asustada",
+        "speaker":"M",
+        "dialogs":"De hecho a ella no le gustaría que usted estuviera aquí.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 152,
+        "id_obj": 153,
+        "score": -25,
+        "expresion": "asustada",
+        "speaker":"M",
+        "dialogs":"Ella se enfadaría...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 153,
+        "id_obj": 154,
+        "score": 0,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"En-entiendo...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 154,
+        "id_obj": 155,
+        "score": 0,
+        "expresion": "asustada",
+        "speaker":"F",
+        "dialogs":"Creo que mejor me termino la cena en la habitación...",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 155,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "asustada",
+        "speaker":"M",
+        "dialogs":"...",  
+        "location": null,     
+        "options": null,
+        "match": 0
+    },
+
+
+    {
+        "id": 4,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"No se preocupe, ¿es ella así con usted siempre?",
+        "location": null,   
+        "options":[{
+            "text":"No, de normal es una persona encantadora",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 7
+        },
+        {
+            "text":"Siempre se pone así cuando hay visita",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 7
+        }
+    ]
+    },
+
+    {
+        "id": 9,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Bueno, ya que ha preparado usted eso vamos a cenar aquí.",
+        "location": null,   
+        "options":[{
+            "text":"Sí, está bien",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 5,
+            "id_obj": 17
+        },
+        {
+            "text":"¿En su cuarto?",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 13
+        },
+        {
+            "text":"No, mejor vayamos a mi despacho",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 89
+        }
+    ]
+    },
+
+    {
+        "id": 14,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Sí... ¿Ocurre algo?",
+        "location": null,   
+        "options":[{
+            "text":"No, nada, entremos",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 17
+        },
+        {
+            "text":"Preferiría que cenemos en mi despacho",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -5,
+            "id_obj": 89
+        }
+    ]
+    },
+
+    {
+        "id": 19,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"Sí, es acogedora.",
+        "location": null,   
+        "options":[{
+            "text":"He escogido la mejor para usted",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 25,
+            "id_obj": 23
+        },
+        {
+            "text":"El motel está vacío",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 26
+        },
+        {
+            "text":"Es la que más cerca está al desapacho",
+            "maxScore": 100,
+            "minScore": 60,
+            "score": 10,
+            "id_obj": 85
+        }
+    ]
+    },
+
+    {
+        "id": 25,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Suele pasar mucha gente por aquí?",
+        "location": null,   
+        "options":[{
+            "text":"Tan guapas como usted no, se lo aseguro",
+            "maxScore": 40,
+            "minScore": 0,
+            "score": 40,
+            "id_obj": 31
+        },
+        {
+            "text":"El negocio va mal",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 49
+        },
+        {
+            "text":"La verdad es que no",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 49
+        },
+        {
+            "text":"A mi madre no le gustan las visitas",
+            "maxScore": 100,
+            "minScore": 60,
+            "score": -10,
+            "id_obj": 81
+        }
+    ]
+    },
+
+    {
+        "id": 32,
+        "id_obj": -2,
+        "score": 20,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Pero estoy segura de que le dices eso mismo a otras huéspedes, ¿verdad?",
+        "location": null,   
+        "options":[{
+            "text":"No, se lo aseguro",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -15,
+            "id_obj": 36
+        },
+        {
+            "text":"...",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 25,
+            "id_obj": 36
+        },
+        {
+            "text":"La verdad es que no pasa mucha gente por aquí",
+            "maxScore": 40,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 49
+        }
+    ]
+    },
+
+    {
+        "id": 39,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "spicy",
+        "speaker":"F",
+        "dialogs":"Pero hoy ha sido un día muy ajetreado para mí y quiero dormir.",
+        "location": null,   
+        "options":[{
+            "text":"Descansa bien",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 43
+        },
+        {
+            "text":"Buenas noches, espero volver a verte mañana",
+            "maxScore": 50,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 44
+        },
+        {
+            "text":"Sí, la verdad es que pareces muerta del sueño...",
+            "maxScore": 100,
+            "minScore": 50,
+            "score": 10,
+            "id_obj": 47
+        }
+    ]
+    },
+
+    {
+        "id": 52,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Y qué te lo impide?",
+        "location": null,   
+        "options":[{
+            "text":"Tengo que cuidar a mi madre",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 56
+        },
+        {
+            "text":"Mi madre no se puede quedar sola",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 56
+        },
+        {
+            "text":"...",
+            "maxScore": 60,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 66
+        }
+    ]
+    },
+
+    {
+        "id": 58,
+        "id_obj": -2,
+        "score": 45,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿No has barajado la posibilidad de llevarla a algún sitio, a que la cuiden?",
+        "location": null,   
+        "options":[{
+            "text":"No, jamás",
+            "maxScore": 100,
+            "minScore": 55,
+            "score": -20,
+            "id_obj": 62
+        },
+        {
+            "text":"No puedo hacer eso",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 62
+        },
+        {
+            "text":"...",
+            "maxScore": 65,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 66
+        }
+    ]
+    },
+
+    {
+        "id": 71,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"¿Qué me dices?",
+        "location": null,   
+        "options":[{
+            "text":"No puedo hacer eso",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 74
+        },
+        {
+            "text":"Estaría encantado",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 80
+        }
+    ]
+    },
+
+    {
+        "id": 94,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "sonriente",
+        "speaker":"F",
+        "dialogs":"¿Lo dice usted por esos?",
+        "location": null,   
+        "options":[{
+            "text":"No, desde luego...",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 97
+        },
+        {
+            "text":"Lo digo por usted",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 100
+        }
+    ]
+    },
+
+    {
+        "id": 99,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Y dígame... ¿a qué se dedica?",
+        "location": null,   
+        "options":[{
+            "text":"Soy taxidermista",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 105
+        },
+        {
+            "text":"Trabajo en el motel",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 137
+        },
+        {
+            "text":"Cuido de mi madre",
+            "maxScore": 100,
+            "minScore": 35,
+            "score": -15,
+            "id_obj": 149
+        }
+    ]
+    },
+
+    {
+        "id": 108,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"Es un pasatiempo extraño, curioso.",
+        "location": null,   
+        "options":[{
+            "text":"Sí, y no es muy común",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 112
+        },
+        {
+            "text":"Y no hay que emplear mucho dinero en ello",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 112
+        },
+        {
+            "text":"¿Sabe? A usted no la disecaría...",
+            "maxScore": 100,
+            "minScore": 30,
+            "score": 0,
+            "id_obj": 117
+        }
+    ]
+    },
+
+    {
+        "id": 122,
+        "id_obj": -2,
+        "score": 20,
+        "expresion": "neutral",
+        "speaker":"M",
+        "dialogs":"Quédese unos días más...",
+        "location": null,   
+        "options":[{
+            "text":"...aún tengo más pájaros en la colección",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 126
+        },
+        {
+            "text":"...puedo enseñarte más cosas sobre mí a parte de pájaros",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 25,
+            "id_obj": 129
+        },
+        {
+            "text":"...no es hora de salir de la jaula todavía",
+            "maxScore": 100,
+            "minScore": 70,
+            "score": 0,
+            "id_obj": 136
+        }
+    ]
+    },
+
+    {
+        "id": 140,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Y no se siente solo?",
+        "location": null,   
+        "options":[{
+            "text":"Ahora que está usted aquí no",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 30,
+            "id_obj": 143
+        },
+        {
+            "text":"No estoy solo, vivo con mi madre",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 149
+        }
+    ]
+    },
+
+    {
+        "id": 146,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "neutral",
+        "speaker":"F",
+        "dialogs":"¿Nunca ha pensado en salir de aquí?",
+        "location": null,   
+        "options":[{
+            "text":"...",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 20,
+            "id_obj": 66
+        },
+        {
+            "text":"Debo cuidar de mi madre",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 56
+        }
+    ]
+    }
+]
+
