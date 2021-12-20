@@ -35,6 +35,8 @@ export default class Boot extends Phaser.Scene {
     this.load.image('marionCraneMenu', 'marion_crane.jpg');
     this.load.image('eveKendallMenu', 'eve_kendall.png');
     this.load.image('configButton', 'black_button.png');
+    this.load.image('pauseMenu', 'motel_pausa.png')
+    this.load.image('heartPauseButton','heart_pause_button.png')
 
     //Carga de audio
     this.load.setPath("assets/audio/")
@@ -50,7 +52,7 @@ export default class Boot extends Phaser.Scene {
   }
 
   create() {
-    this.game.sound.volume = 0.50;
+    this.game.sound.volume = 0.5;
     this.scene.start('menu');
   }
 }
