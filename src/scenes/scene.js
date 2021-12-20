@@ -60,6 +60,7 @@ export default class Scene extends Phaser.Scene {
     this.events.on("optionClicked", this.optionClicked, this);
     this.events.on('changeBlood', this.changeBlood, this);
     this.esc.on('down', this.showMenu, this);
+    this.events.on('detuneMusic', this.detuneMusic, this);
 
     this.events.on("shutdown", () => { //creo que no es necesrio aqui
       this.events.off('badEnding');
@@ -179,5 +180,10 @@ export default class Scene extends Phaser.Scene {
     this.scene.run("pause");
     this.scene.pause("Scene");
     this.scene.setVisible(true, "pause");
+  }
+
+  detuneMusic(detune){
+    this.jazzSound.setDetune(detune);
+    console.log(detune);
   }
 }
