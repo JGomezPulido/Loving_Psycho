@@ -39,7 +39,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('eveKendallMenu', 'eve_kendall.png');
     this.load.image('configButton', 'black_button.png');
     this.load.image('pauseMenu', 'motel_pausa.png');
-    this.load.image('fondoMenu', 'fondo_menu.jpg');
+    this.load.image('fondoMenu', 'fondo_menu.png');
     this.load.image('heartPauseButton','heart_pause_button.png')
 
     //Carga de audio

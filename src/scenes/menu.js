@@ -16,19 +16,22 @@ export default class Menu extends Phaser.Scene {
     let canvasW = canvas.width;
     let canvasH = canvas.height;
 
-    this.add.text(canvasW / 2, canvasH * 0.05, 'Loving Psycho').setOrigin(0.5, 0).setFontSize(80);
+    this.b = this.add.image(canvasW / 2, canvasH / 2, 'fondoMenu');
+    this.b.setScale(canvasW / this.b.width, canvasH / this.b.height);
+    this.add.text(canvasW / 2, canvasH * 0.07, 'Loving  Psycho').setOrigin(0.5, 0).setFontSize(80);
+    
 
     //botones de las dos citas
-    this.buttonMarionCrane = new DateButton(this, canvasW * 0.25, canvasH / 3, 'marionCraneMenu', this.cache.json.get("tree"));
-    this.buttonEveKendall = new DateButton(this, canvasW * 0.75, canvasH / 3, 'eveKendallMenu', this.cache.json.get("tree2"));
+    this.buttonMarionCrane = new DateButton(this, canvasW * 0.25, canvasH / 2.4, 'marionCraneMenu', this.cache.json.get("tree"));
+    this.buttonEveKendall = new DateButton(this, canvasW * 0.75, canvasH / 2.4, 'eveKendallMenu', this.cache.json.get("tree2"));
 
     //botones para seleccionar la dificltad
-    this.add.text(canvasW / 2, canvasH / 3 * 2, '< Dificultad >').setOrigin(0.5, 0.5).setFontSize(30).setOrigin(0.5, 0.5).setFontStyle('bold');
-    this.buttonNormal = new DifficultyButton(this, canvasW / 4, canvasH / 3 * 2, "Normal", false);
-    this.buttonDificil = new DifficultyButton(this, canvasW * 3 / 4, canvasH / 3 * 2, "Difícil", true);
+    this.add.text(canvasW / 2, canvasH / 1.4, '< Dificultad >').setOrigin(0.5, 0.5).setFontSize(30).setOrigin(0.5, 0.5).setFontStyle('bold');
+    this.buttonNormal = new DifficultyButton(this, canvasW / 4, canvasH / 1.4, "Normal", false);
+    this.buttonDificil = new DifficultyButton(this, canvasW * 3 / 4, canvasH / 1.4, "Difícil", true);
 
     //boton de configuracion
-    this.configButton = new ConfigButton(this, canvasW / 2, canvasH / 6 * 5);
+    this.configButton = new ConfigButton(this, canvasW / 2, canvasH / 1.15);
     this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2);
 
     //música
