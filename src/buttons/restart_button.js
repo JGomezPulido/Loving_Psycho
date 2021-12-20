@@ -2,7 +2,7 @@ import Button from "./button.js"
 
 export default class RestartButton extends Button {
     constructor(scene, x, y) {
-        super(scene, x, y, 'boton', 'Reiniciar', 0.8, 0.8);//0.95
+        super(scene, x, y, 'boton', 'Reiniciar', 0.95, 0.95);//0.95
 
         this.sprite.on("pointerdown", this.exit, this);
     }
