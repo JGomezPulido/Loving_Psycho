@@ -56,7 +56,6 @@ export default class Boot extends Phaser.Scene {
   }
 
   create() {
-    this.game.sound.volume = 0.5;
     this.scene.start('menu');
   }
 }
