@@ -6,6 +6,7 @@ import PsychoBar from "../psycho_bar.js";
 import Option from "../option.js";
 import Girl from "../girl.js";
 import Background from "../background.js";
+import Blood from "../blood.js";
 
 /**
  * Representa la escena principal del juego
@@ -124,7 +125,7 @@ export default class Scene extends Phaser.Scene {
    * Método que crea los backgrounds del juego
    */
   initBlood() {
-    this.blood = new Background(this, this._canvasW / 2, this._canvasH / 2, 'sangre');
+    this.blood = new Blood(this, this._canvasW / 2, this._canvasH / 2, 'sangre');
     this.blood.setAlpha(0);
   }
 
