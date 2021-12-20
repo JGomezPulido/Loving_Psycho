@@ -118,8 +118,7 @@ export default class DialogBox extends Phaser.GameObjects.Container {
     this._cont = 0;
     this._delay = 0;
     this._textoEscrito = false;
-    this._textSpeed = 30;
-
+    this._textSpeed = this.scene.textVelocity;
   }
 
   /**
@@ -173,6 +172,10 @@ export default class DialogBox extends Phaser.GameObjects.Container {
     this._dialogBackground.setTexture(speaker);
   }
 
+  setTextVelocity(vel){
+    this._textSpeed = vel;
+  }
+
   preUpdate(t, dt) {
     //Escribe el texto guardado en this._paragraph progresivamente
     if (!this._textoEscrito) {
@@ -181,7 +184,7 @@ export default class DialogBox extends Phaser.GameObjects.Container {
           this._actParrafo += this._paragraph[this._cont];
           this._text.setText(this._actParrafo);
           this._cont++;
-          this._delay = this._textSpeed;
+          this._delay = 100- this._textSpeed;
         } else {
           this._textoEscrito = true;
         }

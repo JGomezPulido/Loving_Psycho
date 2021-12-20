@@ -22,6 +22,7 @@ export default class Scene extends Phaser.Scene {
   init(datos) {
     this.treeJson = datos.cita;
     this.dificil = datos.dificultad;
+    this.textVelocity = datos.textVelocity;
   }
 
   create() {
@@ -67,6 +68,14 @@ export default class Scene extends Phaser.Scene {
       this.events.off('changeBlood');
       this.jazzSound.stop();
     })
+
+    this.events.on('resume', (sys, data) =>{
+        this.textVelocity = data.textVelocity;
+       
+        this.dialoge.setTextVelocity(this.textVelocity);
+        this.dialogeOption.setTextVelocity(this.textVelocity);
+
+    });
   }
 
   /**
@@ -174,8 +183,7 @@ export default class Scene extends Phaser.Scene {
   }
 
   showMenu() {
-    console.log(this.scene.isPaused("Scene"));
-    this.scene.run("pause");
+    this.scene.run("pause", {textVelocity: this.textVelocity});
     this.scene.pause("Scene");
     this.scene.setVisible(true, "pause");
   }

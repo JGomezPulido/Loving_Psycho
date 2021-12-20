@@ -10,6 +10,9 @@ export default class PauseMenu extends Phaser.Scene {
         });
     }
 
+    init(data){
+        this._textVelocity = data.textVelocity;
+    }
     create() {
 
         let canvasW = this.cameras.main.width;
@@ -22,7 +25,7 @@ export default class PauseMenu extends Phaser.Scene {
 
         this._settingsButton = new ConfigButton(this, canvasW / 2, canvasH / 2 - 65);
         //this._settingsButton = new ConfigButton(this, canvasW / 2 +17, canvasH / 2 - 23);
-        this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2);
+        this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2, {textVelocity: this._textVelocity});
 
         this._restartButton = new RestartButton(this, canvasW  / 2, canvasH / 4 * 3 - 35);
         //this._restartButton = new RestartButton(this, canvasW /2 + 23, 3* canvasH/4+40);
@@ -31,10 +34,14 @@ export default class PauseMenu extends Phaser.Scene {
 
         this.esc = this.input.keyboard.addKey("ESC");
         this.esc.on("down", this.changeScene, this);
+
+        this.events.on('resume', (sys, data) => {
+            this.configMenu.setTextVelocity(data.textVelocity);
+        })
     }
 
     changeScene() {
-        this.scene.run("Scene");
+        this.scene.run("Scene", {textVelocity: this.configMenu.getTextVelocity()});
         this.scene.setVisible(false, "pause");
         this.scene.pause("pause");
     }

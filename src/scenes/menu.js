@@ -29,7 +29,7 @@ export default class Menu extends Phaser.Scene {
 
     //boton de configuracion
     this.configButton = new ConfigButton(this, canvasW / 2, canvasH / 6 * 5);
-    this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2);
+    this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2, {"textVelocity": 40});
 
     //música
     this.menuMusic = this.sound.add('menu');
@@ -47,7 +47,8 @@ export default class Menu extends Phaser.Scene {
     this.menuMusic.stop();
     this.scene.start('Scene', {
       cita: tree,
-      dificultad: this.hard,   
+      dificultad: this.hard,  
+      textVelocity: this.configMenu.getTextVelocity() 
     });
     this.scene.stop("menu");
   }
@@ -55,4 +56,5 @@ export default class Menu extends Phaser.Scene {
   setDifficulty(isHard) {
     this.hard = isHard;
   }
+
 }
