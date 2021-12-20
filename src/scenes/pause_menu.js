@@ -17,12 +17,15 @@ export default class PauseMenu extends Phaser.Scene {
 
         this._sprite = this.add.sprite(canvasW / 2, canvasH / 2, "pauseMenu");
 
-        this._resumeButton = new ResumeButton(this, canvasW / 2, canvasH / 4 - 10);
+        //this._resumeButton = new ResumeButton(this, canvasW/2, canvasH / 4 - 10);
+        this._resumeButton = new ResumeButton(this, canvasW/2 +20, canvasH / 4 + 30);
 
-        this._settingsButton = new ConfigButton(this, canvasW / 2, canvasH / 2 - 65);
+        //this._settingsButton = new ConfigButton(this, canvasW / 2, canvasH / 2 - 65);
+        this._settingsButton = new ConfigButton(this, canvasW / 2 +17, canvasH / 2 - 23);
         this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2);
 
-        this._restartButton = new RestartButton(this, canvasW  / 2, canvasH / 4 * 3 - 35);
+        //this._restartButton = new RestartButton(this, canvasW  / 2, canvasH / 4 * 3 - 35);
+        this._restartButton = new RestartButton(this, canvasW /2 + 23, 3* canvasH/4+40);
 
         this._container = this.add.container(0, 0, [this._sprite, this._settingsButton, this._resumeButton, this._restartButton,this.configMenu]);
 

@@ -2,7 +2,7 @@ import Button from './button.js'
 
 export default class ResumeButton extends Button {
     constructor(scene, x, y) {
-        super(scene, x, y, 'boton', 'Continuar', 0.75, 0.75);
+        super(scene, x, y, 'boton', 'Continuar', 0.6, 0.6); //0.75
 
         this.sprite.on("pointerdown", this.changeScene, this);
     }

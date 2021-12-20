@@ -32,7 +32,8 @@ export default class Boot extends Phaser.Scene {
     this.load.image('motel', 'motel.png');
     this.load.image('muerta', 'she_died.png');
     this.load.image('sangre', 'blood.png');
-    this.load.image('marionCraneMenu', 'marion_crane.jpg');
+    this.load.image('marionCraneMenu', 'marion_icon.png');
+    this.load.image('marionCraneMenuRojo', 'marion_icon_border.png');
     this.load.image('eveKendallMenu', 'eve_kendall.png');
     this.load.image('configButton', 'black_button.png');
     this.load.image('pauseMenu', 'motel_pausa.png')
