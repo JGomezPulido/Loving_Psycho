@@ -12,7 +12,7 @@ export default class RestartButton extends Button {
      * @param {*} y - Posicion en y
      */
     constructor(scene, x, y) {
-        super(scene, x, y, 'boton', 'Reiniciar', 0.95, 0.95);//0.95
+        super(scene, x, y, 'boton', 'Reiniciar', 0.95, 0.95); //0.95
 
         this.sprite.on("pointerdown", this.exit, this);
     }

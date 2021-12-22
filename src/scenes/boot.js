@@ -34,7 +34,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('configButton', 'black_button.png');
     this.load.image('pauseMenu', 'motel_pausa.png');
     this.load.image('fondoMenu', 'fondo_menu.png');
-    this.load.image('heartPauseButton','heart_pause_button.png')
+    this.load.image('heartPauseButton', 'heart_pause_button.png')
     this.load.image('restaurante', 'restaurante_tren.png');
     this.load.image('compartimento', 'habitacion_tren.png');
 
@@ -46,10 +46,10 @@ export default class Boot extends Phaser.Scene {
     this.load.image('spicy', 'marion_spicy.png');
     this.load.image('horrorizada', 'marion_pavor.png');
     this.load.image('sonriente', 'marion_sonriente.png');
-    this.load.image('asqueada', 'marion_asqueada.png');    
+    this.load.image('asqueada', 'marion_asqueada.png');
     this.load.image('marionCraneMenu', 'marion_icon.png');
     this.load.image('marionCraneMenuRojo', 'marion_icon_border.png');
-    
+
     //Carga de sprites Eva
     this.load.setPath('assets/sprites/eva_kendall/');
     this.load.image('evaNeutral', 'eva_neutral.png');
@@ -58,7 +58,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('evaSpicy', 'eva_spicy.png');
     this.load.image('evaHorrorizada', 'eva_pavor.png');
     this.load.image('evaSonriente', 'eva_sonriente.png');
-    this.load.image('evaAsqueada', 'eva_asqueada.png');    
+    this.load.image('evaAsqueada', 'eva_asqueada.png');
     this.load.image('evaKendallMenu', 'eva_icon.png');
     this.load.image('evaKendallMenuRojo', 'eva_icon_border.png');
 

@@ -16,10 +16,10 @@ export default class DateButton extends Button {
     constructor(scene, x, y, sprite, tree) {
         super(scene, x, y, sprite, "", 0.3, 0.3);
         //
-        this.sprite.on("pointerover", () =>{
-            this.sprite.setTexture(sprite+'Rojo')
-          });
-        this.sprite.on("pointerout", () =>{
+        this.sprite.on("pointerover", () => {
+            this.sprite.setTexture(sprite + 'Rojo')
+        });
+        this.sprite.on("pointerout", () => {
             this.sprite.setTexture(sprite)
         });
         this.sprite.on("pointerdown", () => {

@@ -20,7 +20,7 @@ export default class DialogBox extends Phaser.GameObjects.Container {
     this.scene.events.on('optionsStart', this.showOptionDialog, this);
     this.scene.events.on('changeDialogBox', this.changeDialogeBox, this);
     this.initContainer(inter, width, height);
-    
+
 
     //Variables para gestionar la escritura del diálogo
     this.initProperties();
@@ -182,7 +182,7 @@ export default class DialogBox extends Phaser.GameObjects.Container {
    * Cambia la velocidad del texto.
    * @param {number} velocity - nueva velocidad del texto
    */
-  setTextVelocity(velocity){
+  setTextVelocity(velocity) {
     this._textSpeed = velocity;
   }
 
@@ -191,14 +191,14 @@ export default class DialogBox extends Phaser.GameObjects.Container {
    * @override
    */
   preUpdate(t, dt) {
-    
+
     if (!this._textoEscrito) {
       if (this._delay <= 0) {
         if (this._cont < this._paragraph.length) {
           this._actParrafo += this._paragraph[this._cont];
           this._text.setText(this._actParrafo);
           this._cont++;
-          this._delay = 100- this._textSpeed;
+          this._delay = 100 - this._textSpeed;
         } else {
           this._textoEscrito = true;
         }

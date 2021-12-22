@@ -27,7 +27,7 @@ export default class Menu extends Phaser.Scene {
     this.b = this.add.image(canvasW / 2, canvasH / 2, 'fondoMenu');
     this.b.setScale(canvasW / this.b.width, canvasH / this.b.height);
     this.add.text(canvasW / 2, canvasH * 0.07, 'Loving  Psycho').setOrigin(0.5, 0).setFontSize(80);
-    
+
 
     //botones de las dos citas
     this.buttonMarionCrane = new DateButton(this, canvasW * 0.25, canvasH / 2.4, 'marionCraneMenu', this.cache.json.get("tree"));
@@ -40,7 +40,9 @@ export default class Menu extends Phaser.Scene {
 
     //boton de configuracion
     this.configButton = new ConfigButton(this, canvasW / 2, canvasH / 6 * 5);
-    this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2, {"textVelocity": 40});
+    this.configMenu = new ConfigMenu(this, canvasW / 2, canvasH / 2, {
+      "textVelocity": 40
+    });
 
     //música
     this.menuMusic = this.sound.add('menu');
@@ -62,8 +64,8 @@ export default class Menu extends Phaser.Scene {
     this.menuMusic.stop();
     this.scene.start('Scene', {
       cita: tree,
-      dificultad: this.hard,  
-      textVelocity: this.configMenu.getTextVelocity() 
+      dificultad: this.hard,
+      textVelocity: this.configMenu.getTextVelocity()
     });
     this.scene.stop("menu");
   }

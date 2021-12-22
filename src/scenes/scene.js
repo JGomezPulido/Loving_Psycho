@@ -21,9 +21,9 @@ export default class Scene extends Phaser.Scene {
   }
 
   /**
-     * Inicializa la velocidad del texto, el árbol de diálogos y la dificultad.
-     * @param {object} data- objeto de inicialización de la escena.
-     */
+   * Inicializa la velocidad del texto, el árbol de diálogos y la dificultad.
+   * @param {object} data- objeto de inicialización de la escena.
+   */
   init(datos) {
     this.treeJson = datos.cita;
     this.dificil = datos.dificultad;
@@ -82,8 +82,8 @@ export default class Scene extends Phaser.Scene {
     })
 
     //Asignación de la velocidad del texto al volver del menú de pausa
-    this.events.on('resume', (sys, data) =>{
-      if(data.textVelocity){
+    this.events.on('resume', (sys, data) => {
+      if (data.textVelocity) {
         this.textVelocity = data.textVelocity;
         this.dialoge.setTextVelocity(this.textVelocity);
         this.dialogeOption.setTextVelocity(this.textVelocity);
@@ -139,7 +139,7 @@ export default class Scene extends Phaser.Scene {
     this.optionsGroup.addMultiple([this.op1, this.op2, this.op3, this.op4]);
     this.optionsActive = false;
     this.optionsGroup.children.iterate(ch => {
-     
+
       this.optionsGroup.killAndHide(ch);
     });
 
@@ -159,7 +159,7 @@ export default class Scene extends Phaser.Scene {
    * @param {number} id_obj - id del nodo objetivo
    */
   optionClicked() {
-    if(!this.dialogManager.isOption()){
+    if (!this.dialogManager.isOption()) {
       this.psychoBar.setPasiveFill(false);
 
       this.dialogeOption.setActive(false);
@@ -172,9 +172,8 @@ export default class Scene extends Phaser.Scene {
         this.optionsGroup.killAndHide(ch);
       });
       this.changeBlood();
-    }
-    else{
-      this.events.emit('optionsStart',this.dialogManager.getActualNode());
+    } else {
+      this.events.emit('optionsStart', this.dialogManager.getActualNode());
     }
   }
 
@@ -199,12 +198,12 @@ export default class Scene extends Phaser.Scene {
     let optionsArrray = this.optionsGroup.getChildren()
     let i = 0;
     while (i < node.options.length) {
-      
+
       let option = optionsArrray[i];
       option.setOption(node.options[i]);
-      if (node.options[i].minScore <= this.psychoBar.getScore() && node.options[i].maxScore >= this.psychoBar.getScore()) {      
+      if (node.options[i].minScore <= this.psychoBar.getScore() && node.options[i].maxScore >= this.psychoBar.getScore()) {
         option.setActive(true);
-        option.setVisible(true); 
+        option.setVisible(true);
       }
       i++;
     }
@@ -213,17 +212,17 @@ export default class Scene extends Phaser.Scene {
   /**
    * Metodo que actualiza las opciones con respecto a la puntuación de la barra de diálogo, en caso de que estas estén activas.
    */
-  updateOptions(){
-    if(this.optionsActive){
+  updateOptions() {
+    if (this.optionsActive) {
       let i = 0;
       let optionsArray = this.optionsGroup.getChildren();
-      
-      while(i < this.dialogManager.getActualNode().options.length){
+
+      while (i < this.dialogManager.getActualNode().options.length) {
         let option = optionsArray[i];
-        if(option.getMinScore() <=  this.psychoBar.getScore() && option.getMaxScore() >= this.psychoBar.getScore()){
+        if (option.getMinScore() <= this.psychoBar.getScore() && option.getMaxScore() >= this.psychoBar.getScore()) {
           option.setActive(true);
-          option.setVisible(true); 
-        }else{
+          option.setVisible(true);
+        } else {
           this.optionsGroup.killAndHide(option);
         }
         i++
@@ -232,15 +231,17 @@ export default class Scene extends Phaser.Scene {
   }
 
   showMenu() {
-    this.scene.run("pause", {textVelocity: this.textVelocity});
+    this.scene.run("pause", {
+      textVelocity: this.textVelocity
+    });
     this.scene.pause("Scene");
     this.scene.setVisible(true, "pause");
   }
 
-  detuneMusic(detune){
+  detuneMusic(detune) {
     this.jazzSound.setDetune(detune);
-    
+
   }
-  
-  
+
+
 }

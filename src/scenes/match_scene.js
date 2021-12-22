@@ -32,7 +32,7 @@ export default class MatchScene extends Phaser.Scene {
     let textString = "La cita ha terminado. Match: " + this._match + "%";
     this.setText(canvasW / 2, canvasH / 2, textString);
 
-    this._restartButton = new RestartButton(this, canvasW/ 2, 3*canvasH/ 4);
+    this._restartButton = new RestartButton(this, canvasW / 2, 3 * canvasH / 4);
   }
 
   /**
