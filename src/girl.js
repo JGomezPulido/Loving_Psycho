@@ -9,8 +9,8 @@ export default class Girl extends Phaser.GameObjects.Sprite {
      * @param {number} y - posición en eje y
      * @param {number} h - proporción/ escala
      */
-    constructor(scene, x, y, h) {
-        super(scene, x, y, 'neutral');
+    constructor(scene, x, y, h, expresion) {
+        super(scene, x, y, expresion);
         this.setScale(h / this.height, h / this.height);
         this.scene.events.on('changeExpresion', this.changeGirlFace, this);
         this.scene.add.existing(this);

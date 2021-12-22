@@ -10,9 +10,18 @@ export default class PauseMenu extends Phaser.Scene {
         });
     }
 
-    init(data){
+    /**
+     * Inicializa la velocidad del texto.
+     * @param {object} data- objeto de inicialización de la escena, contiene la velocidad del texto para el menú de configuración. 
+     */
+    init(data) {
         this._textVelocity = data.textVelocity;
     }
+
+    /**
+     * Construye un nuevo menú de pausa, con un botones de configuración, continuar y reiniciar, además de un menú de configuración.
+     * @override
+     */
     create() {
 
         let canvasW = this.cameras.main.width;
@@ -20,17 +29,19 @@ export default class PauseMenu extends Phaser.Scene {
 
         this._sprite = this.add.sprite(canvasW / 2, canvasH / 2, "pauseMenu");
 
-        this._resumeButton = new ResumeButton(this, canvasW/2, canvasH / 4 - 10);
+        this._resumeButton = new ResumeButton(this, canvasW / 2, canvasH / 4 - 10);
         //this._resumeButton = new ResumeButton(this, canvasW/2 +20, canvasH / 4 + 30);
 
         this._settingsButton = new ConfigButton(this, canvasW / 2, canvasH / 2 - 65);
         //this._settingsButton = new ConfigButton(this, canvasW / 2 +17, canvasH / 2 - 23);
-        this.configMenu = new ConfigMenu(this, canvasW/2, canvasH/2, {textVelocity: this._textVelocity});
+        this.configMenu = new ConfigMenu(this, canvasW / 2, canvasH / 2, {
+            textVelocity: this._textVelocity
+        });
 
-        this._restartButton = new RestartButton(this, canvasW  / 2, canvasH / 4 * 3 - 35);
+        this._restartButton = new RestartButton(this, canvasW / 2, canvasH / 4 * 3 - 35);
         //this._restartButton = new RestartButton(this, canvasW /2 + 23, 3* canvasH/4+40);
 
-        this._container = this.add.container(0, 0, [this._sprite, this._settingsButton, this._resumeButton, this._restartButton,this.configMenu]);
+        this._container = this.add.container(0, 0, [this._sprite, this._settingsButton, this._resumeButton, this._restartButton, this.configMenu]);
 
         this.esc = this.input.keyboard.addKey("ESC");
         this.esc.on("down", this.changeScene, this);
@@ -40,8 +51,13 @@ export default class PauseMenu extends Phaser.Scene {
         })
     }
 
+    /**
+     * Despausa la escena de la cita y le pasa la velocidad del texto.
+     */
     changeScene() {
-        this.scene.run("Scene", {textVelocity: this.configMenu.getTextVelocity()});
+        this.scene.run("Scene", {
+            textVelocity: this.configMenu.getTextVelocity()
+        });
         this.scene.setVisible(false, "pause");
         this.scene.pause("pause");
     }

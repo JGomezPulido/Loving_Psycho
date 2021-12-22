@@ -4,7 +4,7 @@
 export default class Button extends Phaser.GameObjects.Container {
 
   /**
-   * 
+   * Construye un botón nuevo, con el sprite y el texto indicados.
    * @param {Phaser.Scene} scene 
    * @param {number} x - posición en el eje x
    * @param {number} y - posición en el eje x
@@ -36,5 +36,5 @@ export default class Button extends Phaser.GameObjects.Container {
   }
 
 
-  
+
 }

@@ -20,12 +20,20 @@ export default class Scene extends Phaser.Scene {
     });
   }
 
+  /**
+   * Inicializa la velocidad del texto, el árbol de diálogos y la dificultad.
+   * @param {object} data- objeto de inicialización de la escena.
+   */
   init(datos) {
     this.treeJson = datos.cita;
     this.dificil = datos.dificultad;
     this.textVelocity = datos.textVelocity;
   }
 
+  /**
+   * Crea una nueva escena de cita, con todos sus assets necesarios
+   * @override
+   */
   create() {
 
     this._canvasW = document.getElementById("juego").width;
@@ -37,7 +45,7 @@ export default class Scene extends Phaser.Scene {
     //Creamos los objetos del juego
     this.dialogManager = new DialogManager(this.tree, this.treeJson, this);
     this.background = new Background(this, this._canvasW / 2, this._canvasH / 2, this.dialogManager.getActualNode().location);
-    this.girl = new Girl(this, this._canvasW / 2, this._canvasH / 2-85, this._canvasH-160);
+    this.girl = new Girl(this, this._canvasW / 2, this._canvasH / 2-85, this._canvasH-160, this.dialogManager.getActualNode().expresion);
     this.tween = this.tweens.add({
       targets: []
     })
@@ -48,7 +56,7 @@ export default class Scene extends Phaser.Scene {
     this.intiOptions()
     this.initBlood();
 
-    
+    //Inicialización de sonidos
     this.jazzSound = this.sound.add('jazz');
     this.jazzSound.play();
     this.jazzSound.setLoop(true);
@@ -63,16 +71,19 @@ export default class Scene extends Phaser.Scene {
     this.esc.on('down', this.showMenu, this);
     this.events.on('detuneMusic', this.detuneMusic, this);
 
+    //Desuscripción a eventos en shutdown
     this.events.on("shutdown", () => { //creo que no es necesrio aqui
       this.events.off('badEnding');
       this.events.off("optionsStart");
       this.events.off("optionClicked");
       this.events.off('changeBlood');
+      this.events.off('detuneMusic');
       this.jazzSound.stop();
     })
 
-    this.events.on('resume', (sys, data) =>{
-      if(data.textVelocity){
+    //Asignación de la velocidad del texto al volver del menú de pausa
+    this.events.on('resume', (sys, data) => {
+      if (data.textVelocity) {
         this.textVelocity = data.textVelocity;
         this.dialoge.setTextVelocity(this.textVelocity);
         this.dialogeOption.setTextVelocity(this.textVelocity);
@@ -110,7 +121,7 @@ export default class Scene extends Phaser.Scene {
   }
 
   /**
-   * Métoodo que crea los 4 objetos Option y los mete a un grupo
+   * Método que crea los 4 objetos Option y los mete a un grupo
    */
   intiOptions() {
 
@@ -126,7 +137,9 @@ export default class Scene extends Phaser.Scene {
     this.op3 = new Option(this, "", 0, 100, 20, 0, rightOptionsX, upOptionsY);
     this.op4 = new Option(this, "", 0, 100, 20, 0, leftOptoinsX, downOptionsY);
     this.optionsGroup.addMultiple([this.op1, this.op2, this.op3, this.op4]);
+    this.optionsActive = false;
     this.optionsGroup.children.iterate(ch => {
+
       this.optionsGroup.killAndHide(ch);
     });
 
@@ -145,54 +158,90 @@ export default class Scene extends Phaser.Scene {
    * También avisa a la barra de instinto asesino de que se deje de llenar pasivamente
    * @param {number} id_obj - id del nodo objetivo
    */
-  optionClicked(id_obj) {
-    this.psychoBar.setPasiveFill(false);
+  optionClicked() {
+    if (!this.dialogManager.isOption()) {
+      this.psychoBar.setPasiveFill(false);
 
-    this.dialogeOption.setActive(false);
-    this.dialogeOption.setVisible(false);
-    this.dialoge.reset();
-    this.dialoge.setActive(true);
-    this.dialoge.setVisible(true);
-    this.optionsGroup.children.iterate(ch => {
-      this.optionsGroup.killAndHide(ch);
-    });
-    this.changeBlood();
+      this.dialogeOption.setActive(false);
+      this.dialogeOption.setVisible(false);
+      this.dialoge.reset();
+      this.dialoge.setActive(true);
+      this.dialoge.setVisible(true);
+      this.optionsActive = false;
+      this.optionsGroup.children.iterate(ch => {
+        this.optionsGroup.killAndHide(ch);
+      });
+      this.changeBlood();
+    } else {
+      this.events.emit('optionsStart', this.dialogManager.getActualNode());
+    }
   }
 
   /**
-   * Método que reorganiza los nodos aleatoriamente y los habilita si cumplen los requisitos de puntuación de la barra de instinto asesino
-   * * También avisa a la barra de instinto asesino de que se empiece a llenar pasivamente
+   * Método que reorganiza los nodos aleatoriamente y los habilita si cumplen los requisitos de puntuación de la barra de instinto asesino.
+   * También avisa a la barra de instinto asesino de que se empiece a llenar pasivamente.
    * @param {Node} node 
    */
   optionsStart(node) {
+
+    this.optionsGroup.children.iterate(ch => {
+      this.optionsGroup.killAndHide(ch);
+    });
+
     if (this.dificil) {
       this.psychoBar.setPasiveFill(true);
       this.psychoBar.resetPasiveFillCont();
     }
 
-
+    this.optionsActive = true;
     this.optionsGroup.shuffle();
+    let optionsArrray = this.optionsGroup.getChildren()
     let i = 0;
     while (i < node.options.length) {
-      if (node.options[i].minScore <= this.psychoBar._score && node.options[i].maxScore >= this.psychoBar._score) {
-        let option = this.optionsGroup.getFirst();
+
+      let option = optionsArrray[i];
+      option.setOption(node.options[i]);
+      if (node.options[i].minScore <= this.psychoBar.getScore() && node.options[i].maxScore >= this.psychoBar.getScore()) {
         option.setActive(true);
         option.setVisible(true);
-        option.setOption(node.options[i]);
-
       }
       i++;
     }
   }
 
+  /**
+   * Metodo que actualiza las opciones con respecto a la puntuación de la barra de diálogo, en caso de que estas estén activas.
+   */
+  updateOptions() {
+    if (this.optionsActive) {
+      let i = 0;
+      let optionsArray = this.optionsGroup.getChildren();
+
+      while (i < this.dialogManager.getActualNode().options.length) {
+        let option = optionsArray[i];
+        if (option.getMinScore() <= this.psychoBar.getScore() && option.getMaxScore() >= this.psychoBar.getScore()) {
+          option.setActive(true);
+          option.setVisible(true);
+        } else {
+          this.optionsGroup.killAndHide(option);
+        }
+        i++
+      }
+    }
+  }
+
   showMenu() {
-    this.scene.run("pause", {textVelocity: this.textVelocity});
+    this.scene.run("pause", {
+      textVelocity: this.textVelocity
+    });
     this.scene.pause("Scene");
     this.scene.setVisible(true, "pause");
   }
 
-  detuneMusic(detune){
+  detuneMusic(detune) {
     this.jazzSound.setDetune(detune);
-    console.log(detune);
+
   }
+
+
 }

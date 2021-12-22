@@ -5,7 +5,7 @@ import DeathScene from './scenes/death_scene.js';
 import MatchScene from './scenes/match_scene.js';
 import PauseMenu from './scenes/pause_menu.js';
 
-
+//Configuracioón del juego de Phaser
 let config = {
     type: Phaser.CANVAS,
     canvas: document.getElementById("juego"),

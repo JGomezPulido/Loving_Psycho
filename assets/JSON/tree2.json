@@ -1,237 +1,1108 @@
 [
     {
-        "id":0,
-        "id_obj":1,
-        "score": 50,
-        "expresion": "neutral",
+        "id": 0,
+        "id_obj": 1,
+        "score": 0,
+        "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"Buenos días",      
+        "dialogs":" Perdone, ¿Le importa que me siente con usted a comer? No hay ningún otro sitio libre.", 
+        "location": "restaurante",    
         "options": null
     },
     {
-        "id":1,
-        "id_obj":2,
-        "score": 200,
-        "expresion": "neutral",
+        "id": 1,
+        "id_obj": 2,
+        "score": 10,
+        "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":"Hola (tómate una pastilla para bajar tu instinto asesino)",
+        "dialogs":"Por favor, faltaría más.", 
+        "location": null,    
         "options": null
     },
     {
-        "id":2,
-        "id_obj":-2,
-        "score": 40,
-        "expresion": "feliz",
+        "id": 2,
+        "id_obj": 3,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Muchas gracias. ¿Cómo se llama?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 3,
+        "id_obj": 4,
+        "score": 0,
+        "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":"¿A qué te dedicas?",
+        "dialogs":"Norman Bates, mucho gusto, ¿y usted?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 4,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Eva Kendal, encantada. ¿Le gusta algo de la carta?",
+        "location": null,   
         "options":[{
-            "text":"Juego al LoL, soy Plata II",
+            "text":"Si, el salmón tiene buena pinta.",
             "maxScore": 100,
             "minScore": 0,
             "score": 0,
-            "id_obj":3
+            "id_obj": 5
         },
         {
-            "text":"Juego a videojuegos",
-            "maxScore": 100,
+            "text":"Usted.",
+            "maxScore": 30,
             "minScore": 0,
-            "score": 0,
-            "id_obj":21
+            "score": 30,
+            "id_obj": 6
         },
         {
-            "text":"Estudio DV en la UCM",
+            "text":"Sorpréndame",
+            "maxScore": 60,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 7
+        },
+        {
+            "text":"Soy un poco exquisito, no le voy a mentir.",
+            "maxScore": 100,
+            "minScore": 10,
+            "score": -10,
+            "id_obj": 8
+        }
+        ]
+    },
+    {
+        "id": 5,
+        "id_obj": 9,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Sí, yo estaba pensando lo mismo.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 6,
+        "id_obj":-2,
+        "score": 10,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"Me halaga usted, caballero.",
+        "location": null,   
+        "options":[{
+            "text":"Digame, ¿Cual es el motivo de su viaje?",
             "maxScore": 100,
             "minScore": 0,
             "score": 0,
-            "id_obj":21
+            "id_obj": 10
+        },
+        {
+            "text":"¿Ah, si?",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 23
+        },
+        {
+            "text":"Tampoco se emocione, jovencita.",
+            "maxScore": 60,
+            "minScore": 15,
+            "score": 15,
+            "id_obj": 13
+        }
+    ]},
+    {
+        "id": 7,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":" Hmm… ¿Te gusta la aventura, no? Interesante…",
+        "location": null,   
+        "options":[{
+            "text":"¿Qué propone?",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 21
+        },
+        {
+            "text":"Tampoco se emocione demasiado, jovencita.",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 13
+        }
+    ]},
+    {
+        "id": 8,
+        "id_obj": 9,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"¿Entonces qué es de lo que más disfruta? ¿Pescado, por ejemplo?¿Le parece bien salmón?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 9,
+        "id_obj": 10,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":" Dos salmones por aquí, por favor. Y digame, ¿Cuál es el motivo de su viaje?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 10,
+        "id_obj": 11,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Vengo de vacaciones, ¿Y usted?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 11,
+        "id_obj": 12,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Vengo para descansar un poco del trabajo, soy director de un motel de prestigio. He venido con mi madre, está en mi compartimento.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 12,
+        "id_obj": -2,
+        "score": -10,
+        "expresion": "evaAsqueada",
+        "speaker":"F",
+        "dialogs":"Ah, ¿ha venido usted con su madre?",
+        "location": null,   
+        "options":[{
+            "text":"A ella le encanta estar conmigo.",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 14
+        },
+        {
+            "text":"Disfruto mucho de su compañía",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 15
+        },
+        {
+            "text":"No me deja solo ni un rato",
+            "maxScore": 60,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 16
+        }
+    ]},
+    {
+        "id": 13,
+        "id_obj": 22,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Oh,disculpe… Me había hecho una idea equivocada de usted.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 14,
+        "id_obj": 19,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"¿Y a usted le gusta estar con ella?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 15,
+        "id_obj": 17,
+        "score": 0,
+        "expresion": "evaAsqueada",
+        "speaker":"F",
+        "dialogs":"¿No es un poco mayorcito para esas cosas?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 16,
+        "id_obj": 17,
+        "score": 0,
+        "expresion": "evaAsqueada",
+        "speaker":"F",
+        "dialogs":"Debe estar muy cansado de ella.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 17,
+        "id_obj": 18,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Uno no puede elegir a su familia, por desgracia, pero es la mujer que más feliz me hace.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 18,
+        "id_obj": 26,
+        "score": 15,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"¿Y no desearía usted a una mujer que le haga más feliz?.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 19,
+        "id_obj": 20,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Por supuesto que sí, al fin y al cabo es mi madre.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 20,
+        "id_obj": 28,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"*El camarero les trae la comida*.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 21,
+        "id_obj": 20,
+        "score": 10,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"Nada nada… Simplemente me gustan los chicos así.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 22,
+        "id_obj": 20,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"No se preocupe, era broma…", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 23,
+        "id_obj": 24,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Sí… no suelo recibir muchos cumplidos.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 24,
+        "id_obj": 25,
+        "score": 20,
+        "expresion": "evaSpicy",
+        "speaker":"M",
+        "dialogs":"Qué extraño… con lo guapa que es usted esperaba que tuviese pretendientes por todas partes.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 25,
+        "id_obj": 20,
+        "score": 0,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"Sabe… Es usted un hombre muy interesante.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 26,
+        "id_obj": 27,
+        "score": -15,
+        "expresion": "evaEnfadada",
+        "speaker":"M",
+        "dialogs":"¿Más feliz que mi madre? Déjeme decirle que eso es imposible.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 27,
+        "id_obj": 20,
+        "score": -10,
+        "expresion": "evaEnfadada",
+        "speaker":"F",
+        "dialogs":"...", 
+        "location": null,    
+        "options": null
+    },
+
+
+    {
+        "id": 28,
+        "id_obj": 29,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"He de admitir que este salmón está bastante bueno.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 29,
+        "id_obj": 30,
+        "score": 10,
+        "expresion": "evaSonriente",
+        "speaker":"M",
+        "dialogs":"Sí, deberíamos tomar más este tren, así disfrutaríamos más de esta comida y de la compañía del otro.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 30,
+        "id_obj": 31,
+        "score": 15,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Me parece una buena idea…", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 31,
+        "id_obj": 32,
+        "score": 10,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"*matala Norman… ¡MATALA!*", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 32,
+        "id_obj": 33,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"*entre susurros* No madre... No... ella me gusta...", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 33,
+        "id_obj": 34,
+        "score": 15,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"*¡¡MATALA!!*", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 34,
+        "id_obj":35,
+        "score": 0,
+        "expresion": "evaHorrorizada",
+        "speaker":"M",
+        "dialogs":"¡NO PIENSO HACERLO!", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 35,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaHorrorizada",
+        "speaker":"F",
+        "dialogs":"¿Está bien…? Estaba… hablando solo… ¿Qué no piensa hacer?",
+        "location": null,   
+        "options":[{
+            "text":"*Quedarse dormido*",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 36
+        },
+        {
+            "text":"*Pastillas*",
+            "maxScore": 100,
+            "minScore": 50,
+            "score": -15,
+            "id_obj": 43
+        },
+        {
+            "text":"*Actuar*",
+            "maxScore": 50,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 48
+        }
+    ]},
+    {
+        "id": 36,
+        "id_obj": 37,
+        "score": 0,
+        "expresion": "evaEnfadada",
+        "speaker":"M",
+        "dialogs":"Disculpa… me había quedado medio dormido y estaba teniendo una pesadilla…", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 37,
+        "id_obj": 38,
+        "score": -10,
+        "expresion": "evaEnfadada",
+        "speaker":"F",
+        "dialogs":"¿!Dormido!?, ¿con los ojos abiertos? ¿y además mientras manteníamos una conversación?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 38,
+        "id_obj": 39,
+        "score": 0,
+        "expresion": "evaEnfadada",
+        "speaker":"M",
+        "dialogs":"De verdad, disculpeme. Está noche apenas he podido dormir, demasiado trabajo…", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 39,
+        "id_obj": 40,
+        "score": 0,
+        "expresion": "evaEnfadada",
+        "speaker":"M",
+        "dialogs":"No es que nuestra conversación me estuviese pareciendo aburrida ni tampoco usted.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 40,
+        "id_obj": 41,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Está bien… no se preocupe, le entiendo. Muchas veces dejamos a un lado nuestra propia salud por trabajo.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 41,
+        "id_obj": 42,
+        "score": 10,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":" Gracias por entenderlo.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 42,
+        "id_obj": 54,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"No hay de que.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 43,
+        "id_obj": 44,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Disculpa… el médico me ha recetado unas pastillas nuevas y no estoy pasando por un buen momento.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 44,
+        "id_obj": 45,
+        "score": 0,
+        "expresion": "evaAsustada",
+        "speaker":"F",
+        "dialogs":" ¿Pastillas? ¿ De qué tipo? ¿Es que sufre usted de alguna enfermedad grave?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 45,
+        "id_obj": 46,
+        "score": -15,
+        "expresion": "evaAsustada",
+        "speaker":"M",
+        "dialogs":"No, solamente oigo voces que me dicen cosas malignas. Mi madre dice que no es nada grave pero aún así decidí asistir al doctor para que me aconsejara.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 46,
+        "id_obj": 47,
+        "score": -15,
+        "expresion": "evaAsustada",
+        "speaker":"F",
+        "dialogs":"¿Voces? ¿Cosas malignas? Creo que me voy a ir yendo… No he dormido nada esta noche y quizá una siesta no me vendría nada mal…", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 47,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "evaAsustada",
+        "speaker":"M",
+        "dialogs":"Espere un momen…",  
+        "location": null,     
+        "options": null,
+        "match": 20
+    },
+    {
+        "id": 48,
+        "id_obj": 49,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Disculpa… actuo en una obra de teatro a la vuelta y estaba practicando.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 49,
+        "id_obj": 50,
+        "score": 10,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"¿Actúa usted? ¿Es como un pasatiempo o algo así?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 50,
+        "id_obj": 51,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Así es, mi madre siempre me ha incitado a ser otra persona.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 51,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaAsustada",
+        "speaker":"F",
+        "dialogs":"¿Eso tiene un doble sentido o algo así?",
+        "location": null,   
+        "options":[{
+            "text":"¿Doble sentido?",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 52
+        },
+        {
+            "text":"Digamos que si…",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 59
+        }
+    ]},
+    {
+        "id": 52,
+        "id_obj": 53,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"¿Cómo qué doble sentido? No no. Mi madre siempre me dice que es bueno meterse en el papel de los demás, así puedes saber lo que están pensando", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 53,
+        "id_obj": 54,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Hmmm… Interesante… Tiene bastante sentido.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 54,
+        "id_obj": 55,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Camarero, la cuenta por favor *El camarero trae la cuenta*", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 55,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"*Eva saca la cartera* Yo pago",
+        "location": null,   
+        "options":[{
+            "text":"Está bien, como usted quiera.",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 56
+        },
+        {
+            "text":"Ni hablar, yo invito.",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 57
+        }
+    ]},
+    {
+        "id": 56,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Ha sido un placer conversar con usted señor Bates, ya nos veremos más adelante.",  
+        "location": null,     
+        "options": null,
+        "match": 50
+    },
+    {
+        "id": 57,
+        "id_obj": 58,
+        "score": 15,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Eso es muy generoso por su parte señor Bates, muy bien, como usted quiera.", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 58,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Por cierto , ¿le apetece venirse a mi compartimento a seguir hablando o tiene cosas que hacer?",
+        "location": null,   
+        "options":[{
+            "text":"Por supuesto que sí, faltaría más",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 63
+        },
+        {
+            "text":"No, tengo cosas que hacer",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 56
+        }
+    ]},
+    {
+        "id": 59,
+        "id_obj": 60,
+        "score": -10,
+        "expresion": "evaAsustada",
+        "speaker":"M",
+        "dialogs":"Hmmm… digamos que sí. A mí madre no le ha gustado nunca mi forma de ser, siempre ha intentado que me convirtiera en otra persona. Alguien sin sentimientos…", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 60,
+        "id_obj": 61,
+        "score": 0,
+        "expresion": "evaAsustada",
+        "speaker":"F",
+        "dialogs":"¿Sin sentimientos? ¿Por qué querría una madre eso?", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 61,
+        "id_obj": 62,
+        "score": 0,
+        "expresion": "evaHorrorizada",
+        "speaker":"M",
+        "dialogs":"Sí, así es más fácil cuando llega el final, ya lo descubrirás", 
+        "location": null,    
+        "options": null
+    },
+    {
+        "id": 62,
+        "id_obj": -1,
+        "score": -10,
+        "expresion": "evaHorrorizada",
+        "speaker":"F",
+        "dialogs":"¿Cómo que el final? Me estás asustando… mejor me voy.",  
+        "location": null,     
+        "options": null,
+        "match": 10
+    },
+
+
+    {
+        "id": 63,
+        "id_obj": 64,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Vaya… su compartimento es bastante más grande que el mio.",  
+        "location": "compartimento",     
+        "options": null
+    },
+    {
+        "id": 64,
+        "id_obj": 65,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"También me ha costado el doble, es un compartimento para 4 personas, me agobio en espacios pequeños.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 65,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"¿Le apetece una copa de vino?",
+        "location": null,   
+        "options":[{
+            "text":"Por supuesto",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 66
+        },
+        {
+            "text":"No, no me sienta bien el alcohol.",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 67
+        }
+    ]},
+    {
+        "id": 66,
+        "id_obj": 68,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"La botella está en el armarito de arriba, junto con las copas. Sirva dos.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 67,
+        "id_obj": 68,
+        "score": -10,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":" Vaya. Bueno, pues me serviré yo una. Si cambia de parecer, estaré encantada de ponerle la suya.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 68,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Y dígame, ¿Tiene algún hobbie?",
+        "location": null,   
+        "options":[{
+            "text":"La taxidermia",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
+            "id_obj": 69
+        },
+        {
+            "text":"Cuido mucho de los huéspedes",
+            "maxScore": 60,
+            "minScore": 0,
+            "score": 10,
+            "id_obj": 72
+        },
+        {
+            "text":"No tengo ningún hobbie",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 75
+        }
+    ]},
+    {
+        "id": 69,
+        "id_obj": 70,
+        "score": -10,
+        "expresion": "evaAsqueada",
+        "speaker":"F",
+        "dialogs":"Oh… Eso es lo de disecar animales muertos, ¿Cierto?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 70,
+        "id_obj": 71,
+        "score": 0,
+        "expresion": "evaAsqueada",
+        "speaker":"M",
+        "dialogs":"Sí, así es. Me mantiene entretenido.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 71,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "evaAsustada",
+        "speaker":"F",
+        "dialogs":" Ya… Vaya, mire qué tarde es. Será mejor que vuelva a su compartimento a descansar. Ha sido un placer conocerle, señor Bates. Ya nos veremos.",  
+        "location": null,     
+        "options": null,
+        "match": 30
+    },
+    {
+        "id": 72,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":" Oh vaya, un hombre dedicado. Y, ¿Tiene un cuidado especial para gente especial, señor Bates?",
+        "location": null,   
+        "options":[{
+            "text":"Puede apostar que sí",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 25,
+            "id_obj": 73
+        },
+        {
+            "text":"No, la verdad",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 75
+        }
+    ]},
+    {
+        "id": 73,
+        "id_obj": 74,
+        "score": 20,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"¿Y cree que podría enseñarmelo? Tengo mucha curiosidad",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 74,
+        "id_obj": -1,
+        "score": 20,
+        "expresion": "evaSpicy",
+        "speaker":"M",
+        "dialogs":"Por supuesto. Póngase cómoda",  
+        "location": null,     
+        "options": null,
+        "match": 100
+    },
+    {
+        "id": 75,
+        "id_obj": 76,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Oh vaya, menuda lástima. ¿Le han dicho alguna vez que es usted un hombre intrigante?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 76,
+        "id_obj": 77,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"¿A… A qué se refiere?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 77,
+        "id_obj": -2,
+        "score": 0,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"A que parece que guarda un mundo entero de secretos. No sé… Tiene cara de interesante.",
+        "location": null,   
+        "options":[{
+            "text":" ¡Yo no he matado a nadie!",
+            "maxScore": 100,
+            "minScore": 40,
+            "score": -20,
+            "id_obj": 78
+        },
+        {
+            "text":" Ya le enseñaré algún secreto mío",
+            "maxScore": 60,
+            "minScore": 0,
+            "score": 15,
+            "id_obj": 81
+        },
+        {
+            "text":"Considero que soy bastante normal",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": 0,
+            "id_obj": 82
         },
         {
             "text":"...",
             "maxScore": 100,
             "minScore": 0,
-            "score": 0,
-            "id_obj":20
+            "score": -10,
+            "id_obj": 78
         }
-    ]
-    },
+        
+    ]},
     {
-        "id":3,
-        "id_obj":-1,
-        "score": 20,
-        "expresion": "horrorizada",
-        "speaker":"M",
-        "dialogs":"Oh no, qué hago aquí",
-        "options": null,
-        "match": 0
-    },
-    {
-        "id":4,
-        "id_obj":-2,
+        "id": 78,
+        "id_obj":79,
         "score": 0,
-        "expresion": "feliz",
-        "speaker":"M",
-        "dialogs":"¿Y a qué juegos sueles jugar?",
-        "options":[{
-            "text":"LoL",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":6
-        },
-        {
-            "text":"Genshin Impact",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":6
-        },
-        {
-            "text":"Minecraft",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":7
-        }
-    ]
+        "expresion": "evaAsustada",
+        "speaker":"F",
+        "dialogs":"Cálmese, no le estoy acusando de nada.",  
+        "location": null,     
+        "options": null
     },
     {
-        "id":6,
-        "id_obj":-1,
-        "score": -10,
-        "expresion": "horrorizada",
+        "id": 79,
+        "id_obj": 80,
+        "score": 0,
+        "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"Oh, no",
+        "dialogs":"Bueno, se hace tarde y debería preparar mi maleta para la llegada de mañana. Ha sido un placer conocerle señor Bates. Espero volverle a ver pronto.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 80,
+        "id_obj": -1,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Igualmente. Cuídese.",  
+        "location": null,     
+        "options": null,
+        "match": 50
+    },
+    {
+        "id": 81,
+        "id_obj": 83,
+        "score": 10,
+        "expresion": "evaSpicy",
+        "speaker":"F",
+        "dialogs":"Vaya vaya, ha hecho que me pique mucho más la curiosidad, señor Bates…",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 82,
+        "id_obj": 83,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Pues yo creo que oculta cosas interesantes, y me gustaría desentrañarlas y conocerle mejor.",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 83,
+        "id_obj": 84,
+        "score": 0,
+        "expresion": "evaNeutral",
+        "speaker":"F",
+        "dialogs":"Bueno, se nos ha hecho algo tarde. Ha sido un placer charlar con usted. ¿Le parece quedar luego a la cena?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 84,
+        "id_obj": 85,
+        "score": 10,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Me parecería estupendo. ¿La recojo aquí a las ocho?",  
+        "location": null,     
+        "options": null
+    },
+    {
+        "id": 85,
+        "id_obj": 86,
+        "score": 0,
+        "expresion": "evaSonriente",
+        "speaker":"F",
+        "dialogs":"Aquí estaré esperándole. Nos vemos luego, señor Bates.",  
+        "location": null,     
         "options": null,
         "match": 10
     },
     {
-        "id":7,
-        "id_obj":-1,
-        "score": 20,
-        "expresion": "sonrojada",
-        "speaker":"F",
-        "dialogs":"owo",
-        "options": null,
-        "match": 100
-    },
-    {
-        "id":5,
-        "id_obj":-2,
-        "score": -5,
-        "expresion": "enfadada",
-        "speaker":"F",
-        "dialogs":"¿Por qué no hablas?",
-        "options":[{
-            "text":"Me pongo nervioso hablando con chicas",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":8
-        },
-        {
-            "text":"Perdon",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":9
-        },
-        {
-            "text":"...",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":10
-        }    
-    ]
-    },
-    {
-        "id":8,
-        "id_obj":11,
-        "score": 20,
-        "expresion": "sonrojada",
-        "speaker":"F",
-        "dialogs":"sexo",
+        "id": 86,
+        "id_obj": 87,
+        "score": 15,
+        "expresion": "evaNeutral",
+        "speaker":"M",
+        "dialogs":"Oh, por favor. Llamame Norman",  
+        "location": null,     
         "options": null
     },
     {
-        "id":9,
-        "id_obj":11,
-        "score": 25,
-        "expresion": "sonrojada",
-        "speaker":"F",
-        "dialogs":"Tranquilo, lo entiendo, mi belleza te ha dejado sin palabras",
-        "options": null
-    },
-    {
-        "id":10,
+        "id": 87,
         "id_obj": -1,
-        "score": -5,
-        "expresion": "enfadada",
-        "speaker":"F",
-        "dialogs":"En fin veo que no vas a hablar, por lo que parece",
-        "options": null,
-        "match": 0
-    },
-    {
-        "id":20,
-        "id_obj":5,
         "score": 0,
-        "expresion": "sorprendida",
+        "expresion": "evaSpicy",
         "speaker":"F",
-        "dialogs":"Esto...",
-        "options": null
-    },
-    {
-        "id":21,
-        "id_obj":4,
-        "score": 0,
-        "expresion": "sorprendida",
-        "speaker":"F",
-        "dialogs":"¿En serio?",
-        "options": null
-    },
-    {
-        "id":13,
-        "id_obj":-1,
-        "score": -30,
-        "expresion": "enfadada",
-        "speaker":"F",
-        "dialogs":"Qué grosero",
+        "dialogs":"De acuerdo, Norman. No se retrase.",  
+        "location": null,     
         "options": null,
-        "match": 40
-    },
-    {
-        "id":12,
-        "id_obj":-1,
-        "score": 10,
-        "expresion": "sonrojada",
-        "speaker":"F",
-        "dialogs":"uwu",
-        "options": null,
-        "match": 100
-    },
-    {
-        "id":11,
-        "id_obj":-2,
-        "score": 0,
-        "expresion": "sonrojada",
-        "speaker":"F",
-        "dialogs":"¿Sabes? Me gustan los chicos bajitos como tú",
-        "options":[{
-            "text":"Tú también me gustas bb",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":12
-        },
-        {
-            "text":"Dijo nadie nunca",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
-            "id_obj":13
-        }
-    ]
+        "match": 70
     }
 ]
-
