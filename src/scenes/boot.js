@@ -9,8 +9,11 @@ export default class Boot extends Phaser.Scene {
     });
   }
 
+  /**
+   * Carga los assets del juego
+   */
   preload() {
-    //Carga de 
+    //Carga de sprites de la carpeta general.
     this.load.setPath('assets/sprites/');
     this.load.image('pastilla', 'pasti.png');
     this.load.image('boton', 'heart_button.png');
@@ -33,7 +36,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('fondoMenu', 'fondo_menu.png');
     this.load.image('heartPauseButton','heart_pause_button.png')
 
-    //Sprites Marion
+    //Carga de sprites Marion
     this.load.setPath('assets/sprites/marion_crane/');
     this.load.image('neutral', 'marion_neutral.png');
     this.load.image('asustada', 'marion_asustada.png');
@@ -45,7 +48,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('marionCraneMenu', 'marion_icon.png');
     this.load.image('marionCraneMenuRojo', 'marion_icon_border.png');
     
-    //Sprites Eva
+    //Carga de sprites Eva
     this.load.setPath('assets/sprites/eva_kendall/');
     this.load.image('evaNeutral', 'eva_neutral.png');
     this.load.image('evaAsustada', 'eva_asustada.png');

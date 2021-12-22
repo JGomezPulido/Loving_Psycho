@@ -1,13 +1,15 @@
 import Button from "./button.js";
 
-
+/**
+ * Representa un botón de selección de dificultad del menú principal
+ */
 export default class DifficultyButton extends Button {
     /**
-     * 
-     * @param {Phaser.Scene} scene 
-     * @param {number} x 
-     * @param {number} y 
-     * @param {string} text 
+     * Construye un nuevo botón de dificultad, al pulsarlo seleccionará la dificultad del juego.
+     * @param {Phaser.Scene} scene - escena a la que pertenece el botón
+     * @param {number} x - posicion en x
+     * @param {number} y - posicion en y
+     * @param {string} text - texto del botón
      * @param {boolean} difficulty - true: dificultad difícil; false: dificultad true
      */
 

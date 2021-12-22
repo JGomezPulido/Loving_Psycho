@@ -12,6 +12,10 @@ export default class DeathScene extends Phaser.Scene {
     });
   }
 
+  /**
+   * Construye la escena de muerte, poniendo el fondo y un boton de reinicio, ademas de ejecutando varios sonidos
+   * @override
+   */
   create() {
 
     let canvasW = document.getElementById("juego").width;

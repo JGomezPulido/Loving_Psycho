@@ -20,12 +20,20 @@ export default class Scene extends Phaser.Scene {
     });
   }
 
+  /**
+     * Inicializa la velocidad del texto, el árbol de diálogos y la dificultad.
+     * @param {object} data- objeto de inicialización de la escena.
+     */
   init(datos) {
     this.treeJson = datos.cita;
     this.dificil = datos.dificultad;
     this.textVelocity = datos.textVelocity;
   }
 
+  /**
+   * Crea una nueva escena de cita, con todos sus assets necesarios
+   * @override
+   */
   create() {
 
     this._canvasW = document.getElementById("juego").width;
@@ -50,7 +58,7 @@ export default class Scene extends Phaser.Scene {
     this.intiOptions()
     this.initBlood();
 
-    
+    //Inicialización de sonidos
     this.jazzSound = this.sound.add('jazz');
     this.jazzSound.play();
     this.jazzSound.setLoop(true);
@@ -65,6 +73,7 @@ export default class Scene extends Phaser.Scene {
     this.esc.on('down', this.showMenu, this);
     this.events.on('detuneMusic', this.detuneMusic, this);
 
+    //Desuscripción a eventos en shutdown
     this.events.on("shutdown", () => { //creo que no es necesrio aqui
       this.events.off('badEnding');
       this.events.off("optionsStart");
@@ -74,6 +83,7 @@ export default class Scene extends Phaser.Scene {
       this.jazzSound.stop();
     })
 
+    //Asignación de la velocidad del texto al volver del menú de pausa
     this.events.on('resume', (sys, data) =>{
       if(data.textVelocity){
         this.textVelocity = data.textVelocity;
@@ -113,7 +123,7 @@ export default class Scene extends Phaser.Scene {
   }
 
   /**
-   * Métoodo que crea los 4 objetos Option y los mete a un grupo
+   * Método que crea los 4 objetos Option y los mete a un grupo
    */
   intiOptions() {
 
@@ -166,8 +176,8 @@ export default class Scene extends Phaser.Scene {
   }
 
   /**
-   * Método que reorganiza los nodos aleatoriamente y los habilita si cumplen los requisitos de puntuación de la barra de instinto asesino
-   * * También avisa a la barra de instinto asesino de que se empiece a llenar pasivamente
+   * Método que reorganiza los nodos aleatoriamente y los habilita si cumplen los requisitos de puntuación de la barra de instinto asesino.
+   * También avisa a la barra de instinto asesino de que se empiece a llenar pasivamente.
    * @param {Node} node 
    */
   optionsStart(node) {
@@ -192,6 +202,9 @@ export default class Scene extends Phaser.Scene {
     }
   }
 
+  /**
+   * Metodo que actualiza las opciones con respecto a la puntuación de la barra de diálogo, en caso de que estas estén activas.
+   */
   updateOptions(){
     if(this.optionsActive){
       let i = 0;

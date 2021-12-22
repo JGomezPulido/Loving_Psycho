@@ -10,9 +10,18 @@ export default class PauseMenu extends Phaser.Scene {
         });
     }
 
+    /**
+     * Inicializa la velocidad del texto.
+     * @param {object} data- objeto de inicialización de la escena, contiene la velocidad del texto para el menú de configuración. 
+     */
     init(data){
         this._textVelocity = data.textVelocity;
     }
+
+    /**
+     * Construye un nuevo menú de pausa, con un botones de configuración, continuar y reiniciar, además de un menú de configuración.
+     * @override
+     */
     create() {
 
         let canvasW = this.cameras.main.width;
@@ -40,6 +49,9 @@ export default class PauseMenu extends Phaser.Scene {
         })
     }
 
+    /**
+     * Despausa la escena de la cita y le pasa la velocidad del texto.
+     */
     changeScene() {
         this.scene.run("Scene", {textVelocity: this.configMenu.getTextVelocity()});
         this.scene.setVisible(false, "pause");

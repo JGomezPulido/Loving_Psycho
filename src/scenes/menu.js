@@ -3,6 +3,9 @@ import DateButton from '../buttons/date_button.js';
 import DifficultyButton from '../buttons/difficulty_button.js';
 import ConfigMenu from '../config_menu.js';
 
+/**
+ * Representa el menú principal del juego
+ */
 export default class Menu extends Phaser.Scene {
   constructor() {
     super({
@@ -11,6 +14,11 @@ export default class Menu extends Phaser.Scene {
   }
 
 
+  /**
+   * Construye un menú principal, con el título, los botones para iniciar ambas citas, los selectores de dificultad
+   * y un botón y menú de configuración.
+   * @override
+   */
   create() {
     let canvas = document.getElementById("juego");
     let canvasW = canvas.width;
@@ -46,6 +54,10 @@ export default class Menu extends Phaser.Scene {
 
   }
 
+  /**
+   * Pasa a la escena de la cita con el árbol de diálogo especificado y los datos de velocidad del texto del menú de configuración.
+   * @param {Node[]} tree - árbol de diálogos de la nueva escena
+   */
   startScene(tree) {
     this.menuMusic.stop();
     this.scene.start('Scene', {
@@ -56,6 +68,10 @@ export default class Menu extends Phaser.Scene {
     this.scene.stop("menu");
   }
 
+  /**
+   * Selecciona la dificultad del juego dependiendo del parámetro.
+   * @param {boolean} isHard - true para seleccionar el modo difícil, false en caso contrario
+   */
   setDifficulty(isHard) {
     this.hard = isHard;
   }

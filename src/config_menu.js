@@ -6,8 +6,8 @@ import Button from "./buttons/button.js";
 export default class ConfigMenu extends Phaser.GameObjects.Container{
 
     /**
-     * 
-     * @param {Phaser.Scene} scene 
+     * Crea un nuevo menú de configuración, que permite configurar la velocidad del texto y el volumen de la música y los efectos.
+     * @param {Phaser.Scene} scene - escena a la que pertenece el menú de configuración.
      * @param {number} x 
      * @param {number} y 
      */
@@ -27,6 +27,9 @@ export default class ConfigMenu extends Phaser.GameObjects.Container{
         this.setVisible(false);
     }
 
+    /**
+     * Este método se encarga de crear y hacer funcionales los botones y displays de la configuración del volumen
+     */
     initVolumeConfig(){
         this._volumeContainer = this.scene.add.container(0, -190);
         this.add(this._volumeContainer);
@@ -70,7 +73,9 @@ export default class ConfigMenu extends Phaser.GameObjects.Container{
 
     }
 
-
+    /**
+     * Este método se encarga de crear y hacer funcionales los botones y displays de la configuración de la velocidad del texto
+     */
     initTextVelocity(){
         this._textVelContainer = this.scene.add.container(0, -65);
         this.add(this._textVelContainer);
@@ -115,6 +120,10 @@ export default class ConfigMenu extends Phaser.GameObjects.Container{
 
 
     };
+
+    /**
+     * Este método se encarga de crear y hacer funcionales lel botón de salida del menú y la tecla escape.
+     */
     initExit(){
 
         this._esc = this.scene.input.keyboard.addKey("ESC");
@@ -135,20 +144,35 @@ export default class ConfigMenu extends Phaser.GameObjects.Container{
         })
     };
 
+    /**
+     * Est método hace que el menú aparezca en escena
+     */
     show(){
         
         this.setVisible(true);
         this.setActive(true);
     }
 
+    /**
+     * Este método devuelve la velocidad del texto seleccionada en el menú.
+     * @returns {number} - La velocidad del texto que se ha seleccionado+
+     */
     getTextVelocity(){
         return Phaser.Math.RoundTo(this._textVelocity);
     }
 
-    setTextVelocity(vel){
+    /**
+     * Este método cambia la velocidad de texto selecionada.
+     * @param {number} velocity - cambia la velocidad del texto seleccionada.
+     */
+    setTextVelocity(velocity){
         this._textVelocity = vel;
     }
 
+    /**
+     * Cambia ambas configuraciones al mantener pulsados los botones correspondientes del menú.
+     * @override
+     */
     preUpdate(t, dt){
         if(this._textVelDown && this._textVelocity >= 1){                    
             this._textVelocity-= 8*(dt/1000); 

@@ -170,16 +170,28 @@ export default class DialogBox extends Phaser.GameObjects.Container {
     this._paragraph = this._dialogManager.getActualNode().dialogs;
   }
 
+  /**
+   * Cambia el sprite del cuadro de diálogo.
+   * @param {string} speaker - key del nuevo sprite del cuadro de diálogo.
+   */
   changeDialogeBox(speaker) {
     this._dialogBackground.setTexture(speaker);
   }
 
-  setTextVelocity(vel){
-    this._textSpeed = vel;
+  /**
+   * Cambia la velocidad del texto.
+   * @param {number} velocity - nueva velocidad del texto
+   */
+  setTextVelocity(velocity){
+    this._textSpeed = velocity;
   }
 
+  /**
+   * Escribe el texto guardado en this._paragraph progresivamente
+   * @override
+   */
   preUpdate(t, dt) {
-    //Escribe el texto guardado en this._paragraph progresivamente
+    
     if (!this._textoEscrito) {
       if (this._delay <= 0) {
         if (this._cont < this._paragraph.length) {
