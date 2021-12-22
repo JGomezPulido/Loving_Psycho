@@ -72,11 +72,11 @@ export default class Option extends Phaser.GameObjects.Container {
         this._sprite.setTexture('cuadroOpcion');
     }
 
-    getMinScore(){
+    getMinScore() {
         return this._minS;
     }
 
-    getMaxScore(){
+    getMaxScore() {
         return this._maxS;
     }
 }

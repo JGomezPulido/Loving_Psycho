@@ -65,11 +65,11 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite {
         this._tween.once('complete', () => {
             this.fullBar();
         });
-        this._detune = -5*this._score;
+        this._detune = -5 * this._score;
         this.scene.events.emit('detuneMusic', this._detune);
 
         this.scene.events.emit('changeBlood');
-       
+
     }
 
     /**
@@ -96,9 +96,9 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite {
             yoyo: false,
             repeat: 0
         });
-        this._detune = -5*this._score;
+        this._detune = -5 * this._score;
         this.scene.events.emit('detuneMusic', this._detune);
-        this.scene.events.emit('changeBlood');  
+        this.scene.events.emit('changeBlood');
     }
 
     /**

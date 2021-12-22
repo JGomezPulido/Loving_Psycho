@@ -3,7 +3,7 @@ import Node from "./node.js";
 /**
  * Maneja la lógica de los dialogos, es un Container para que pueda reaccionar al evento onDestroy para desuscribirse de eventos.
  */
-export default class DialogManager extends Phaser.GameObjects.Container{
+export default class DialogManager extends Phaser.GameObjects.Container {
 
     /**
      * Construye un nuevo objeto DialogManager
@@ -13,7 +13,7 @@ export default class DialogManager extends Phaser.GameObjects.Container{
      */
     constructor(node, tree, scene) {
         //inicializaciones
-        super(scene, 0,0);
+        super(scene, 0, 0);
         this._actNode = node;
         this._tree = tree;
         this.scene.add.existing(this);
@@ -21,7 +21,7 @@ export default class DialogManager extends Phaser.GameObjects.Container{
         //eventos
         this.scene.events.on('optionClicked', this.changeNode, this);
         this.scene.events.on('dialogBoxClicked', this.changeNode, this);
-        
+
         this.on('destroy', () => {
             this.scene.events.off('optionClicked');
             this.scene.events.off('dialogBoxClicked');
@@ -42,7 +42,7 @@ export default class DialogManager extends Phaser.GameObjects.Container{
             while (i < this._tree.length && this._tree[i].id !== id_obj) {
                 i++
             }
-            this._actNode = this._tree[i];         
+            this._actNode = this._tree[i];
             this.scene.events.emit('changePsychoBar', this.getActualNode().score);
             this.scene.events.emit('changeExpresion', this.getActualNode().expresion);
             this.scene.events.emit('changeDialogBox', this.getActualNode().speaker);

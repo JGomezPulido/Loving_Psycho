@@ -1,55 +1,62 @@
 body {
 	margin: 0;
 	padding: 0;
-	background:rgb(209, 209, 209);
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background: rgb(209, 209, 209);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	/*background: radial-gradient(red,rgb(138, 17, 17),rgb(0, 0, 0));*/
 	word-wrap: break-word;
 }
 
 
 /*header*/
-header{
+header {
 	background: rgb(39, 39, 39);
-	padding:1.5em 0;
+	padding: 1.5em 0;
 	margin-bottom: 8em;
 	font-family: 'Courgette', cursive;
 }
-.header-container{
+
+.header-container {
 	width: 85%;
-	margin:0 auto;
-	display:flex;
+	margin: 0 auto;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-header a{
+
+header a {
 	text-decoration: none;
-	color:white;
-	border-radius:1.5em;
+	color: white;
+	border-radius: 1.5em;
 	font-size: 1.5em;
 }
-header a:hover{
-	background:rgb(161, 9, 9);
+
+header a:hover {
+	background: rgb(161, 9, 9);
 }
-header ul{
-	margin:0;
-	padding:0;
+
+header ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
-header ul li{
+
+header ul li {
 	display: inline-block;
 }
+
 header ul li a {
-	display:block;
-	padding:0.5rem 1rem;
+	display: block;
+	padding: 0.5rem 1rem;
 }
-.logo{
-	font-size:2em;
+
+.logo {
+	font-size: 2em;
 }
 
 
-main{
-	margin:10em auto;
+main {
+	margin: 10em auto;
 	min-height: 30em;
 	max-height: 100em;
 }
@@ -57,88 +64,99 @@ main{
 
 /*footer*/
 
-footer{
+footer {
 	background: rgb(83, 83, 83);
-	padding:2em 0;
-	margin-top:8em;
-	bottom:0;
+	padding: 2em 0;
+	margin-top: 8em;
+	bottom: 0;
 	width: 100%;
 
 }
-.footer-container{
+
+.footer-container {
 	width: 70%;
-	margin:0 auto;
-	display:flex;
+	margin: 0 auto;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-footer nav{
-	padding-top:2em;
+
+footer nav {
+	padding-top: 2em;
 }
-footer img{
-	width:3.5em;
+
+footer img {
+	width: 3.5em;
 	height: 3.5em;
-	border-radius:1em;	
-	margin:0 0.6rem;
+	border-radius: 1em;
+	margin: 0 0.6rem;
 }
-footer img:hover{
-	background:rgb(0, 0, 0);
+
+footer img:hover {
+	background: rgb(0, 0, 0);
 }
-footer p{
-	color:white;
+
+footer p {
+	color: white;
 	font-size: 1.5em;
 }
 
 
 
 /*about us html*/
-.about_us{
+.about_us {
 	width: 95%;
 	font-size: 2.5rem;
-	margin:0 auto;
-	display:flex;
+	margin: 0 auto;
+	display: flex;
 	justify-content: space-between;
 }
-.about_us a{
+
+.about_us a {
 	text-decoration: none;
 	color: black;
 }
-.about_text{
+
+.about_text {
 	padding-left: 2em;
 	margin-top: 0;
 	font-size: 0.7em;
 }
-.about_text .title{
+
+.about_text .title {
 	font-size: 2em;
-	border-radius:0.25em;
+	border-radius: 0.25em;
 }
-.about_text .title:hover{
+
+.about_text .title:hover {
 	background: rgb(148, 148, 148);
 }
 
 
 
 /*our game html*/
-.desc{
+.desc {
 	text-align: left;
 	font-size: 1.75rem;
 	padding: 0 3rem 1rem 3rem;
 }
-.our_game{
+
+.our_game {
 	padding: 0 4rem;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 }
-.our_game img{
+
+.our_game img {
 	width: 37.5em;
 	height: 31.25em;
 	max-width: 37.5em;
 	max-height: 31.25em;
 }
-.our_game p{
+
+.our_game p {
 	text-align: left;
 	font-size: 1.5rem;
 	line-height: 1.9rem;
 	padding: 0 3rem;
 }
-
