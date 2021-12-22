@@ -1,5 +1,6 @@
 # LOVING PSYCHO
 [Página de gestión (Pivotal Tracker)](https://www.pivotaltracker.com/n/projects/2532848)
+[Página web del juego](https://jgomez18ucm.github.io/Loving_Psycho/)
 
 *Documento de diseño de videojuego*  
 
@@ -184,3 +185,8 @@ Pastillas --> Tendrás 3 en cada cita. Reducirán la barra de instinto asesino a
 
  ## <a name = "uml">6. Diagrama UML</a>
  ![uml](./imagenes/uml.png  "uml")
+
+ ## <a name = "Gestion">7. Gestión y comunicación</a>
+ La plataforma de gestión utilizada ha sido Pivotal Tracker, usado para dividir el desarrollo del proyecto en tareas e historias organizables por hitos y prioridad y asignadas a miembros del grupo, dinamizando el trabajo y permitiendo una mejor gestión y organización del tiempo.
+
+La comunicación se ha llevado a cabo principalmente a través de llamadas grupales semanales por la plataforma Discord, aunque tambien hemos notificado de errores, planificado sesiones e intercambiado información general cada día a través de un grupo de Whatsapp de los desarolladores.

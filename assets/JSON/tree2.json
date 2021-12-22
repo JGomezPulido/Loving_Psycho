@@ -12,7 +12,7 @@
     {
         "id": 1,
         "id_obj": 2,
-        "score": 0,
+        "score": 10,
         "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"Por favor, faltaría más.", 
@@ -51,14 +51,14 @@
             "text":"Si, el salmón tiene buena pinta.",
             "maxScore": 100,
             "minScore": 0,
-            "score": -10,
+            "score": 0,
             "id_obj": 5
         },
         {
             "text":"Usted.",
-            "maxScore": 100,
+            "maxScore": 30,
             "minScore": 0,
-            "score": 0,
+            "score": 30,
             "id_obj": 6
         },
         {
@@ -71,8 +71,8 @@
         {
             "text":"Soy un poco exquisito, no le voy a mentir.",
             "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
+            "minScore": 10,
+            "score": -10,
             "id_obj": 8
         }
         ]
@@ -96,23 +96,23 @@
         "dialogs":"Me halaga usted, caballero.",
         "location": null,   
         "options":[{
-            "text":"Bueno, dime,¿ cual es el motivo de su viaje?",
-            "maxScore": 100,
-            "minScore": 0,
-            "score": -10,
-            "id_obj": 10
-        },
-        {
-            "text":"¿ah si?",
+            "text":"Bueno, digame. ¿Cual es el motivo de su viaje?",
             "maxScore": 100,
             "minScore": 0,
             "score": 0,
+            "id_obj": 10
+        },
+        {
+            "text":"¿Ah, si?",
+            "maxScore": 100,
+            "minScore": 0,
+            "score": -10,
             "id_obj": 23
         },
         {
             "text":"Bueno, tampoco se emocione, jovencita.",
             "maxScore": 60,
-            "minScore": 0,
+            "minScore": 15,
             "score": 15,
             "id_obj": 13
         }
@@ -123,20 +123,20 @@
         "score": 0,
         "expresion": "evaSpicy",
         "speaker":"F",
-        "dialogs":" mm…¿te gusta la aventura, no? interesante…",
+        "dialogs":" Hmm… ¿Te gusta la aventura, no? Interesante…",
         "location": null,   
         "options":[{
             "text":"¿Qué propone?",
             "maxScore": 100,
             "minScore": 0,
-            "score": -10,
+            "score": 15,
             "id_obj": 21
         },
         {
             "text":"Bueno, tampoco se emocione demasiado, jovencita.",
             "maxScore": 100,
             "minScore": 0,
-            "score": 0,
+            "score": -10,
             "id_obj": 13
         }
     ]},
@@ -146,7 +146,7 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"¿entonces qué es de lo que más disfruta? ¿pescado, por ejemplo?¿le parece bien salmón?", 
+        "dialogs":"¿Entonces qué es de lo que más disfruta? ¿Pescado, por ejemplo?¿Le parece bien salmón?", 
         "location": null,    
         "options": null
     },
@@ -156,7 +156,7 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":" Dos salmones por aquí, por favor. y dime, ¿cuál es el motivo de su viaje?", 
+        "dialogs":" Dos salmones por aquí, por favor. Y digame, ¿Cuál es el motivo de su viaje?", 
         "location": null,    
         "options": null
     },
@@ -166,7 +166,7 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"Vengo de vacaciones, ¿y usted?.", 
+        "dialogs":"Vengo de vacaciones, ¿Y usted?", 
         "location": null,    
         "options": null
     },
@@ -176,14 +176,14 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":"Vengo para descansar un poco del trabajo, soy director de un motel de prestigio . He venido con mi madre, está en mi compartimento.", 
+        "dialogs":"Vengo para descansar un poco del trabajo, soy director de un motel de prestigio. He venido con mi madre, está en mi compartimento.", 
         "location": null,    
         "options": null
     },
     {
         "id": 12,
         "id_obj": -2,
-        "score": 0,
+        "score": -10,
         "expresion": "evaAsqueada",
         "speaker":"F",
         "dialogs":"Ah, ¿ha venido usted con su madre?",
@@ -216,7 +216,7 @@
         "score": 0,
         "expresion": "evaSonriente",
         "speaker":"F",
-        "dialogs":"Oh,disculpe… me había hecho una idea equivocada de usted.", 
+        "dialogs":"Oh,disculpe… Me había hecho una idea equivocada de usted.", 
         "location": null,    
         "options": null
     },
@@ -246,7 +246,7 @@
         "score": 0,
         "expresion": "evaAsqueada",
         "speaker":"F",
-        "dialogs":"Debe estar muy cansada de ella.", 
+        "dialogs":"Debe estar muy cansado de ella.", 
         "location": null,    
         "options": null
     },
@@ -263,7 +263,7 @@
     {
         "id": 18,
         "id_obj": 26,
-        "score": 0,
+        "score": 15,
         "expresion": "evaSpicy",
         "speaker":"F",
         "dialogs":"¿Y no desearía usted a una mujer que le haga más feliz?.", 
@@ -293,10 +293,10 @@
     {
         "id": 21,
         "id_obj": 20,
-        "score": 0,
+        "score": 10,
         "expresion": "evaSpicy",
         "speaker":"F",
-        "dialogs":"Nada, nada… simplemente… me gustan los chicos así.", 
+        "dialogs":"Nada nada… Simplemente me gustan los chicos así.", 
         "location": null,    
         "options": null
     },
@@ -323,8 +323,8 @@
     {
         "id": 24,
         "id_obj": 25,
-        "score": 0,
-        "expresion": "evaSonriente",
+        "score": 20,
+        "expresion": "evaSpicy",
         "speaker":"M",
         "dialogs":"Qué extraño… con lo guapa que es usted esperaba que tuviese pretendientes por todas partes.", 
         "location": null,    
@@ -334,16 +334,16 @@
         "id": 25,
         "id_obj": 20,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaSpicy",
         "speaker":"F",
-        "dialogs":"Sabe… es usted un hombre muy interesante.", 
+        "dialogs":"Sabe… Es usted un hombre muy interesante.", 
         "location": null,    
         "options": null
     },
     {
         "id": 26,
         "id_obj": 27,
-        "score": 0,
+        "score": -15,
         "expresion": "evaEnfadada",
         "speaker":"M",
         "dialogs":"¿Más feliz que mi madre? Déjeme decirle que eso es imposible.", 
@@ -353,7 +353,7 @@
     {
         "id": 27,
         "id_obj": 20,
-        "score": 0,
+        "score": -10,
         "expresion": "evaEnfadada",
         "speaker":"F",
         "dialogs":"...", 
@@ -375,7 +375,7 @@
     {
         "id": 29,
         "id_obj": 30,
-        "score": 0,
+        "score": 10,
         "expresion": "evaSonriente",
         "speaker":"M",
         "dialogs":"Sí, deberíamos tomar más este tren, así disfrutaríamos más de esta comida y de la compañía del otro.", 
@@ -385,7 +385,7 @@
     {
         "id": 30,
         "id_obj": 31,
-        "score": 0,
+        "score": 15,
         "expresion": "evaSonriente",
         "speaker":"F",
         "dialogs":"Me parece una buena idea…", 
@@ -395,7 +395,7 @@
     {
         "id": 31,
         "id_obj": 32,
-        "score": 0,
+        "score": 10,
         "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"*matala Norman… ¡MATALA!*", 
@@ -408,14 +408,14 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":"*entre susurros* No madre…no ... ella me gusta…", 
+        "dialogs":"*entre susurros* No madre... No... ella me gusta...", 
         "location": null,    
         "options": null
     },
     {
         "id": 33,
         "id_obj": 34,
-        "score": 0,
+        "score": 15,
         "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"*¡¡MATALA!!*", 
@@ -441,24 +441,24 @@
         "dialogs":"¿Está bien…? Estaba… hablando solo… ¿Qué no piensa hacer?",
         "location": null,   
         "options":[{
-            "text":"Quedarse dormido",
+            "text":"*Quedarse dormido*",
             "maxScore": 100,
             "minScore": 0,
             "score": -10,
             "id_obj": 36
         },
         {
-            "text":"Pastillas",
+            "text":"*Pastillas*",
             "maxScore": 100,
-            "minScore": 0,
-            "score": 0,
+            "minScore": 50,
+            "score": -15,
             "id_obj": 43
         },
         {
-            "text":"Actuar",
-            "maxScore": 60,
+            "text":"*Actuar*",
+            "maxScore": 50,
             "minScore": 0,
-            "score": 15,
+            "score": 10,
             "id_obj": 48
         }
     ]},
@@ -475,7 +475,7 @@
     {
         "id": 37,
         "id_obj": 38,
-        "score": 0,
+        "score": -10,
         "expresion": "evaEnfadada",
         "speaker":"F",
         "dialogs":"¿!Dormido!?, ¿con los ojos abiertos? ¿y además mientras manteníamos una conversación?", 
@@ -515,7 +515,7 @@
     {
         "id": 41,
         "id_obj": 42,
-        "score": 0,
+        "score": 10,
         "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":" Gracias por entenderlo.", 
@@ -555,7 +555,7 @@
     {
         "id": 45,
         "id_obj": 46,
-        "score": 0,
+        "score": -15,
         "expresion": "evaAsustada",
         "speaker":"M",
         "dialogs":"No, solamente oigo voces que me dicen cosas malignas. Mi madre dice que no es nada grave pero aún así decidí asistir al doctor para que me aconsejara.", 
@@ -565,7 +565,7 @@
     {
         "id": 46,
         "id_obj": 47,
-        "score": 0,
+        "score": -15,
         "expresion": "evaAsustada",
         "speaker":"F",
         "dialogs":"¿Voces? ¿Cosas malignas? Creo que me voy a ir yendo… No he dormido nada esta noche y quizá una siesta no me vendría nada mal…", 
@@ -596,10 +596,10 @@
     {
         "id": 49,
         "id_obj": 50,
-        "score": 0,
+        "score": 10,
         "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"¿Actúa usted?¿Es como un pasatiempo o algo así?", 
+        "dialogs":"¿Actúa usted? ¿Es como un pasatiempo o algo así?", 
         "location": null,    
         "options": null
     },
@@ -642,7 +642,7 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":"¿Cómo qué doble sentido? no,no. Mi madre siempre me dice que es bueno meterse en el papel de los demás, así puedes saber lo que están pensando", 
+        "dialogs":"¿Cómo qué doble sentido? No no. Mi madre siempre me dice que es bueno meterse en el papel de los demás, así puedes saber lo que están pensando", 
         "location": null,    
         "options": null
     },
@@ -650,9 +650,9 @@
         "id": 53,
         "id_obj": 54,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"mmm… interesante…tiene bastante sentido.", 
+        "dialogs":"Hmmm… Interesante… Tiene bastante sentido.", 
         "location": null,    
         "options": null
     },
@@ -660,9 +660,9 @@
         "id": 54,
         "id_obj": 55,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaNeutral",
         "speaker":"M",
-        "dialogs":"camarero, la cuenta por favor * el camarero les trae la cuenta*", 
+        "dialogs":"Camarero, la cuenta por favor *El camarero trae la cuenta*", 
         "location": null,    
         "options": null
     },
@@ -670,9 +670,9 @@
         "id": 55,
         "id_obj": -2,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":"*Eva saca la cartera* yo pago",
+        "dialogs":"*Eva saca la cartera* Yo pago",
         "location": null,   
         "options":[{
             "text":"Está bien, como usted quiera.",
@@ -685,7 +685,7 @@
             "text":"Ni hablar, yo invito.",
             "maxScore": 100,
             "minScore": 0,
-            "score": 0,
+            "score": 10,
             "id_obj": 57
         }
     ]},
@@ -703,7 +703,7 @@
     {
         "id": 57,
         "id_obj": 58,
-        "score": 0,
+        "score": 15,
         "expresion": "evaSonriente",
         "speaker":"F",
         "dialogs":"Eso es muy generoso por su parte señor Bates, muy bien, como usted quiera.", 
@@ -722,7 +722,7 @@
             "text":"Por supuesto que sí, faltaría más",
             "maxScore": 100,
             "minScore": 0,
-            "score": -10,
+            "score": 15,
             "id_obj": 63
         },
         {
@@ -736,10 +736,10 @@
     {
         "id": 59,
         "id_obj": 60,
-        "score": 0,
+        "score": -10,
         "expresion": "evaAsustada",
         "speaker":"M",
-        "dialogs":"Mmmm… digamos que sí. A mí madre no le ha gustado nunca mi forma de ser, siempre ha intentado que me convirtiera en otra persona. Alguien sin sentimientos…", 
+        "dialogs":"Hmmm… digamos que sí. A mí madre no le ha gustado nunca mi forma de ser, siempre ha intentado que me convirtiera en otra persona. Alguien sin sentimientos…", 
         "location": null,    
         "options": null
     },
@@ -766,7 +766,7 @@
     {
         "id": 62,
         "id_obj": -1,
-        "score": 0,
+        "score": -10,
         "expresion": "evaHorrorizada",
         "speaker":"F",
         "dialogs":"¿Cómo que el final? Me estás asustando… mejor me voy.",  
@@ -780,7 +780,7 @@
         "id": 63,
         "id_obj": 64,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"Vaya… su compartimento es bastante más grande que el mio.",  
         "location": "compartimento",     
@@ -790,7 +790,7 @@
         "id": 64,
         "id_obj": 65,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":"También me ha costado el doble, es un compartimento para 4 personas, me agobio en espacios pequeños.",  
         "location": null,     
@@ -808,7 +808,7 @@
             "text":"Por supuesto",
             "maxScore": 100,
             "minScore": 0,
-            "score": -10,
+            "score": 15,
             "id_obj": 66
         },
         {
@@ -823,7 +823,7 @@
         "id": 66,
         "id_obj": 68,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaSonriente",
         "speaker":"F",
         "dialogs":"La botella está en el armarito de arriba, junto con las copas. Sirva dos.",  
         "location": null,     
@@ -832,8 +832,8 @@
     {
         "id": 67,
         "id_obj": 68,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": -10,
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":" Vaya. Bueno, pues me serviré yo una. Si cambia de parecer, estaré encantada de ponerle la suya.",  
         "location": null,     
@@ -843,7 +843,7 @@
         "id": 68,
         "id_obj": -2,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":"Y dígame, ¿Tiene algún hobbie?",
         "location": null,   
@@ -856,9 +856,9 @@
         },
         {
             "text":"Cuido mucho de los huéspedes",
-            "maxScore": 100,
+            "maxScore": 60,
             "minScore": 0,
-            "score": 0,
+            "score": 10,
             "id_obj": 72
         },
         {
@@ -872,8 +872,8 @@
     {
         "id": 69,
         "id_obj": 70,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": -10,
+        "expresion": "evaAsqueada",
         "speaker":"F",
         "dialogs":"Oh… Eso es lo de disecar animales muertos, ¿Cierto?",  
         "location": null,     
@@ -883,7 +883,7 @@
         "id": 70,
         "id_obj": 71,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaAsqueada",
         "speaker":"M",
         "dialogs":"Sí, así es. Me mantiene entretenido.",  
         "location": null,     
@@ -893,9 +893,9 @@
         "id": 71,
         "id_obj": -1,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaAsustada",
         "speaker":"F",
-        "dialogs":" Ya… Vaya, mire qué tarde es. Será mejor que vuelva a su compartimento a descansar. ha sido un placer conocerle, señor Bates. Ya nos veremos.",  
+        "dialogs":" Ya… Vaya, mire qué tarde es. Será mejor que vuelva a su compartimento a descansar. Ha sido un placer conocerle, señor Bates. Ya nos veremos.",  
         "location": null,     
         "options": null,
         "match": 30
@@ -904,7 +904,7 @@
         "id": 72,
         "id_obj": -2,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaSpicy",
         "speaker":"F",
         "dialogs":" Oh vaya, un hombre dedicado. Y, ¿Tiene un cuidado especial para gente especial, señor Bates?",
         "location": null,   
@@ -912,7 +912,7 @@
             "text":"Puede apostar que sí",
             "maxScore": 100,
             "minScore": 0,
-            "score": -10,
+            "score": 25,
             "id_obj": 73
         },
         {
@@ -926,8 +926,8 @@
     {
         "id": 73,
         "id_obj": 74,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": 20,
+        "expresion": "evaSpicy",
         "speaker":"F",
         "dialogs":"¿Y cree que podría enseñarmelo? Tengo mucha curiosidad",  
         "location": null,     
@@ -936,8 +936,8 @@
     {
         "id": 74,
         "id_obj": -1,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": 20,
+        "expresion": "evaSpicy",
         "speaker":"M",
         "dialogs":"Por supuesto. Póngase cómoda",  
         "location": null,     
@@ -948,7 +948,7 @@
         "id": 75,
         "id_obj": 76,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":"Oh vaya, menuda lástima. ¿Le han dicho alguna vez que es usted un hombre intrigante?",  
         "location": null,     
@@ -958,7 +958,7 @@
         "id": 76,
         "id_obj": 77,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"¿A… A qué se refiere?",  
         "location": null,     
@@ -968,22 +968,22 @@
         "id": 77,
         "id_obj": -2,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaSpicy",
         "speaker":"F",
         "dialogs":"A que parece que guarda un mundo entero de secretos. No sé… Tiene cara de interesante.",
         "location": null,   
         "options":[{
             "text":" ¡Yo no he matado a nadie!",
             "maxScore": 100,
-            "minScore": 0,
-            "score": -10,
+            "minScore": 40,
+            "score": -20,
             "id_obj": 78
         },
         {
             "text":" Ya le enseñaré algún secreto mío",
-            "maxScore": 100,
+            "maxScore": 60,
             "minScore": 0,
-            "score": 0,
+            "score": 15,
             "id_obj": 81
         },
         {
@@ -997,7 +997,7 @@
             "text":"...",
             "maxScore": 100,
             "minScore": 0,
-            "score": 0,
+            "score": -10,
             "id_obj": 78
         }
         
@@ -1006,7 +1006,7 @@
         "id": 78,
         "id_obj":79,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaAsustada",
         "speaker":"F",
         "dialogs":"Cálmese, no le estoy acusando de nada.",  
         "location": null,     
@@ -1016,7 +1016,7 @@
         "id": 79,
         "id_obj": 80,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":"Bueno, se hace tarde y debería preparar mi maleta para la llegada de mañana. Ha sido un placer conocerle señor Bates. Espero volverle a ver pronto.",  
         "location": null,     
@@ -1026,7 +1026,7 @@
         "id": 80,
         "id_obj": -1,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"Igualmente. Cuídese.",  
         "location": null,     
@@ -1036,8 +1036,8 @@
     {
         "id": 81,
         "id_obj": 83,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": 10,
+        "expresion": "evaSpicy",
         "speaker":"F",
         "dialogs":"Vaya vaya, ha hecho que me pique mucho más la curiosidad, señor Bates…",  
         "location": null,     
@@ -1047,7 +1047,7 @@
         "id": 82,
         "id_obj": 83,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":"Pues yo creo que oculta cosas interesantes, y me gustaría desentrañarlas y conocerle mejor.",  
         "location": null,     
@@ -1057,7 +1057,7 @@
         "id": 83,
         "id_obj": 84,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaNeutral",
         "speaker":"F",
         "dialogs":"Bueno, se nos ha hecho algo tarde. Ha sido un placer charlar con usted. ¿Le parece quedar luego a la cena?",  
         "location": null,     
@@ -1066,8 +1066,8 @@
     {
         "id": 84,
         "id_obj": 85,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": 10,
+        "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"Me parecería estupendo. ¿La recojo aquí a las ocho?",  
         "location": null,     
@@ -1077,7 +1077,7 @@
         "id": 85,
         "id_obj": 86,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaSonriente",
         "speaker":"F",
         "dialogs":"Aquí estaré esperándole. Nos vemos luego, señor Bates.",  
         "location": null,     
@@ -1087,8 +1087,8 @@
     {
         "id": 86,
         "id_obj": 87,
-        "score": 0,
-        "expresion": "evaHorrorizada",
+        "score": 15,
+        "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"Oh, por favor. Llamame Norman",  
         "location": null,     
@@ -1098,7 +1098,7 @@
         "id": 87,
         "id_obj": -1,
         "score": 0,
-        "expresion": "evaHorrorizada",
+        "expresion": "evaSpicy",
         "speaker":"F",
         "dialogs":"De acuerdo, Norman. No se retrase.",  
         "location": null,     
