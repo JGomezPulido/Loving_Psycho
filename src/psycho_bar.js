@@ -139,6 +139,8 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite {
                 this._score += dt / 1000;
                 this.scaleY = this._score / 100;
                 this.fullBar();
+                this._detune = -5 * this._score;
+                this.scene.events.emit('detuneMusic', this._detune);
             }
             this.scene.updateOptions();
         }
