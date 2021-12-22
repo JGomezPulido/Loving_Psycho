@@ -126,7 +126,9 @@ export default class Scene extends Phaser.Scene {
     this.op3 = new Option(this, "", 0, 100, 20, 0, rightOptionsX, upOptionsY);
     this.op4 = new Option(this, "", 0, 100, 20, 0, leftOptoinsX, downOptionsY);
     this.optionsGroup.addMultiple([this.op1, this.op2, this.op3, this.op4]);
+    this.optionsActive = false;
     this.optionsGroup.children.iterate(ch => {
+     
       this.optionsGroup.killAndHide(ch);
     });
 
@@ -153,6 +155,7 @@ export default class Scene extends Phaser.Scene {
     this.dialoge.reset();
     this.dialoge.setActive(true);
     this.dialoge.setVisible(true);
+    this.optionsActive = false;
     this.optionsGroup.children.iterate(ch => {
       this.optionsGroup.killAndHide(ch);
     });
@@ -170,18 +173,38 @@ export default class Scene extends Phaser.Scene {
       this.psychoBar.resetPasiveFillCont();
     }
 
-
+    this.optionsActive = true;
     this.optionsGroup.shuffle();
+    let optionsArrray = this.optionsGroup.getChildren()
     let i = 0;
     while (i < node.options.length) {
-      if (node.options[i].minScore <= this.psychoBar._score && node.options[i].maxScore >= this.psychoBar._score) {
-        let option = this.optionsGroup.getFirst();
+      
+      let option = optionsArrray[i];
+      option.setOption(node.options[i]);
+      console.log(option);
+      if (node.options[i].minScore <= this.psychoBar.getScore() && node.options[i].maxScore >= this.psychoBar.getScore()) {      
         option.setActive(true);
-        option.setVisible(true);
-        option.setOption(node.options[i]);
-
+        option.setVisible(true); 
       }
       i++;
+    }
+  }
+
+  updateOptions(){
+    if(this.optionsActive){
+      let i = 0;
+      let optionsArray = this.optionsGroup.getChildren();
+      
+      while(i < this.dialogManager.getActualNode().options.length){
+        let option = optionsArray[i];
+        if(option.getMinScore() <=  this.psychoBar.getScore() && option.getMaxScore() >= this.psychoBar.getScore()){
+          option.setActive(true);
+          option.setVisible(true); 
+        }else{
+          this.optionsGroup.killAndHide(option);
+        }
+        i++
+      }
     }
   }
 
@@ -195,4 +218,6 @@ export default class Scene extends Phaser.Scene {
     this.jazzSound.setDetune(detune);
     console.log(detune);
   }
+  
+  
 }

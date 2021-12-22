@@ -53,8 +53,8 @@ export default class Option extends Phaser.GameObjects.Container {
     setOption(optionNode) {
         this._textoOption.setText(optionNode.text);
         this._text = optionNode.text;
-        this._minS = optionNode.minS;
-        this._maxS = optionNode.maxS;
+        this._minS = optionNode.minScore;
+        this._maxS = optionNode.maxScore;
         this._score = optionNode.score;
         this._id_obj = optionNode.id_obj;
     }
@@ -70,5 +70,15 @@ export default class Option extends Phaser.GameObjects.Container {
      */
     hoverOut() {
         this._sprite.setTexture('cuadroOpcion');
+    }
+
+    getMinScore(){
+        console.log("opcion: " + this._text + this._minS);
+        return this._minS;
+    }
+
+    getMaxScore(){
+        console.log("opcion: " + this._text + this._maxS);
+        return this._maxS;
     }
 }

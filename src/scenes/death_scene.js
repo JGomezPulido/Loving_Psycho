@@ -24,5 +24,10 @@ export default class DeathScene extends Phaser.Scene {
     this.screamSound = this.sound.add('scream');
     this.screamSound.play();
     this.stabSound.play();
+
+    this.events.on('shutdown', () => {
+      this.screamSound.stop();
+      this.stabSound.stop();
+    });
   }
 }

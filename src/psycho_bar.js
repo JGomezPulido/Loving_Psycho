@@ -149,6 +149,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite {
                 this.scaleY = this._score / 100;
                 this.fullBar();
             }
+            this.scene.updateOptions();
         }
 
     }
