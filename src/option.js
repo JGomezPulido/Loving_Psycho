@@ -73,12 +73,10 @@ export default class Option extends Phaser.GameObjects.Container {
     }
 
     getMinScore(){
-        console.log("opcion: " + this._text + this._minS);
         return this._minS;
     }
 
     getMaxScore(){
-        console.log("opcion: " + this._text + this._maxS);
         return this._maxS;
     }
 }

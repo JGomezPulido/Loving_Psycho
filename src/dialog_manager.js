@@ -1,7 +1,9 @@
+import Node from "./node.js";
+
 /**
- * Maneja la lógica de los dialogos
+ * Maneja la lógica de los dialogos, es un Container para que pueda reaccionar al evento onDestroy para desuscribirse de eventos.
  */
-export default class DialogManager {
+export default class DialogManager extends Phaser.GameObjects.Container{
 
     /**
      * Construye un nuevo objeto DialogManager
@@ -10,12 +12,20 @@ export default class DialogManager {
      * @param {Phaser.Scene} scene 
      */
     constructor(node, tree, scene) {
+        //inicializaciones
+        super(scene, 0,0);
         this._actNode = node;
-        this._scene = scene;
         this._tree = tree;
+        this.scene.add.existing(this);
 
-        this._scene.events.on('optionClicked', this.changeNode, this)
-        this._scene.events.on('dialogBoxClicked', this.changeNode, this)
+        //eventos
+        this.scene.events.on('optionClicked', this.changeNode, this);
+        this.scene.events.on('dialogBoxClicked', this.changeNode, this);
+        
+        this.on('destroy', () => {
+            this.scene.events.off('optionClicked');
+            this.scene.events.off('dialogBoxClicked');
+        })
     }
 
     /**
@@ -23,9 +33,8 @@ export default class DialogManager {
      * @param {number} id_obj - id del nodo objetivo
      */
     changeNode(id_obj) {
-
         if (id_obj === -1) { //end
-            this._scene.scene.start("matchScene", {
+            this.scene.scene.start("matchScene", {
                 "match": this.getActualNode().match
             });
         } else {
@@ -34,12 +43,12 @@ export default class DialogManager {
                 i++
             }
             this._actNode = this._tree[i];         
-            this._scene.events.emit('changePsychoBar', this.getActualNode().score);
-            this._scene.events.emit('changeExpresion', this.getActualNode().expresion);
-            this._scene.events.emit('changeDialogBox', this.getActualNode().speaker);
+            this.scene.events.emit('changePsychoBar', this.getActualNode().score);
+            this.scene.events.emit('changeExpresion', this.getActualNode().expresion);
+            this.scene.events.emit('changeDialogBox', this.getActualNode().speaker);
             let location = this.getActualNode().location;
             if (location !== null)
-                this._scene.events.emit('changeLocation', location);
+                this.scene.events.emit('changeLocation', location);
         }
     }
 
