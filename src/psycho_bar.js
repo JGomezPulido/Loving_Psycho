@@ -33,6 +33,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite {
         });
 
         this.on("destroy", () => { //esto si
+            console.log("psycho bar on destroy");
             this.scene.events.off('changePsychoBar');
             this.scene.events.off('writtenText');
         });
@@ -44,6 +45,7 @@ export default class PsychoBar extends Phaser.GameObjects.Sprite {
      * @param {number} n cantidad a añadir a la barra
      */
     changePsychoBar(n) {
+        console.log(n);
         this._score += n;
 
         if (this._score >= 100)
