@@ -160,19 +160,21 @@ export default class Scene extends Phaser.Scene {
    * También avisa a la barra de instinto asesino de que se deje de llenar pasivamente
    * @param {number} id_obj - id del nodo objetivo
    */
-  optionClicked(id_obj) {
-    this.psychoBar.setPasiveFill(false);
+  optionClicked() {
+    if(!this.dialogManager.isOption()){
+      this.psychoBar.setPasiveFill(false);
 
-    this.dialogeOption.setActive(false);
-    this.dialogeOption.setVisible(false);
-    this.dialoge.reset();
-    this.dialoge.setActive(true);
-    this.dialoge.setVisible(true);
-    this.optionsActive = false;
-    this.optionsGroup.children.iterate(ch => {
-      this.optionsGroup.killAndHide(ch);
-    });
-    this.changeBlood();
+      this.dialogeOption.setActive(false);
+      this.dialogeOption.setVisible(false);
+      this.dialoge.reset();
+      this.dialoge.setActive(true);
+      this.dialoge.setVisible(true);
+      this.optionsActive = false;
+      this.optionsGroup.children.iterate(ch => {
+        this.optionsGroup.killAndHide(ch);
+      });
+      this.changeBlood();
+    }
   }
 
   /**
