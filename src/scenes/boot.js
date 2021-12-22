@@ -35,6 +35,8 @@ export default class Boot extends Phaser.Scene {
     this.load.image('pauseMenu', 'motel_pausa.png');
     this.load.image('fondoMenu', 'fondo_menu.png');
     this.load.image('heartPauseButton','heart_pause_button.png')
+    this.load.image('restaurante', 'restaurante_tren.png');
+    this.load.image('compartimento', 'habitacion_tren.png');
 
     //Carga de sprites Marion
     this.load.setPath('assets/sprites/marion_crane/');
