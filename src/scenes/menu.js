@@ -23,7 +23,7 @@ export default class Menu extends Phaser.Scene {
 
     //botones de las dos citas
     this.buttonMarionCrane = new DateButton(this, canvasW * 0.25, canvasH / 2.4, 'marionCraneMenu', this.cache.json.get("tree"));
-    this.buttonEveKendall = new DateButton(this, canvasW * 0.75, canvasH / 2.4, 'eveKendallMenu', this.cache.json.get("tree2"));
+    this.buttonEveKendall = new DateButton(this, canvasW * 0.75, canvasH / 2.4, 'evaKendallMenu', this.cache.json.get("tree2"));
 
     //botones para seleccionar la dificltad
     this.add.text(canvasW / 2, canvasH / 1.4, '< Dificultad >').setOrigin(0.5, 0.5).setFontSize(30).setOrigin(0.5, 0.5).setFontStyle('bold');

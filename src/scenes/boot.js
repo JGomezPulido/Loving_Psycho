@@ -45,6 +45,17 @@ export default class Boot extends Phaser.Scene {
     this.load.image('marionCraneMenu', 'marion_icon.png');
     this.load.image('marionCraneMenuRojo', 'marion_icon_border.png');
     
+    //Sprites Eva
+    this.load.setPath('assets/sprites/eva_kendall/');
+    this.load.image('evaNeutral', 'eva_neutral.png');
+    this.load.image('evaAsustada', 'eva_asustada.png');
+    this.load.image('evaEnfadada', 'eva_enfadada.png');
+    this.load.image('evaSpicy', 'eva_spicy.png');
+    this.load.image('evaHorrorizada', 'eva_pavor.png');
+    this.load.image('evaSonriente', 'eva_sonriente.png');
+    this.load.image('evaAsqueada', 'eva_asqueada.png');    
+    this.load.image('evaKendallMenu', 'eva_icon.png');
+    this.load.image('evaKendallMenuRojo', 'eva_icon_border.png');
 
     //Carga de audio
     this.load.setPath("assets/audio/")
