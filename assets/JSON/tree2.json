@@ -5,7 +5,7 @@
         "score": 0,
         "expresion": "evaNeutral",
         "speaker":"F",
-        "dialogs":" Perdona, ¿le importa que me siente con usted a comer?, no hay ningún otro sitio libre.", 
+        "dialogs":" Perdone, ¿Le importa que me siente con usted a comer? No hay ningún otro sitio libre.", 
         "location": "restaurante",    
         "options": null
     },
@@ -33,7 +33,7 @@
         "id": 3,
         "id_obj": 4,
         "score": 0,
-        "expresion": "evaSonriente",
+        "expresion": "evaNeutral",
         "speaker":"M",
         "dialogs":"Norman Bates, mucho gusto, ¿y usted?", 
         "location": null,    
@@ -96,7 +96,7 @@
         "dialogs":"Me halaga usted, caballero.",
         "location": null,   
         "options":[{
-            "text":"Bueno, digame. ¿Cual es el motivo de su viaje?",
+            "text":"Digame, ¿Cual es el motivo de su viaje?",
             "maxScore": 100,
             "minScore": 0,
             "score": 0,
@@ -110,7 +110,7 @@
             "id_obj": 23
         },
         {
-            "text":"Bueno, tampoco se emocione, jovencita.",
+            "text":"Tampoco se emocione, jovencita.",
             "maxScore": 60,
             "minScore": 15,
             "score": 15,
@@ -133,7 +133,7 @@
             "id_obj": 21
         },
         {
-            "text":"Bueno, tampoco se emocione demasiado, jovencita.",
+            "text":"Tampoco se emocione demasiado, jovencita.",
             "maxScore": 100,
             "minScore": 0,
             "score": -10,
