@@ -93,8 +93,8 @@ Logotipo y portada del juego |
 
 Vista general |
 -|
-![Vista General](./imagenes/vista_previa.png "Vista General de un frame del juego")
-![Vista General 2](./imagenes/dialogo_lineal.png "Vista General 2 de un frame del juego")|
+![Vista General](./imagenes/dialogo_opciones.jpg "Vista General de un frame del juego")
+![Vista General 2](./imagenes/dialogo_lineal.jpg "Vista General 2 de un frame del juego")|
 ### <a name = "relato-breve">1.1 Relato breve y parcial de una partida tipica</a>
 
 El jugador elegirá una de dos citas disponibles. A medida que el jugador avanza en la conversación, este elige las distintas opciones de diálogo que cree más convenientes para, al mismo tiempo, agradar a su cita y evadir el instinto asesino en forma de madre que duerme en su interior. Durante la cita el jugador también podrá hacer uso de sus pastillas para reducir su barra de instinto asesino. Al final de la cita el jugador obtendrá un porcentaje de "Match" dependiendo de lo bien o mal que lo haya hecho.
@@ -152,7 +152,7 @@ El menú de configuración se abrirá con el Esc. Contará con la opción de reg
 ### <a name = "Interfaz_y_control">3.2 Interfaz y control</a>
 En el menú principal el jugador podrá elegir cualquiera de la dos citas disponibles, además de su dificultad. Adicionalmente, contará con otro botón con el cual abrir el menú de configuración.
 
-![Interfaz](./imagenes/interfaz.png  "Interfaz")
+![Interfaz](./imagenes/menu.jpg  "Interfaz")
 
 El HUD se puede ver en el apartado de [Aspectos generales](#aspectos-generales).  Aparecerán en este el número de pastillas disponibles y la barra de instinto asesino en el lateral derecho y el diálogo abajo en el centro, dependiendo si es diálgo lineal o si toca elegir opciones.
 
