@@ -175,6 +175,9 @@ export default class Scene extends Phaser.Scene {
       });
       this.changeBlood();
     }
+    else{
+      this.events.emit('optionsStart',this.dialogManager.getActualNode());
+    }
   }
 
   /**
@@ -183,6 +186,11 @@ export default class Scene extends Phaser.Scene {
    * @param {Node} node 
    */
   optionsStart(node) {
+
+    this.optionsGroup.children.iterate(ch => {
+      this.optionsGroup.killAndHide(ch);
+    });
+
     if (this.dificil) {
       this.psychoBar.setPasiveFill(true);
       this.psychoBar.resetPasiveFillCont();
