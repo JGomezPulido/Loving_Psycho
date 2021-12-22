@@ -1,5 +1,6 @@
 # LOVING PSYCHO
 [Página de gestión (Pivotal Tracker)](https://www.pivotaltracker.com/n/projects/2532848)
+
 [Página web del juego](https://jgomez18ucm.github.io/Loving_Psycho/)
 
 *Documento de diseño de videojuego*  
